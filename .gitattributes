@@ -18,3 +18,6 @@
 # Generated files: collapse in diffs and exclude from language stats.
 Content/Production/package-lock.json linguist-generated=true -diff
 Content/Ads/*/asset-manifest.csv linguist-generated=true
+
+# Vendored third-party files: keep upstream bytes exactly (no line-ending changes).
+Content/Production/assets/fonts/** -text
