@@ -1,0 +1,23 @@
+{
+  "id": "ProductAd",
+  "fps": 30,
+  "bpm": 120,
+  "durationInFrames": 450,
+  "scenes": {
+    "hook": { "from": 0, "to": 62 },
+    "proof": { "from": 45, "to": 186 },
+    "desire": { "from": 180, "to": 326 },
+    "mosaic": { "from": 315, "to": 392 },
+    "cta": { "from": 375, "to": 450 }
+  },
+  "flips": [0, 8, 15, 23, 30, 38],
+  "cuts": {
+    "hero": 45,
+    "proof": [45, 90, 120, 150],
+    "desire": [180, 225, 270],
+    "mosaic": 315,
+    "cta": 375
+  },
+  "tags": [68, 98, 128, 158, 190, 235, 280],
+  "tiles": [321, 323, 325, 327, 329, 331, 333, 335, 337]
+}

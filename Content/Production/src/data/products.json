@@ -1,0 +1,547 @@
+{
+  "store": "https://www.formanovavintage.com",
+  "checkedAt": "2026-10-30T08:05:28Z",
+  "currency": "EGP",
+  "note": "Facts mirror the public Shopify feed at checkedAt. Run `npm run check:availability` before launching or refreshing ads.",
+  "products": [
+    {
+      "id": "sevres-candlestick",
+      "handle": "sevres-chateau-ornate-candlestick-with-hand-painted-porcelain-birds",
+      "title": "Sèvres Château Ornate Candlestick with Hand-Painted Porcelain Birds",
+      "shortTitle": "Sèvres Château Candlesticks",
+      "url": "https://www.formanovavintage.com/products/sevres-chateau-ornate-candlestick-with-hand-painted-porcelain-birds",
+      "collection": {
+        "en": "Porcelain",
+        "ar": "بورسلين"
+      },
+      "variant": "Pair",
+      "price": "11999.00",
+      "priceLabel": "EGP 11,999",
+      "priceNote": "Price is for the variant \"Pair\".",
+      "available": true,
+      "claims": [
+        {
+          "text": "Hand-painted porcelain birds",
+          "evidence": "Description: \"Hand-painted colored porcelain birds\""
+        },
+        {
+          "text": "Engraved bronze mounts",
+          "evidence": "Description: \"Intricately engraved bronze mounts\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/sevres-chateau-ornate-candlestick-with-hand-painted-porcelain-birds/03-52E8C3A0-403C-4ED9-ACBB-A1306380B393.jpg",
+          "listingPosition": 3,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/52E8C3A0-403C-4ED9-ACBB-A1306380B393.jpg",
+          "sha256": "5ac30817756c9f6020dc1726846729c6aaf8f5905ca2bb86366ab254c14886f7"
+        },
+        {
+          "file": "products/sevres-chateau-ornate-candlestick-with-hand-painted-porcelain-birds/08-8B4773A5-E5BA-48B2-B4BF-7A4BF6E4AF1C.jpg",
+          "listingPosition": 8,
+          "width": 1200,
+          "height": 1600,
+          "kind": "product-photo",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/8B4773A5-E5BA-48B2-B4BF-7A4BF6E4AF1C.jpg",
+          "sha256": "7dbd9fa235be0e7d77d6de8aac3943aa62e3a4b1f668e997e8a008702fc304b4"
+        }
+      ]
+    },
+    {
+      "id": "chinoiserie-cachepot",
+      "handle": "large-vintage-chinoiserie-cachepot-with-red-mark-figures-birds",
+      "title": "Large Vintage Chinoiserie Cachepot with Red Mark, Figures & Birds",
+      "shortTitle": "Chinoiserie Cachepot, Red Mark",
+      "url": "https://www.formanovavintage.com/products/large-vintage-chinoiserie-cachepot-with-red-mark-figures-birds",
+      "collection": {
+        "en": "Chinoiserie",
+        "ar": "شينواه"
+      },
+      "variant": "One Size",
+      "price": "4499.00",
+      "priceLabel": "EGP 4,499",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Vintage",
+          "evidence": "Title and description: \"Large Vintage Chinoiserie Cachepot\""
+        },
+        {
+          "text": "Hand-painted figures and birds",
+          "evidence": "Description: \"delicately decorated with hand-painted figures and birds\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/large-vintage-chinoiserie-cachepot-with-red-mark-figures-birds/01-87AFC66D-50BA-4DB0-ADF8-8F890A186E1A.jpg",
+          "listingPosition": 1,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/87AFC66D-50BA-4DB0-ADF8-8F890A186E1A.jpg",
+          "sha256": "bdda7908cb6571cecc5e018b2633e2c4d23447d9ff10a3c2801426f6be72a980"
+        },
+        {
+          "file": "products/large-vintage-chinoiserie-cachepot-with-red-mark-figures-birds/10-BE5028F1-1282-4CCA-8BE2-0374E336AC2B.jpg",
+          "listingPosition": 10,
+          "width": 1200,
+          "height": 1600,
+          "kind": "product-photo",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/BE5028F1-1282-4CCA-8BE2-0374E336AC2B.jpg",
+          "sha256": "60bf066567ae0cb1999a51849f422c216637912f9eca29f671f18724674948a7"
+        }
+      ]
+    },
+    {
+      "id": "czech-crystal-vase",
+      "handle": "vintage-czech-hand-cut-crystal-vase",
+      "title": "Vintage Czech Hand-Cut Crystal Vase",
+      "shortTitle": "Czech Hand-Cut Crystal Vase",
+      "url": "https://www.formanovavintage.com/products/vintage-czech-hand-cut-crystal-vase",
+      "collection": {
+        "en": "Crystal",
+        "ar": "كريستال"
+      },
+      "variant": "One Size",
+      "price": "4724.99",
+      "priceLabel": "EGP 4,724.99",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Hand-cut Czech crystal",
+          "evidence": "Description: \"Material: Czech crystal / Technique: Hand-cut craftsmanship\""
+        },
+        {
+          "text": "Vintage",
+          "evidence": "Title: \"Vintage Czech Hand-Cut Crystal Vase\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/vintage-czech-hand-cut-crystal-vase/03-1E8188A5-3E01-45B9-8C94-23913C7EF77A.jpg",
+          "listingPosition": 3,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/1E8188A5-3E01-45B9-8C94-23913C7EF77A.jpg",
+          "sha256": "d740cd838fb1e64d6b25e328a8ed599213d0fba8d4df90ffa7c822e0444bb703"
+        },
+        {
+          "file": "products/vintage-czech-hand-cut-crystal-vase/05-07F01F58-D3DD-43C0-B5DC-BA9FEB80EDD3.jpg",
+          "listingPosition": 5,
+          "width": 960,
+          "height": 1280,
+          "kind": "product-photo",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/07F01F58-D3DD-43C0-B5DC-BA9FEB80EDD3.jpg",
+          "sha256": "f46060055f1a765c8d77f35ae31c746cb996af77f30a4f44730d9889793672a9"
+        }
+      ]
+    },
+    {
+      "id": "cloisonne-jar",
+      "handle": "raised-cloisonne-lidded-jar-antique",
+      "title": "Raised Cloisonné Lidded Jar – Antique",
+      "shortTitle": "Raised Cloisonné Lidded Jar",
+      "url": "https://www.formanovavintage.com/products/raised-cloisonne-lidded-jar-antique",
+      "collection": {
+        "en": "Cloisonné",
+        "ar": "كلوازينه"
+      },
+      "variant": "Single",
+      "price": "5459.99",
+      "priceLabel": "EGP 5,459.99",
+      "priceNote": "Price is for the variant \"Single\" (the \"Pair\" variant is sold out).",
+      "available": true,
+      "claims": [
+        {
+          "text": "Antique",
+          "evidence": "Title and description: \"Style: Antique\""
+        },
+        {
+          "text": "Raised cloisonné work",
+          "evidence": "Description: \"intricate raised craftsmanship\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/raised-cloisonne-lidded-jar-antique/01-0EFE36C7-E210-4983-ACD2-6DB7B61469C9.jpg",
+          "listingPosition": 1,
+          "width": 1280,
+          "height": 1280,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/0EFE36C7-E210-4983-ACD2-6DB7B61469C9.jpg",
+          "sha256": "b00cde0cd96e64d122c20d1ea1c0f70da1d03a0dfb7cec33a6762757faaa029f"
+        },
+        {
+          "file": "products/raised-cloisonne-lidded-jar-antique/06-E32FAE46-DAC5-4F3B-8B1B-7A1C2CB94D79.jpg",
+          "listingPosition": 6,
+          "width": 960,
+          "height": 1280,
+          "kind": "product-photo",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/E32FAE46-DAC5-4F3B-8B1B-7A1C2CB94D79.jpg",
+          "sha256": "b5117d62f159cb6bdf43d022577516d15536360e168402af1cbe89fce3f4100d"
+        }
+      ]
+    },
+    {
+      "id": "murano-amber-vase",
+      "handle": "murano-glass-vase",
+      "title": "Murano Glass Vase",
+      "shortTitle": "Murano Glass Vase, 30 cm",
+      "url": "https://www.formanovavintage.com/products/murano-glass-vase",
+      "collection": {
+        "en": "Murano",
+        "ar": "مورانو"
+      },
+      "variant": "One Size",
+      "price": "3499.00",
+      "priceLabel": "EGP 3,499",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Murano glass style",
+          "evidence": "Description: \"Authentic Murano glass style\" (no origin stated: do NOT call it Italian)"
+        }
+      ],
+      "images": [
+        {
+          "file": "products/murano-glass-vase/01-A082A21C-4C00-4480-AFEA-85F4F0797DEC.jpg",
+          "listingPosition": 1,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/A082A21C-4C00-4480-AFEA-85F4F0797DEC.jpg",
+          "sha256": "e77ba59d43b8df9e0aa34199d9808c3382dbf0fa56d395cfe81e13efb6ea1481"
+        },
+        {
+          "file": "products/murano-glass-vase/02-18912093-78C0-4B22-A2C8-89A283B43093.jpg",
+          "listingPosition": 2,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/18912093-78C0-4B22-A2C8-89A283B43093.jpg",
+          "sha256": "cf7eb245628e24ec1b663c76b9c0d27885cf4746b69694e1c74d7fc6e2a67bf1"
+        }
+      ]
+    },
+    {
+      "id": "bleu-blanc-ginger-jar",
+      "handle": "bleu-blanc-porcelain-ginger-jar",
+      "title": "Bleu Blanc Porcelain Ginger Jar",
+      "shortTitle": "Bleu Blanc Ginger Jar",
+      "url": "https://www.formanovavintage.com/products/bleu-blanc-porcelain-ginger-jar",
+      "collection": {
+        "en": "Bleu Blanc",
+        "ar": "بلو بلا"
+      },
+      "variant": "One Size",
+      "price": "1574.99",
+      "priceLabel": "EGP 1,574.99",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Bleu Blanc porcelain, 25 cm",
+          "evidence": "Description: \"Material: Porcelain / Style: Bleu Blanc / Height: 25 cm\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/bleu-blanc-porcelain-ginger-jar/01-EA8AB680-2E60-4461-9AD2-0A96F1ADFE26.jpg",
+          "listingPosition": 1,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/EA8AB680-2E60-4461-9AD2-0A96F1ADFE26.jpg",
+          "sha256": "2632853253786ce0e3f94eb529ffdef88aaeeebe1d5956316826c589f3ec7af6"
+        }
+      ]
+    },
+    {
+      "id": "italian-murano-vase",
+      "handle": "italian-murano-glass-vase",
+      "title": "Italian Murano Glass Vase",
+      "shortTitle": "Italian Murano Glass Vase",
+      "url": "https://www.formanovavintage.com/products/italian-murano-glass-vase",
+      "collection": {
+        "en": "Murano",
+        "ar": "مورانو"
+      },
+      "variant": "One Size",
+      "price": "3499.00",
+      "priceLabel": "EGP 3,499",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Italian Murano glass",
+          "evidence": "Description: \"Material: Murano glass / Origin: Italy\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/italian-murano-glass-vase/01-D6B29073-C9F2-40FC-BB24-1A3DA186BAA5.jpg",
+          "listingPosition": 1,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/D6B29073-C9F2-40FC-BB24-1A3DA186BAA5.jpg",
+          "sha256": "864d0de9d1e321a88f4adfa208641655b5881511bbbd6b0866834dce4da7ded5"
+        },
+        {
+          "file": "products/italian-murano-glass-vase/02-61A46BA9-8391-44B5-BF17-1D2522FB51FF.jpg",
+          "listingPosition": 2,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/61A46BA9-8391-44B5-BF17-1D2522FB51FF.jpg",
+          "sha256": "4f97485dbde6d413b6d4b25ef3098af7e6c4d5ad8c59cba4431be4da3cc39c4e"
+        }
+      ]
+    },
+    {
+      "id": "chinoiserie-potiches-pair",
+      "handle": "pair-of-chinoiserie-potiches-with-bride-motif",
+      "title": "Pair of Chinoiserie Potiches with Bride Motif",
+      "shortTitle": "Pair of Chinoiserie Potiches",
+      "url": "https://www.formanovavintage.com/products/pair-of-chinoiserie-potiches-with-bride-motif",
+      "collection": {
+        "en": "Chinoiserie",
+        "ar": "شينواه"
+      },
+      "variant": "Pair",
+      "price": "1849.00",
+      "priceLabel": "EGP 1,849",
+      "priceNote": "Price is for the pair.",
+      "available": true,
+      "claims": [
+        {
+          "text": "Sold as a pair, 21 cm",
+          "evidence": "Title: \"Pair of ...\"; variant \"Pair\"; Description: \"Height: 21 cm\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/pair-of-chinoiserie-potiches-with-bride-motif/02-4C35E3EF-D1A4-4DBF-BC5A-9C953C9701B9.jpg",
+          "listingPosition": 2,
+          "width": 1500,
+          "height": 1500,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/4C35E3EF-D1A4-4DBF-BC5A-9C953C9701B9.jpg",
+          "sha256": "e6a7a489d221802acc2fbd5dfeef3c4365d2fd41785db0a12982d19f88a85fab"
+        },
+        {
+          "file": "products/pair-of-chinoiserie-potiches-with-bride-motif/04-C07E0C25-B501-42C3-A26E-7A4E91D8B6AD.jpg",
+          "listingPosition": 4,
+          "width": 1500,
+          "height": 1500,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/C07E0C25-B501-42C3-A26E-7A4E91D8B6AD.jpg",
+          "sha256": "b0b61fda2e5391d5557a489d2dd52aafe92f8ceb283e8eef86f31a82c4e88b48"
+        }
+      ]
+    },
+    {
+      "id": "satsuma-potiche",
+      "handle": "chinoiserie-satsuma-potiche-with-hand-painted-bride-motif",
+      "title": "Chinoiserie Satsuma Potiche with Hand-Painted Bride Motif",
+      "shortTitle": "Satsuma Potiche, Hand-Painted",
+      "url": "https://www.formanovavintage.com/products/chinoiserie-satsuma-potiche-with-hand-painted-bride-motif",
+      "collection": {
+        "en": "Chinoiserie",
+        "ar": "شينواه"
+      },
+      "variant": "21 CM",
+      "price": "949.00",
+      "priceLabel": "EGP 949",
+      "priceNote": "Two sizes: 21 cm EGP 949, 26 cm EGP 1,199. Advertise as \"from EGP 949\".",
+      "available": true,
+      "claims": [
+        {
+          "text": "Hand-painted decoration",
+          "evidence": "Description: \"Hand-painted decoration\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/chinoiserie-satsuma-potiche-with-hand-painted-bride-motif/02-DE94C004-744B-4B06-81F2-345A0370ED30.jpg",
+          "listingPosition": 2,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/DE94C004-744B-4B06-81F2-345A0370ED30.jpg",
+          "sha256": "4275f6f5e9f15bb0dd750981932849bbb07222f4d13deff71efa3a645a099af6"
+        },
+        {
+          "file": "products/chinoiserie-satsuma-potiche-with-hand-painted-bride-motif/05-26770524-72A3-49A4-9B7F-96ACF3E6EFBD.jpg",
+          "listingPosition": 5,
+          "width": 1200,
+          "height": 1600,
+          "kind": "product-photo",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/26770524-72A3-49A4-9B7F-96ACF3E6EFBD.jpg",
+          "sha256": "a4c6f7db098ed057363dbdd991fc3e93b0134e0cb50fdc1bfcdf5eab8fc16bb7"
+        }
+      ]
+    },
+    {
+      "id": "chinoiserie-egg",
+      "handle": "rare-chinoiserie-egg-with-raised-floral-fan-motifs-and-gold-detailing",
+      "title": "Rare Chinoiserie Egg with Raised Floral & Fan Motifs and Gold Detailing",
+      "shortTitle": "Chinoiserie Egg, Gold Detailing",
+      "url": "https://www.formanovavintage.com/products/rare-chinoiserie-egg-with-raised-floral-fan-motifs-and-gold-detailing",
+      "collection": {
+        "en": "Chinoiserie",
+        "ar": "شينواه"
+      },
+      "variant": "One Size",
+      "price": "1499.00",
+      "priceLabel": "EGP 1,499",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Raised floral and fan motifs, gold detailing",
+          "evidence": "Title and description"
+        }
+      ],
+      "images": [
+        {
+          "file": "products/rare-chinoiserie-egg-with-raised-floral-fan-motifs-and-gold-detailing/01-94149A95-9B7D-47BD-9958-C3EB3735D498.jpg",
+          "listingPosition": 1,
+          "width": 1080,
+          "height": 1080,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/94149A95-9B7D-47BD-9958-C3EB3735D498.jpg",
+          "sha256": "4a24f1cb2878d8588b597917cf9e9a7284b557a55c2d3a04cbf2ad73e33df3fa"
+        },
+        {
+          "file": "products/rare-chinoiserie-egg-with-raised-floral-fan-motifs-and-gold-detailing/05-289143C8-CE16-427C-A463-5BE9E8442E53.jpg",
+          "listingPosition": 5,
+          "width": 1200,
+          "height": 1600,
+          "kind": "product-photo",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/289143C8-CE16-427C-A463-5BE9E8442E53.jpg",
+          "sha256": "a630337e08e7787dd20be8c7d48bc7b2bdcbabd70c8151b7f8263f1d96c7b289"
+        }
+      ]
+    },
+    {
+      "id": "cobalt-centerpiece",
+      "handle": "stamped-porcelain-centerpiece-with-solid-bronze-figurine-cobalt-color",
+      "title": "Stamped Porcelain Centerpiece with Solid Bronze Figurine – Cobalt Color",
+      "shortTitle": "Cobalt Porcelain Centerpiece",
+      "url": "https://www.formanovavintage.com/products/stamped-porcelain-centerpiece-with-solid-bronze-figurine-cobalt-color",
+      "collection": {
+        "en": "Porcelain",
+        "ar": "بورسلين"
+      },
+      "variant": "One Size",
+      "price": "10599.99",
+      "priceLabel": "EGP 10,599.99",
+      "priceNote": null,
+      "available": true,
+      "claims": [],
+      "images": [
+        {
+          "file": "products/stamped-porcelain-centerpiece-with-solid-bronze-figurine-cobalt-color/02-E3C87767-E925-46EF-A7B5-842F41463C9F.jpg",
+          "listingPosition": 2,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/E3C87767-E925-46EF-A7B5-842F41463C9F.jpg",
+          "sha256": "a785957df53865aff0ea8e2bf20067eba2873b435a0a202948062402b96f4dd5"
+        }
+      ]
+    },
+    {
+      "id": "satsuma-bonbonniere",
+      "handle": "satsuma-chinoiserie-bonbonniere-ladies-floral-motifs",
+      "title": "Satsuma Chinoiserie Bonbonnière – Ladies & Floral Motifs",
+      "shortTitle": "Satsuma Bonbonnière",
+      "url": "https://www.formanovavintage.com/products/satsuma-chinoiserie-bonbonniere-ladies-floral-motifs",
+      "collection": {
+        "en": "Chinoiserie",
+        "ar": "شينواه"
+      },
+      "variant": "One Size",
+      "price": "1849.00",
+      "priceLabel": "EGP 1,849",
+      "priceNote": null,
+      "available": true,
+      "claims": [],
+      "images": [
+        {
+          "file": "products/satsuma-chinoiserie-bonbonniere-ladies-floral-motifs/02-C6CE6792-F7AB-4B97-8F45-8CD511AB6F2F.jpg",
+          "listingPosition": 2,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/C6CE6792-F7AB-4B97-8F45-8CD511AB6F2F.jpg",
+          "sha256": "e81c3a611df62b2be76261316664a522b52022bfbd62f4e37e5c47a71db5f179"
+        }
+      ]
+    },
+    {
+      "id": "bleu-blanc-potiche",
+      "handle": "bleu-blanc-porcelain-potiche-with-floral-motifs-brass-rimmed-lid",
+      "title": "Bleu Blanc Porcelain Potiche with Floral Motifs & Brass-Rimmed Lid",
+      "shortTitle": "Bleu Blanc Potiche, Brass Lid",
+      "url": "https://www.formanovavintage.com/products/bleu-blanc-porcelain-potiche-with-floral-motifs-brass-rimmed-lid",
+      "collection": {
+        "en": "Bleu Blanc",
+        "ar": "بلو بلا"
+      },
+      "variant": "One Size",
+      "price": "949.00",
+      "priceLabel": "EGP 949",
+      "priceNote": null,
+      "available": true,
+      "claims": [],
+      "images": [
+        {
+          "file": "products/bleu-blanc-porcelain-potiche-with-floral-motifs-brass-rimmed-lid/02-579130C4-202A-4784-B080-3D8873238310.jpg",
+          "listingPosition": 2,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/579130C4-202A-4784-B080-3D8873238310.jpg",
+          "sha256": "0eac308f6f6773c75f137013e95aae9e4145b40d70a707437c3504b7459b5821"
+        }
+      ]
+    },
+    {
+      "id": "bohemian-gold-vase",
+      "handle": "untitled-oct23_12-31-00",
+      "title": "Bohemian Crystal Vase with Floral Motifs & Gold Detailing",
+      "shortTitle": "Bohemian Crystal Vase, Gold Detailing",
+      "url": "https://www.formanovavintage.com/products/untitled-oct23_12-31-00",
+      "collection": {
+        "en": "Crystal",
+        "ar": "كريستال"
+      },
+      "variant": "One Size",
+      "price": "2499.00",
+      "priceLabel": "EGP 2,499",
+      "priceNote": null,
+      "available": true,
+      "claims": [],
+      "images": [
+        {
+          "file": "products/untitled-oct23_12-31-00/03-3B7CF421-DC26-44D5-8BB3-6C2477023550.jpg",
+          "listingPosition": 3,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/3B7CF421-DC26-44D5-8BB3-6C2477023550.jpg",
+          "sha256": "6585b29beeede95685d7e40079719166463ae96b49f71cef6c04917d50e4dd6b"
+        }
+      ]
+    }
+  ]
+}

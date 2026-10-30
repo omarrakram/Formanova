@@ -1,0 +1,38 @@
+{
+  "id": "Heritage",
+  "fps": 30,
+  "durationInFrames": 450,
+  "scenes": {
+    "hook": {
+      "from": 0,
+      "to": 92
+    },
+    "details": {
+      "from": 72,
+      "to": 196
+    },
+    "payoff": {
+      "from": 170,
+      "to": 336
+    },
+    "brand": {
+      "from": 312,
+      "to": 402
+    },
+    "cta": {
+      "from": 386,
+      "to": 450
+    }
+  },
+  "cuts": {
+    "hookStart": 0,
+    "detail1": 84,
+    "detail2": 118,
+    "detail3": 148,
+    "payoffOpen": 176,
+    "payoff2": 222,
+    "payoff3": 270,
+    "brand": 318,
+    "logo": 389
+  }
+}
