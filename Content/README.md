@@ -25,10 +25,11 @@ Content/
 ## Adding a campaign
 
 1. Create `Ads/YYYY-MM-name/`, copying the structure of the most recent campaign.
-2. Add the compositions under `Production/src/creatives/<name>/` and register them in `Production/src/Root.tsx`.
-3. Declare the deliverables and their technical spec in the campaign's `deliverables.json`.
-4. Render with `npm run render`, then write the manifest (`npm run manifest`) and run `npm run verify`.
-5. Open a pull request. CI re-validates every deliverable, required document and checksum.
+2. Add the compositions under `Production/src/creatives/<name>/`, register them in `Production/src/Root.tsx` and add them to `Production/scripts/render.mjs`.
+3. Describe the campaign in `Production/src/data/campaigns/YYYY-MM-name.json` (creatives, fonts, scores, any sale terms).
+4. Declare the deliverables and their technical spec in the campaign's `deliverables.json`.
+5. Render with `npm run render`, record stock with `npm run check:availability -- YYYY-MM-name --record`, write the manifests (`npm run manifest`) and run `npm run verify`.
+6. Open a pull request. CI re-validates every deliverable, required document and checksum.
 
 ## Adding other kinds of content
 

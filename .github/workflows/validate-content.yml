@@ -67,6 +67,8 @@ jobs:
           mkdir -p out
           npx remotion still Heritage out/heritage-frame-040.png --frame=40 --props='{"audio":false}'
           npx remotion still ProductAd out/product-frame-075.png --frame=75 --props='{"audio":false}'
+          npx remotion still BlackFridayLadder out/bf-ladder-frame-240.png --frame=240 --props='{"audio":false}'
+          npx remotion still BlackFridaySet out/bf-set-frame-330.png --frame=330 --props='{"audio":false}'
 
       - name: Score generator runs and reproduces the masters
         run: |
