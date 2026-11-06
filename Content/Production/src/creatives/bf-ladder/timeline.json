@@ -1,0 +1,18 @@
+{
+  "id": "BlackFridayLadder",
+  "fps": 30,
+  "bpm": 120,
+  "durationInFrames": 450,
+  "scenes": {
+    "hook": { "from": 0, "to": 68 },
+    "ladder": { "from": 54, "to": 218 },
+    "prices": { "from": 204, "to": 356 },
+    "cta": { "from": 340, "to": 450 }
+  },
+  "cuts": {
+    "tiers": [60, 105, 150],
+    "prices": [210, 255, 300],
+    "cta": 345
+  },
+  "tags": [218, 263, 308]
+}

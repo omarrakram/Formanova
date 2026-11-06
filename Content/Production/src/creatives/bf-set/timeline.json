@@ -1,0 +1,19 @@
+{
+  "id": "BlackFridaySet",
+  "fps": 30,
+  "bpm": 80,
+  "durationInFrames": 450,
+  "scenes": {
+    "hook": { "from": 0, "to": 86 },
+    "set": { "from": 66, "to": 266 },
+    "math": { "from": 246, "to": 372 },
+    "cta": { "from": 352, "to": 450 }
+  },
+  "cuts": {
+    "pieces": [75, 120, 165, 210],
+    "math": 255,
+    "rows": [270, 285, 300],
+    "stamp": 318,
+    "cta": 360
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "formanova-production",
+  "version": "1.0.0",
+  "description": "Formanova video production: Remotion source, original score generator and render pipeline for paid social creatives.",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "scripts": {
+    "studio": "remotion studio",
+    "score": "node scripts/synth-score.mjs",
+    "render": "node scripts/render.mjs",
+    "verify": "node ../../.github/scripts/validate-content.mjs",
+    "build": "npm run score && npm run render && npm run manifest && npm run verify",
+    "manifest": "node scripts/build-manifest.mjs",
+    "check:availability": "node scripts/check-availability.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src && tsc --noEmit",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "@remotion/fonts": "4.0.539",
+    "@remotion/media": "4.0.539",
+    "@remotion/transitions": "4.0.539",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.539",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}

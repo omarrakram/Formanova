@@ -1,0 +1,88 @@
+name: Validate content
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-content-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deliverables:
+    name: Deliverables meet their declared spec
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Install FFmpeg (ffprobe)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends ffmpeg
+          ffprobe -version | head -n 1
+
+      - name: Validate videos, required documents and asset checksums
+        run: node .github/scripts/validate-content.mjs
+
+  production:
+    name: Production project builds and renders
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Content/Production
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: Content/Production/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint and type-check
+        run: npm run lint
+
+      - name: Asset manifest matches the sources
+        run: |
+          npm run manifest
+          git diff --exit-code -- ../Ads/*/asset-manifest.csv
+
+      - name: Install headless browser for Remotion
+        run: npx remotion browser ensure
+
+      - name: Smoke-render one frame of each composition
+        run: |
+          mkdir -p out
+          npx remotion still Heritage out/heritage-frame-040.png --frame=40 --props='{"audio":false}'
+          npx remotion still ProductAd out/product-frame-075.png --frame=75 --props='{"audio":false}'
+          npx remotion still BlackFridayLadder out/bf-ladder-frame-240.png --frame=240 --props='{"audio":false}'
+          npx remotion still BlackFridaySet out/bf-set-frame-330.png --frame=330 --props='{"audio":false}'
+
+      - name: Score generator runs and reproduces the masters
+        run: |
+          npm run score
+          if git diff --quiet -- assets/audio; then
+            echo "Regenerated score masters are byte-identical to the committed files."
+          else
+            echo "::warning::Regenerated score masters differ from the committed files (floating-point differences between Node versions are possible); listen before re-rendering."
+            git checkout -- assets/audio
+          fi
+
+      - name: Upload smoke-render frames
+        uses: actions/upload-artifact@v6
+        with:
+          name: smoke-render-frames
+          path: Content/Production/out/*.png
+          retention-days: 7

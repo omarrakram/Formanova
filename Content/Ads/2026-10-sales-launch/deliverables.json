@@ -1,0 +1,60 @@
+{
+  "campaign": "2026-10-sales-launch",
+  "deliverables": [
+    {
+      "id": "creative-01-heritage",
+      "title": "One Piece With a Past",
+      "file": "creative-01-heritage/final/formanova-heritage-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-product",
+      "title": "Not Your Ordinary Decor",
+      "file": "creative-02-product/final/formanova-product-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    }
+  ],
+  "requiredFiles": [
+    "README.md",
+    "strategy.md",
+    "ad-copy.md",
+    "licensing.md",
+    "asset-manifest.csv",
+    "creative-01-heritage/cover.jpg",
+    "creative-01-heritage/contact-sheet.jpg",
+    "creative-01-heritage/script.md",
+    "creative-01-heritage/storyboard.md",
+    "creative-02-product/cover.jpg",
+    "creative-02-product/contact-sheet.jpg",
+    "creative-02-product/script.md",
+    "creative-02-product/storyboard.md"
+  ]
+}
