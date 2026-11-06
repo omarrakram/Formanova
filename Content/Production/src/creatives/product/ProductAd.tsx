@@ -8,6 +8,7 @@ import { Photo } from "../../components/Photo";
 import { SafeZoneGuide } from "../../components/SafeZoneGuide";
 import { Grain } from "../../components/Texture";
 import { EASE_IN, EASE_IN_OUT, EASE_OUT, progress } from "../../lib/anim";
+import { priceLabel as campaignPriceLabel } from "../../lib/pricing";
 import { Product, getImage, getProduct } from "../../lib/products";
 import timeline from "./timeline.json";
 
@@ -18,6 +19,10 @@ import timeline from "./timeline.json";
  */
 
 const S = timeline.scenes;
+
+/** Prices as recorded for the October campaign (30 October 2026). */
+const octoberPrice = (id: string) =>
+  campaignPriceLabel("2026-10-sales-launch", id);
 const CARD = { x: 110, y: 560, w: 860, h: 860 };
 const TALL_CARD = { x: 110, y: 560, w: 860, h: 960 };
 const PLINTH_Y = 1262;
@@ -94,13 +99,13 @@ const DESIRE: (CardSpec & {
     ),
     claim: "مرسومة يدويًا",
     sub: "بوتيش شينواه ساتسوما",
-    priceLabel: "From EGP 949",
+    priceLabel: `From ${octoberPrice("satsuma-potiche")}`,
   },
   {
     ...card("cloisonne-jar", 6, d2, d3, tag6, "right", [50, 48], [1.04, 1.12]),
     claim: "كلوازينه أنتيك",
     sub: "شغل بارز بتفاصيل يدوية",
-    priceLabel: getProduct("cloisonne-jar").priceLabel,
+    priceLabel: octoberPrice("cloisonne-jar"),
   },
   {
     ...card(
@@ -115,7 +120,7 @@ const DESIRE: (CardSpec & {
     ),
     claim: "مشغولة بمياه الذهب",
     sub: "بيضة شينواه برسومات بارزة",
-    priceLabel: getProduct("chinoiserie-egg").priceLabel,
+    priceLabel: octoberPrice("chinoiserie-egg"),
   },
 ];
 
@@ -233,7 +238,7 @@ const ProductCard: React.FC<{
       />
       <PriceTag
         name={spec.product.shortTitle}
-        price={priceLabel ?? spec.product.priceLabel}
+        price={priceLabel ?? octoberPrice(spec.product.id)}
         drop={drop}
         angle={angle}
         style={{

@@ -8,9 +8,10 @@
  *   npm run check:availability -- 2026-11-black-friday
  *   npm run check:availability -- 2026-11-black-friday --record
  *
- * --record stores the result (time, prices, availability) as the campaign's
- * snapshot, which the asset manifest reports. Behind an HTTP proxy, Node
- * 22.21+ needs NODE_USE_ENV_PROXY=1.
+ * "Advertised" means the campaign's recorded snapshot, which is what its films
+ * show. --record replaces the snapshot with the live result; re-render the
+ * campaign's films afterwards so they show the new prices. Behind an HTTP
+ * proxy, Node 22.21+ needs NODE_USE_ENV_PROXY=1.
  */
 
 import fs from "node:fs";
@@ -46,17 +47,20 @@ for (const product of products) {
   const live = await res.json();
   const variant = live.variants.find((v) => v.title === product.variant);
   const price = variant ? (variant.price / 100).toFixed(2) : null;
+  const advertised = campaign.snapshot?.[product.id]?.price ?? null;
   const status = !variant
     ? "VARIANT?"
     : !variant.available
       ? "SOLD OUT"
-      : price !== Number(product.price).toFixed(2)
-        ? "PRICE Δ "
-        : "OK      ";
+      : advertised === null
+        ? "NEW     "
+        : price !== Number(advertised).toFixed(2)
+          ? "PRICE Δ "
+          : "OK      ";
   if (status.trim() !== "OK") problems++;
   if (variant) snapshot[product.id] = { price, available: variant.available };
   console.log(
-    `${status} ${product.title} [${product.variant}] advertised EGP ${product.price}, live ${price ? `EGP ${price}` : "n/a"}`,
+    `${status} ${product.title} [${product.variant}] advertised ${advertised ? `EGP ${advertised}` : "n/a"}, live ${price ? `EGP ${price}` : "n/a"}`,
   );
 }
 
@@ -71,6 +75,11 @@ if (record) {
   campaign.snapshot = snapshot;
   fs.writeFileSync(campaignFile(id), JSON.stringify(campaign, null, 2) + "\n");
   console.log(`Recorded snapshot in src/data/campaigns/${id}.json`);
+  if (problems > 0) {
+    console.log(
+      `Re-render this campaign's films so they show the recorded prices (npm run render -- <composition>).`,
+    );
+  }
 }
 
 process.exitCode = problems === 0 ? 0 : 1;

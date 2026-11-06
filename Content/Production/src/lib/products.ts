@@ -17,11 +17,9 @@ export type Product = {
   shortTitle: string;
   url: string;
   collection: { en: string; ar: string };
+  /** The variant every campaign advertises (its price is campaign data). */
   variant: string;
-  price: string;
-  priceLabel: string;
   priceNote: string | null;
-  available: boolean;
   claims: { text: string; evidence: string }[];
   images: ProductImage[];
 };

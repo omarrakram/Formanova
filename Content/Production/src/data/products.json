@@ -1,8 +1,7 @@
 {
   "store": "https://www.formanovavintage.com",
-  "checkedAt": "2026-11-06T11:33:53Z",
   "currency": "EGP",
-  "note": "Facts mirror the public Shopify feed at checkedAt. Run `npm run check:availability` before launching or refreshing ads.",
+  "note": "Product facts from the public storefront. Prices and availability are campaign data: see src/data/campaigns/<campaign>.json, recorded by `npm run check:availability -- <campaign> --record`.",
   "products": [
     {
       "id": "sevres-candlestick",
@@ -15,10 +14,7 @@
         "ar": "بورسلين"
       },
       "variant": "Pair",
-      "price": "11999.00",
-      "priceLabel": "EGP 11,999",
       "priceNote": "Price is for the variant \"Pair\".",
-      "available": true,
       "claims": [
         {
           "text": "Hand-painted porcelain birds",
@@ -70,10 +66,7 @@
         "ar": "شينواه"
       },
       "variant": "One Size",
-      "price": "4499.00",
-      "priceLabel": "EGP 4,499",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Vintage",
@@ -116,10 +109,7 @@
         "ar": "كريستال"
       },
       "variant": "One Size",
-      "price": "4724.99",
-      "priceLabel": "EGP 4,724.99",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Hand-cut Czech crystal",
@@ -162,10 +152,7 @@
         "ar": "كلوازينه"
       },
       "variant": "Single",
-      "price": "5459.99",
-      "priceLabel": "EGP 5,459.99",
       "priceNote": "Price is for the variant \"Single\" (the \"Pair\" variant is sold out).",
-      "available": true,
       "claims": [
         {
           "text": "Antique",
@@ -208,10 +195,7 @@
         "ar": "مورانو"
       },
       "variant": "One Size",
-      "price": "3499.00",
-      "priceLabel": "EGP 3,499",
       "priceNote": null,
-      "available": false,
       "claims": [
         {
           "text": "Murano glass style",
@@ -250,10 +234,7 @@
         "ar": "بلو بلا"
       },
       "variant": "One Size",
-      "price": "1574.99",
-      "priceLabel": "EGP 1,574.99",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Bleu Blanc porcelain, 25 cm",
@@ -283,10 +264,7 @@
         "ar": "مورانو"
       },
       "variant": "One Size",
-      "price": "3499.00",
-      "priceLabel": "EGP 3,499",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Italian Murano glass",
@@ -325,10 +303,7 @@
         "ar": "شينواه"
       },
       "variant": "Pair",
-      "price": "1849.00",
-      "priceLabel": "EGP 1,849",
       "priceNote": "Price is for the pair.",
-      "available": true,
       "claims": [
         {
           "text": "Sold as a pair, 21 cm",
@@ -367,10 +342,7 @@
         "ar": "شينواه"
       },
       "variant": "21 CM",
-      "price": "949.00",
-      "priceLabel": "EGP 949",
       "priceNote": "Two sizes: 21 cm EGP 949, 26 cm EGP 1,199. Advertise as \"from EGP 949\".",
-      "available": true,
       "claims": [
         {
           "text": "Hand-painted decoration",
@@ -409,10 +381,7 @@
         "ar": "شينواه"
       },
       "variant": "One Size",
-      "price": "1499.00",
-      "priceLabel": "EGP 1,499",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Raised floral and fan motifs, gold detailing",
@@ -451,10 +420,7 @@
         "ar": "بورسلين"
       },
       "variant": "One Size",
-      "price": "10599.99",
-      "priceLabel": "EGP 10,599.99",
       "priceNote": null,
-      "available": true,
       "claims": [],
       "images": [
         {
@@ -488,10 +454,7 @@
         "ar": "شينواه"
       },
       "variant": "One Size",
-      "price": "1849.00",
-      "priceLabel": "EGP 1,849",
       "priceNote": null,
-      "available": false,
       "claims": [],
       "images": [
         {
@@ -516,10 +479,7 @@
         "ar": "بلو بلا"
       },
       "variant": "One Size",
-      "price": "949.00",
-      "priceLabel": "EGP 949",
       "priceNote": null,
-      "available": false,
       "claims": [],
       "images": [
         {
@@ -544,10 +504,7 @@
         "ar": "كريستال"
       },
       "variant": "One Size",
-      "price": "2499.00",
-      "priceLabel": "EGP 2,499",
       "priceNote": null,
-      "available": true,
       "claims": [],
       "images": [
         {
@@ -572,10 +529,7 @@
         "ar": "بورسلين"
       },
       "variant": "Blue",
-      "price": "32409.99",
-      "priceLabel": "EGP 32,409.99",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "24K gold-plated, stamped",
@@ -609,10 +563,7 @@
         "ar": "تماثيل"
       },
       "variant": "One Size",
-      "price": "9754.99",
-      "priceLabel": "EGP 9,754.99",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Antique French spelter (semi-bronze)",
@@ -646,10 +597,7 @@
         "ar": "بورسلين"
       },
       "variant": "One Size",
-      "price": "6119.99",
-      "priceLabel": "EGP 6,119.99",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Vintage glazed porcelain, 52 × 60 cm",
@@ -683,10 +631,7 @@
         "ar": "بلو بلا"
       },
       "variant": "One Size",
-      "price": "5814.99",
-      "priceLabel": "EGP 5,814.99",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Bleu Blanc, Capodimonte style, 32 cm",
@@ -716,10 +661,7 @@
         "ar": "مورانو"
       },
       "variant": "One Size",
-      "price": "5499.00",
-      "priceLabel": "EGP 5,499",
       "priceNote": null,
-      "available": true,
       "claims": [
         {
           "text": "Heavy Italian Murano glass, 30 cm",

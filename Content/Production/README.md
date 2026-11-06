@@ -14,9 +14,9 @@ Production/
 │   │   ├── heritage/               October 01 · One Piece With a Past  (Heritage.tsx + timeline.json)
 │   │   └── product/                October 02 · Not Your Ordinary Decor (ProductAd.tsx + timeline.json)
 │   ├── data/
-│   │   ├── products.json           Product catalogue: titles, prices, URLs, images, verified claims
-│   │   └── campaigns/<id>.json     Per campaign: creatives, fonts, scores, sale terms, stock snapshot
-│   └── lib/                        Animation, product-data and sale-maths helpers
+│   │   ├── products.json           Product catalogue: titles, URLs, images, verified claims
+│   │   └── campaigns/<id>.json     Per campaign: creatives, fonts, scores, sale terms, recorded prices and stock
+│   └── lib/                        Animation, product, pricing and sale-maths helpers
 ├── scripts/
 │   ├── synth-score.mjs             Original music and sound design (deterministic)
 │   ├── render.mjs                  Render, mux and trim to exactly 15.000 s
@@ -75,11 +75,19 @@ Vintage pieces are usually one of a kind. Before launching, and daily while a ca
 npm run check:availability -- 2026-11-black-friday
 ```
 
-Add `--record` to save the result as the campaign's snapshot (the manifest reports it). Behind an HTTP proxy, prefix the command with `NODE_USE_ENV_PROXY=1`.
+Prices on screen come from that campaign's recorded snapshot, never from live data, so a store price change never alters a finished film by accident. When prices change, record them and re-render:
+
+```bash
+npm run check:availability -- 2026-11-black-friday --record
+npm run render -- BlackFridayLadder BlackFridaySet
+npm run manifest
+```
+
+Behind an HTTP proxy, prefix the check with `NODE_USE_ENV_PROXY=1`.
 
 ## Making a variant
 
-- **Swap a product.** Vendor the photograph into `assets/products/<handle>/`, add it to `src/data/products.json` with its SHA-256, and reference it in the creative with `getImage("<id>", <listing position>)`. Names, prices and collection chips flow from the data file.
+- **Swap a product.** Vendor the photograph into `assets/products/<handle>/`, add it to `src/data/products.json` with its SHA-256, reference it in the creative with `getImage("<id>", <listing position>)`, and record its price with `check:availability -- <campaign> --record`. Names and collection chips come from the catalogue; prices come from the campaign snapshot.
 - **Change the sale.** Tiers, dates and labels live in `src/data/campaigns/2026-11-black-friday.json`; percentages and savings on screen are computed from it (`src/lib/sale.ts`).
 - **Change copy.** Strings live in the creative's `.tsx` file next to the scene that shows them.
 - **Change timing.** Edit the creative's `timeline.json`, then re-run `npm run score` so the music still lands on the cuts.

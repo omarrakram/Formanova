@@ -15,7 +15,7 @@ import {
   progress,
 } from "../../lib/anim";
 import { getImage, getProduct } from "../../lib/products";
-import { MAX_TIER, SALE, basket } from "../../lib/sale";
+import { MAX_TIER, SALE, basket, regularLabel } from "../../lib/sale";
 import type { BlackFridayProps } from "../bf-ladder/BlackFridayLadder";
 import timeline from "./timeline.json";
 
@@ -271,7 +271,7 @@ const SetScene: React.FC = () => {
                 color: COLORS.goldSoft,
               }}
             >
-              {p.product.priceLabel}
+              {regularLabel(p.id)}
             </div>
           </div>
         );

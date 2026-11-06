@@ -1,9 +1,10 @@
 import campaign from "../data/campaigns/2026-11-black-friday.json";
-import { getProduct } from "./products";
+import { campaignPrice, formatEGP } from "./pricing";
 
 /**
- * Black Friday offer maths. All amounts are handled in integer piastres so
- * the on-screen figures match a whole-order percentage discount exactly.
+ * Black Friday offer maths, from the campaign's recorded prices. All amounts
+ * are handled in integer piastres so the on-screen figures match a
+ * whole-order percentage discount exactly.
  */
 
 export const SALE = campaign.sale;
@@ -12,22 +13,16 @@ export type Tier = (typeof SALE.tiers)[number];
 
 export const MAX_TIER: Tier = SALE.tiers[SALE.tiers.length - 1];
 
-const toPiastres = (price: string): number =>
-  Math.round(parseFloat(price) * 100);
+const price = (productId: string) =>
+  campaignPrice(campaign.campaign, productId);
 
-/** "EGP 19,445.99", or "EGP 11,999" for whole pounds (storefront style). */
-export const formatEGP = (piastres: number): string => {
-  const pounds = Math.floor(piastres / 100);
-  const rest = piastres % 100;
-  const whole = pounds.toLocaleString("en-US");
-  return rest === 0
-    ? `EGP ${whole}`
-    : `EGP ${whole}.${String(rest).padStart(2, "0")}`;
-};
+/** Regular price of one product, formatted for display. */
+export const regularLabel = (productId: string): string =>
+  formatEGP(price(productId));
 
 /** Price of one product after a whole-order discount of `percentOff`. */
 export const discounted = (productId: string, percentOff: number) => {
-  const regular = toPiastres(getProduct(productId).price);
+  const regular = price(productId);
   const saving = Math.round((regular * percentOff) / 100);
   return {
     regular: formatEGP(regular),
@@ -43,10 +38,7 @@ export const discounted = (productId: string, percentOff: number) => {
  * same, internally consistent numbers either way.
  */
 export const basket = (productIds: string[], percentOff: number) => {
-  const total = productIds.reduce(
-    (sum, id) => sum + toPiastres(getProduct(id).price),
-    0,
-  );
+  const total = productIds.reduce((sum, id) => sum + price(id), 0);
   const saving = (total * percentOff) / 100;
   const pounds = (piastres: number) => Math.round(piastres / 100) * 100;
   return {
