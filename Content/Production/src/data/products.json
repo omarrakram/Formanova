@@ -1,6 +1,6 @@
 {
   "store": "https://www.formanovavintage.com",
-  "checkedAt": "2026-10-30T08:05:28Z",
+  "checkedAt": "2026-11-06T11:33:53Z",
   "currency": "EGP",
   "note": "Facts mirror the public Shopify feed at checkedAt. Run `npm run check:availability` before launching or refreshing ads.",
   "products": [
@@ -38,6 +38,15 @@
           "kind": "styled-interior",
           "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/52E8C3A0-403C-4ED9-ACBB-A1306380B393.jpg",
           "sha256": "5ac30817756c9f6020dc1726846729c6aaf8f5905ca2bb86366ab254c14886f7"
+        },
+        {
+          "file": "products/sevres-chateau-ornate-candlestick-with-hand-painted-porcelain-birds/05-442A0762-5309-4B2A-8531-7C7C03CE5E67.jpg",
+          "listingPosition": 5,
+          "width": 1200,
+          "height": 1600,
+          "kind": "product-photo",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/442A0762-5309-4B2A-8531-7C7C03CE5E67.jpg",
+          "sha256": "5bf5e4a2ca5ad75097c0fcf3c0fcc9feabeddcfc65f3a60c1ec3cf0342e0f0b8"
         },
         {
           "file": "products/sevres-chateau-ornate-candlestick-with-hand-painted-porcelain-birds/08-8B4773A5-E5BA-48B2-B4BF-7A4BF6E4AF1C.jpg",
@@ -202,7 +211,7 @@
       "price": "3499.00",
       "priceLabel": "EGP 3,499",
       "priceNote": null,
-      "available": true,
+      "available": false,
       "claims": [
         {
           "text": "Murano glass style",
@@ -449,6 +458,15 @@
       "claims": [],
       "images": [
         {
+          "file": "products/stamped-porcelain-centerpiece-with-solid-bronze-figurine-cobalt-color/01-3D4DF5E0-1D1C-4BDE-98DC-426D2A3D6AE7.jpg",
+          "listingPosition": 1,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/3D4DF5E0-1D1C-4BDE-98DC-426D2A3D6AE7.jpg",
+          "sha256": "5c2561b248a42c7051c7b88ba8c76b7d4aeabd8b53e746dfc819a8db3fbaa352"
+        },
+        {
           "file": "products/stamped-porcelain-centerpiece-with-solid-bronze-figurine-cobalt-color/02-E3C87767-E925-46EF-A7B5-842F41463C9F.jpg",
           "listingPosition": 2,
           "width": 1600,
@@ -473,7 +491,7 @@
       "price": "1849.00",
       "priceLabel": "EGP 1,849",
       "priceNote": null,
-      "available": true,
+      "available": false,
       "claims": [],
       "images": [
         {
@@ -501,7 +519,7 @@
       "price": "949.00",
       "priceLabel": "EGP 949",
       "priceNote": null,
-      "available": true,
+      "available": false,
       "claims": [],
       "images": [
         {
@@ -540,6 +558,183 @@
           "kind": "styled-interior",
           "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/3B7CF421-DC26-44D5-8BB3-6C2477023550.jpg",
           "sha256": "6585b29beeede95685d7e40079719166463ae96b49f71cef6c04917d50e4dd6b"
+        }
+      ]
+    },
+    {
+      "id": "jardiniere",
+      "handle": "t-14",
+      "title": "Large Jardinère – Stamped & 24K Gold-Plated",
+      "shortTitle": "Large Jardinière, 24K Gold-Plated",
+      "url": "https://www.formanovavintage.com/products/t-14",
+      "collection": {
+        "en": "Porcelain",
+        "ar": "بورسلين"
+      },
+      "variant": "Blue",
+      "price": "32409.99",
+      "priceLabel": "EGP 32,409.99",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "24K gold-plated, stamped",
+          "evidence": "Listing: \"Finish: 24K gold-plated surface\" / \"Markings: Fully stamped\""
+        },
+        {
+          "text": "60 × 40 cm",
+          "evidence": "Listing: \"Size: Large – 60 cm length × 40 cm width\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/t-14/04-36716FA2-C38D-4D9D-918D-91103166FE60.jpg",
+          "listingPosition": 4,
+          "width": 1170,
+          "height": 1152,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/36716FA2-C38D-4D9D-918D-91103166FE60.jpg",
+          "sha256": "5a9bb669cd4b7eb89c1f11b5bf9d1004deb9fa473befd0ff004e07dba0b0efd2"
+        }
+      ]
+    },
+    {
+      "id": "spelter-dogs",
+      "handle": "t-19",
+      "title": "Authentic Antique French Spelter (Semi-Bronze) Statue – Three Dogs – Solid Wood Base",
+      "shortTitle": "Antique French Spelter Statue",
+      "url": "https://www.formanovavintage.com/products/t-19",
+      "collection": {
+        "en": "Statues",
+        "ar": "تماثيل"
+      },
+      "variant": "One Size",
+      "price": "9754.99",
+      "priceLabel": "EGP 9,754.99",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Antique French spelter (semi-bronze)",
+          "evidence": "Listing: \"Material: Spelter (semi-bronze) / Origin: French – antique piece\""
+        },
+        {
+          "text": "Hand-engraved details, solid wood base",
+          "evidence": "Listing: \"hand-engraved details\" / \"Thick solid wood base\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/t-19/03-867DDF45-C897-42DE-A5EF-29F96918146A.jpg",
+          "listingPosition": 3,
+          "width": 1320,
+          "height": 1320,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/867DDF45-C897-42DE-A5EF-29F96918146A.jpg",
+          "sha256": "d2848a781c5957873b3e9b7aaf1e890da9b0256950fbea9c642aa905ce7f898c"
+        }
+      ]
+    },
+    {
+      "id": "elephant-side-table",
+      "handle": "e-1",
+      "title": "Majestic Porcelain Elephant Side Table",
+      "shortTitle": "Porcelain Elephant Side Table",
+      "url": "https://www.formanovavintage.com/products/e-1",
+      "collection": {
+        "en": "Porcelain",
+        "ar": "بورسلين"
+      },
+      "variant": "One Size",
+      "price": "6119.99",
+      "priceLabel": "EGP 6,119.99",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Vintage glazed porcelain, 52 × 60 cm",
+          "evidence": "Listing: \"Vintage glazed porcelain\" / \"52cm height, 60cm width\""
+        },
+        {
+          "text": "Functional side table",
+          "evidence": "Listing: \"Functional side table\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/e-1/02-D024CB84-F924-4B00-AD79-E513E3F56F72.jpg",
+          "listingPosition": 2,
+          "width": 1170,
+          "height": 1174,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/D024CB84-F924-4B00-AD79-E513E3F56F72.jpg",
+          "sha256": "6806f17b296c9b8fd853f39c5e6000f8b7a973608b03fac7a0f75befacc96d55"
+        }
+      ]
+    },
+    {
+      "id": "bleu-blanc-parrot",
+      "handle": "n-1",
+      "title": "Bleu Blanc Parrot: Capodmonte Style",
+      "shortTitle": "Bleu Blanc Parrot, Capodimonte Style",
+      "url": "https://www.formanovavintage.com/products/n-1",
+      "collection": {
+        "en": "Bleu Blanc",
+        "ar": "بلو بلا"
+      },
+      "variant": "One Size",
+      "price": "5814.99",
+      "priceLabel": "EGP 5,814.99",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Bleu Blanc, Capodimonte style, 32 cm",
+          "evidence": "Listing: \"Bleu Blanc design / Capodmonte style / Height: 32cm\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/n-1/01-A0220EED-C312-453A-B76A-8BD356C35E86.jpg",
+          "listingPosition": 1,
+          "width": 1170,
+          "height": 1187,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/A0220EED-C312-453A-B76A-8BD356C35E86.jpg",
+          "sha256": "76cbc789e92579254e1f0fc777cee2fb8664d230cf0463d3d88234ad35c3506c"
+        }
+      ]
+    },
+    {
+      "id": "murano-swirl-vase",
+      "handle": "large-heavy-italian-murano-glass-vase-with-multicolored-swirls",
+      "title": "Large Heavy Italian Murano Glass Vase with Multicolored Swirls",
+      "shortTitle": "Large Italian Murano Swirl Vase",
+      "url": "https://www.formanovavintage.com/products/large-heavy-italian-murano-glass-vase-with-multicolored-swirls",
+      "collection": {
+        "en": "Murano",
+        "ar": "مورانو"
+      },
+      "variant": "One Size",
+      "price": "5499.00",
+      "priceLabel": "EGP 5,499",
+      "priceNote": null,
+      "available": true,
+      "claims": [
+        {
+          "text": "Heavy Italian Murano glass, 30 cm",
+          "evidence": "Listing title and description: \"Italian Murano glass / Heavy, substantial glasswork\", 30 cm"
+        }
+      ],
+      "images": [
+        {
+          "file": "products/large-heavy-italian-murano-glass-vase-with-multicolored-swirls/01-Photoroom_20261028_182543.jpg",
+          "listingPosition": 1,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/Photoroom_20261028_182543.jpg",
+          "sha256": "5b4cef856ad7ea0bf328d65964c085e4c78540309df54d2a74aa6835365d2497"
         }
       ]
     }

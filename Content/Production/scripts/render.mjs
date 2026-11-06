@@ -2,8 +2,8 @@
 /**
  * Renders the final advertisements straight into the campaign folders.
  *
- *   npm run render              # both creatives
- *   npm run render -- Heritage  # one creative by composition id
+ *   npm run render                       # every creative
+ *   npm run render -- BlackFridayLadder  # one creative by composition id
  *
  * Pipeline per creative:
  *   1. Remotion renders the picture (H.264 High, yuv420p, BT.709, CRF 17).
@@ -24,7 +24,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const CAMPAIGN = path.resolve(ROOT, "..", "Ads", "2026-10-sales-launch");
+const ADS = path.resolve(ROOT, "..", "Ads");
+const CAMPAIGN = path.join(ADS, "2026-10-sales-launch");
+const BLACK_FRIDAY = path.join(ADS, "2026-11-black-friday");
 
 const CREATIVES = [
   {
@@ -47,6 +49,28 @@ const CREATIVES = [
       "creative-02-product",
       "final",
       "formanova-product-15s.mp4",
+    ),
+  },
+  {
+    id: "BlackFridayLadder",
+    title: "Formanova - Black Friday: The Ladder (15s, Arabic)",
+    score: path.join(ROOT, "assets", "audio", "bf-ladder-score.wav"),
+    output: path.join(
+      BLACK_FRIDAY,
+      "creative-01-ladder",
+      "final",
+      "formanova-bf-ladder-15s.mp4",
+    ),
+  },
+  {
+    id: "BlackFridaySet",
+    title: "Formanova - Black Friday: The 40% Set (15s)",
+    score: path.join(ROOT, "assets", "audio", "bf-set-score.wav"),
+    output: path.join(
+      BLACK_FRIDAY,
+      "creative-02-set",
+      "final",
+      "formanova-bf-set-15s.mp4",
     ),
   },
 ];

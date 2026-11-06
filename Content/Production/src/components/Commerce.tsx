@@ -28,19 +28,35 @@ export const Arabic: React.FC<{
 
 /**
  * A shop tag "typed" with the verified product name and price, hanging from
- * a thin cord. `drop` (0..1) animates it onto the product.
+ * a thin cord. `drop` (0..1) animates it onto the product. For sales, `was`
+ * shows the regular price struck through (`strike` 0..1 draws the line) and
+ * `note` adds a short condition line under the price.
  */
 export const PriceTag: React.FC<{
   name: string;
   price: string;
   drop: number;
   angle: number;
+  was?: string;
+  strike?: number;
+  note?: React.ReactNode;
+  width?: number;
   style?: React.CSSProperties;
-}> = ({ name, price, drop, angle, style }) => (
+}> = ({
+  name,
+  price,
+  drop,
+  angle,
+  was,
+  strike = 1,
+  note,
+  width = 372,
+  style,
+}) => (
   <div
     style={{
       position: "absolute",
-      width: 372,
+      width,
       opacity: Math.min(1, drop * 1.6),
       translate: `0px ${(1 - drop) * -46}px`,
       rotate: `${angle}deg`,
@@ -99,6 +115,33 @@ export const PriceTag: React.FC<{
       <div
         style={{ height: 1.5, background: "#DCC7A8", margin: "13px 18px 11px" }}
       />
+      {was ? (
+        <div
+          style={{
+            position: "relative",
+            display: "inline-block",
+            fontFamily: FONTS.mono,
+            fontWeight: 700,
+            fontSize: 30,
+            whiteSpace: "nowrap",
+            color: "rgba(23,11,2,0.5)",
+            marginBottom: 2,
+          }}
+        >
+          {was}
+          <div
+            style={{
+              position: "absolute",
+              left: -4,
+              top: "52%",
+              height: 3,
+              width: `calc(${strike * 100}% + 8px)`,
+              background: "#A3341F",
+              borderRadius: 2,
+            }}
+          />
+        </div>
+      ) : null}
       <div
         style={{
           fontFamily: FONTS.mono,
@@ -111,6 +154,7 @@ export const PriceTag: React.FC<{
       >
         {price}
       </div>
+      {note ? <div style={{ marginTop: 8 }}>{note}</div> : null}
     </div>
   </div>
 );

@@ -1,0 +1,93 @@
+{
+  "campaign": "2026-11-black-friday",
+  "checkedAt": "2026-11-06T11:33:53Z",
+  "creatives": {
+    "creative-01-ladder": "src/creatives/bf-ladder/BlackFridayLadder.tsx",
+    "creative-02-set": "src/creatives/bf-set/BlackFridaySet.tsx"
+  },
+  "sale": {
+    "name": "Black Friday",
+    "startsAt": "2026-11-06T20:00:00+02:00",
+    "endsOn": "2026-11-13",
+    "label": {
+      "en": "Fri 6 Nov, 8 PM – Fri 13 Nov",
+      "ar": "من الجمعة 6/11 الساعة 8 مساءً لحد الجمعة 13/11"
+    },
+    "tiers": [
+      {
+        "minQuantity": 2,
+        "percentOff": 20,
+        "orMore": false
+      },
+      {
+        "minQuantity": 3,
+        "percentOff": 30,
+        "orMore": false
+      },
+      {
+        "minQuantity": 4,
+        "percentOff": 40,
+        "orMore": true
+      }
+    ],
+    "application": "Applied automatically at checkout to the whole order; every product is eligible; no code.",
+    "confirmedBy": "Brand owner, 5 November 2026: sale ends Friday 13 November; automatic whole-order discount."
+  },
+  "fonts": {
+    "AnonymousPro-Bold.ttf": [
+      "creative-01-ladder",
+      "creative-02-set"
+    ],
+    "EBGaramond-Italic-Variable.ttf": [
+      "creative-01-ladder",
+      "creative-02-set"
+    ],
+    "EBGaramond-Variable.ttf": [
+      "creative-01-ladder",
+      "creative-02-set"
+    ],
+    "ElMessiri-Variable.ttf": [
+      "creative-01-ladder"
+    ],
+    "PlayfairDisplay-Italic-Variable.ttf": [
+      "creative-02-set"
+    ],
+    "PlayfairDisplay-Variable.ttf": [
+      "creative-01-ladder"
+    ]
+  },
+  "scores": {
+    "creative-01-ladder": "bf-ladder-score.wav",
+    "creative-02-set": "bf-set-score.wav"
+  },
+  "snapshot": {
+    "sevres-candlestick": {
+      "price": "11999.00",
+      "available": true
+    },
+    "cobalt-centerpiece": {
+      "price": "10599.99",
+      "available": true
+    },
+    "jardiniere": {
+      "price": "32409.99",
+      "available": true
+    },
+    "spelter-dogs": {
+      "price": "9754.99",
+      "available": true
+    },
+    "elephant-side-table": {
+      "price": "6119.99",
+      "available": true
+    },
+    "bleu-blanc-parrot": {
+      "price": "5814.99",
+      "available": true
+    },
+    "murano-swirl-vase": {
+      "price": "5499.00",
+      "available": true
+    }
+  }
+}

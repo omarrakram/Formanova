@@ -9,15 +9,20 @@ Production/
 │   ├── brand/                      Design tokens (colour, type, safe zones) and font loading
 │   ├── components/                 Photo, Arch, Logo, PriceTag, CollectionChip, grain, safe-zone guide
 │   ├── creatives/
-│   │   ├── heritage/               01 · One Piece With a Past  (Heritage.tsx + timeline.json)
-│   │   └── product/                02 · Not Your Ordinary Decor (ProductAd.tsx + timeline.json)
-│   ├── data/products.json          Featured products: titles, prices, URLs, images, verified claims
-│   └── lib/                        Animation and product-data helpers
+│   │   ├── bf-ladder/              Black Friday 01 · The Ladder   (BlackFridayLadder.tsx + timeline.json)
+│   │   ├── bf-set/                 Black Friday 02 · The 40% Set  (BlackFridaySet.tsx + timeline.json)
+│   │   ├── heritage/               October 01 · One Piece With a Past  (Heritage.tsx + timeline.json)
+│   │   └── product/                October 02 · Not Your Ordinary Decor (ProductAd.tsx + timeline.json)
+│   ├── data/
+│   │   ├── products.json           Product catalogue: titles, prices, URLs, images, verified claims
+│   │   └── campaigns/<id>.json     Per campaign: creatives, fonts, scores, sale terms, stock snapshot
+│   └── lib/                        Animation, product-data and sale-maths helpers
 ├── scripts/
 │   ├── synth-score.mjs             Original music and sound design (deterministic)
 │   ├── render.mjs                  Render, mux and trim to exactly 15.000 s
-│   ├── build-manifest.mjs          Writes the campaign asset-manifest.csv
-│   └── check-availability.mjs      Checks featured products against the live store
+│   ├── build-manifest.mjs          Writes each campaign's asset-manifest.csv
+│   ├── check-availability.mjs      Checks a campaign's products against the live store
+│   └── lib/campaigns.mjs           Shared campaign helpers
 └── assets/                         Remotion public directory
     ├── products/<handle>/          Original storefront photographs (unaltered)
     ├── brand/                      Gold wordmark
@@ -37,7 +42,7 @@ npm ci
 npm run studio
 ```
 
-Remotion Studio opens with both compositions under **Sales-Launch-2026-10**. Set the `showSafeZones` prop to `true` to overlay the Reels interface zones.
+Remotion Studio lists the films under **Black-Friday-2026-11** and **Sales-Launch-2026-10**. Set the `showSafeZones` prop to `true` to overlay the Reels interface zones.
 
 ## Rebuild everything
 
@@ -49,12 +54,12 @@ This runs, in order:
 
 | Step | Command | What it does |
 |---|---|---|
-| 1 | `npm run score` | Synthesises `assets/audio/heritage-score.wav` and `product-score.wav` from the creative timelines (about 45 s). The same source always produces identical files. |
+| 1 | `npm run score` | Synthesises every score in `assets/audio/` from the creative timelines (about 90 s). The same source always produces identical files. Use `npm run score -- bf-ladder` for one. |
 | 2 | `npm run render` | Renders each composition muted (H.264 High, CRF 17, x264 preset `slow`, yuv420p, BT.709). The bundled FFmpeg then adds the score as AAC-LC 320 kb/s, trims to exactly 15.000 s and enables `faststart`. The video stream is copied, never re-encoded. |
-| 3 | `npm run manifest` | Rewrites `../Ads/2026-10-sales-launch/asset-manifest.csv`, reading image usage from the creative source and verifying every checksum. |
-| 4 | `npm run verify` | Validates each deliverable against `deliverables.json`: codec, pixel format, colour tags, resolution, frame rate, exact frame count, exact durations, audio format, size, required files and manifest checksums. |
+| 3 | `npm run manifest` | Rewrites each campaign's `asset-manifest.csv` from the creative sources and the campaign's stock snapshot, verifies every checksum and reports unused photographs. |
+| 4 | `npm run verify` | Validates every deliverable against its campaign's `deliverables.json`: codec, pixel format, colour tags, resolution, frame rate, exact frame count, exact durations, audio format, size, required files and manifest checksums. |
 
-Render one creative with `npm run render -- Heritage` or `npm run render -- ProductAd`.
+Render one film by composition id, for example `npm run render -- BlackFridayLadder`.
 
 Remotion normally downloads its own headless Chrome. On offline or locked-down machines, point it at a local build:
 
@@ -62,12 +67,22 @@ Remotion normally downloads its own headless Chrome. On offline or locked-down m
 REMOTION_BROWSER_EXECUTABLE=/path/to/chrome-headless-shell npm run render
 ```
 
+## Stock and prices
+
+Vintage pieces are usually one of a kind. Before launching, and daily while a campaign runs, check every product the campaign features:
+
+```bash
+npm run check:availability -- 2026-11-black-friday
+```
+
+Add `--record` to save the result as the campaign's snapshot (the manifest reports it). Behind an HTTP proxy, prefix the command with `NODE_USE_ENV_PROXY=1`.
+
 ## Making a variant
 
-- **Swap a product or price.** Update `src/data/products.json` (vendor the image into `assets/products/<handle>/` and record its SHA-256), then point the creative at it with `getImage("<id>", <listing position>)`. Prices, titles and collection chips flow from the data file.
+- **Swap a product.** Vendor the photograph into `assets/products/<handle>/`, add it to `src/data/products.json` with its SHA-256, and reference it in the creative with `getImage("<id>", <listing position>)`. Names, prices and collection chips flow from the data file.
+- **Change the sale.** Tiers, dates and labels live in `src/data/campaigns/2026-11-black-friday.json`; percentages and savings on screen are computed from it (`src/lib/sale.ts`).
 - **Change copy.** Strings live in the creative's `.tsx` file next to the scene that shows them.
 - **Change timing.** Edit the creative's `timeline.json`, then re-run `npm run score` so the music still lands on the cuts.
-- **Before launching.** Run `npm run check:availability`. Vintage pieces are often one of a kind, so re-check before every launch or budget increase. Behind an HTTP proxy, prefix it with `NODE_USE_ENV_PROXY=1`.
 
 ## Checks
 
@@ -78,4 +93,4 @@ npm run typecheck   # TypeScript only
 
 ## Licensing
 
-Remotion is free for individuals and companies of up to three people; larger companies need a company licence. See [licensing.md](../Ads/2026-10-sales-launch/licensing.md) for the complete rights record.
+Remotion is free for individuals and companies of up to three people; larger companies need a company licence. Each campaign's `licensing.md` holds its complete rights record.

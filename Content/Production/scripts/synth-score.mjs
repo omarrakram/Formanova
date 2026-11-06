@@ -12,7 +12,7 @@
  * Musical cues are driven by the creative timelines in src/creatives/*, so
  * accents land exactly on picture cuts.
  *
- * Usage: node scripts/synth-score.mjs [heritage|product|all]
+ * Usage: node scripts/synth-score.mjs [heritage|product|bf-ladder|bf-set|all]
  */
 
 import fs from "node:fs";
@@ -920,8 +920,319 @@ const product = () => {
 };
 
 /* ------------------------------------------------------------------ */
+/* Black Friday instruments                                            */
+/* ------------------------------------------------------------------ */
+
+/** Darbuka "dum" (deep centre stroke) and "tek" (rim crack), synthesised. */
+const darbuka = (bus, rand, t, stroke, level, pan = 0) => {
+  const i0 = Math.round(t * SR);
+  const [gl, gr] = panGains(pan);
+  if (stroke === "dum") {
+    let phase = 0;
+    const svf = new SVF();
+    for (let i = 0; i < SR * 0.45; i++) {
+      const tt = i / SR;
+      const f = 92 + 70 * Math.exp(-tt / 0.03);
+      phase += (TAU * f) / SR;
+      const body = Math.sin(phase) * Math.exp(-tt / 0.16);
+      const skin =
+        svf.process(rand() * 2 - 1, 420, 1).low * Math.exp(-tt / 0.02) * 0.5;
+      const v = (body + skin) * level * (1 - Math.exp(-tt / 0.0015));
+      bus.add(i0 + i, v * gl, v * gr);
+    }
+  } else {
+    const svf = new SVF();
+    for (let i = 0; i < SR * 0.12; i++) {
+      const tt = i / SR;
+      const crack =
+        svf.process(rand() * 2 - 1, 3400, 0.5).band * Math.exp(-tt / 0.012);
+      const ring = Math.sin(TAU * 1180 * tt) * 0.25 * Math.exp(-tt / 0.03);
+      const v = (crack + ring) * level * (stroke === "ka" ? 0.45 : 1);
+      bus.add(i0 + i, v * gl, v * gr);
+    }
+  }
+};
+
+/** Short, bowed-string pulse (an eighth-note ostinato voice). */
+const stringPulse = (bus, rand, t, notes, seconds, level) => {
+  for (const name of notes) {
+    const f0 = freq(name);
+    const parts = Math.min(14, Math.floor(7000 / f0));
+    for (const [cents, pan] of [
+      [-5, -0.4],
+      [5, 0.4],
+    ]) {
+      const fv = f0 * Math.pow(2, cents / 1200);
+      const env = (tt) => {
+        const a = Math.min(1, tt / 0.03);
+        const r = tt < seconds ? 1 : Math.max(0, 1 - (tt - seconds) / 0.12);
+        return a * r * Math.exp(-tt / (seconds * 1.4));
+      };
+      for (let n = 1; n <= parts; n++) {
+        const amp =
+          (level / notes.length) * (1 / n) * Math.exp(-(n - 1) / 3.2) * 0.4;
+        partial(bus, t, seconds + 0.14, fv * n, amp, env, pan, rand() * TAU);
+      }
+    }
+  }
+};
+
+/* ------------------------------------------------------------------ */
+/* Black Friday 01: "The Ladder" (A harmonic minor, 120 BPM, darbuka)  */
+/* ------------------------------------------------------------------ */
+
+const bfLadder = () => {
+  const tl = readTimeline("bf-ladder");
+  const fps = tl.fps;
+  const beat = 60 / tl.bpm;
+  const rand = mulberry32(1106);
+  const dry = new Bus();
+  const send = new Bus();
+  const keys = channel(dry, send, 0.3);
+  const drums = channel(dry, send, 0.12);
+  const fx = channel(dry, send, 0.45);
+  const cta = tl.cuts.cta / fps;
+  const tiers = tl.cuts.tiers.map((f) => f / fps);
+
+  // Harmony per two-second bar: Am | F | E | Am | F | E -> A major resolution.
+  const bars = [
+    [["A3", "C4", "E4"], "A2"],
+    [["F3", "A3", "C4"], "F2"],
+    [["E3", "G#3", "B3"], "E2"],
+    [["A3", "C4", "E4"], "A2"],
+    [["F3", "A3", "C4"], "F2"],
+    [["E3", "G#3", "B3"], "E2"],
+  ];
+  const motif = {
+    A2: ["A4", "C5", "E5", "A5", "G#5", "E5", "C5", "B4"],
+    F2: ["F4", "A4", "C5", "F5", "E5", "C5", "A4", "G#4"],
+    E2: ["E4", "G#4", "B4", "E5", "D5", "B4", "G#4", "F4"],
+  };
+  // Maqsum: dum tek . tek dum . tek .  (eighth notes), with ghost "ka" strokes.
+  const maqsum = ["dum", "tek", null, "tek", "dum", null, "tek", null];
+
+  for (let bar = 0; bar < 6; bar++) {
+    const t0 = bar * 4 * beat;
+    if (t0 >= cta) break;
+    const [chord, root] = bars[bar];
+    const barEnd = Math.min(t0 + 4 * beat, cta);
+    pad(keys, rand, t0, barEnd, chord, bar === 0 ? 0.22 : 0.3, {
+      attack: 0.08,
+      release: 0.4,
+      tilt: 4,
+    });
+    for (let e = 0; e < 8; e++) {
+      const t = t0 + e * (beat / 2);
+      if (t >= cta - 0.01) break;
+      const stroke = maqsum[e];
+      if (stroke)
+        darbuka(
+          drums,
+          rand,
+          t,
+          stroke,
+          stroke === "dum" ? 0.5 : 0.22,
+          stroke === "dum" ? 0 : 0.25,
+        );
+      else darbuka(drums, rand, t, "ka", 0.18, -0.25);
+      marimba(
+        keys,
+        rand,
+        t,
+        motif[root][e],
+        e % 4 === 0 ? 0.14 : 0.09,
+        e % 2 ? 0.3 : -0.3,
+      );
+      if (e % 2 === 0) bass(dry, t, root, beat * 0.42, e === 0 ? 0.15 : 0.1);
+    }
+  }
+
+  // Opening stinger on frame 1: the "40%" punch.
+  lowBoom(dry, rand, 0.01, 0.12);
+  kick(dry, rand, 0.01, 0.42);
+  bell(fx, rand, 0.03, "A5", 0.035, 0.1);
+
+  // Ladder: each tier hits harder and higher; 40% is the peak.
+  tiers.forEach((t, k) => {
+    riser(dry, rand, t - 0.45, 0.45, 0.025 + k * 0.012);
+    kick(dry, rand, t, 0.36 + k * 0.06);
+    ["A4", "C#5", "E5"]
+      .slice(0, k + 1)
+      .forEach((n, j) =>
+        marimba(keys, rand, t + j * 0.02, n, 0.12 + k * 0.03, (j - 1) * 0.3),
+      );
+    if (k === 2) {
+      lowBoom(dry, rand, t, 0.11);
+      bell(fx, rand, t + 0.01, "E6", 0.04, -0.1);
+    }
+  });
+
+  // Price cards slide in; tags are typed onto each piece.
+  tl.cuts.prices.forEach((f) =>
+    whoosh(fx, rand, f / fps - 0.2, 0.36, 0.045, 1200, 3200),
+  );
+  tl.tags.forEach((f) => typeClick(fx, rand, f / fps, 0.3));
+
+  // Call to action: resolve to A major with a bell.
+  riser(dry, rand, cta - 0.9, 0.9, 0.05);
+  lowBoom(dry, rand, cta, 0.12);
+  kick(dry, rand, cta, 0.4);
+  pad(keys, rand, cta, DURATION, ["A3", "C#4", "E4", "A4"], 0.6, {
+    attack: 0.05,
+    release: 1.6,
+    tilt: 5,
+  });
+  sub(dry, cta, DURATION, "A1", 0.03);
+  ["A4", "C#5", "E5"].forEach((n, k) =>
+    marimba(keys, rand, cta + k * 0.02, n, 0.14, (k - 1) * 0.3),
+  );
+  bell(fx, rand, cta + 0.01, "A5", 0.05, 0.1);
+  bell(fx, rand, cta + 0.5, "E6", 0.03, -0.2);
+  [0.75, 1.0, 1.25, 1.5].forEach((d, k) =>
+    marimba(
+      keys,
+      rand,
+      cta + d,
+      ["E5", "C#5", "A4", "E4"][k],
+      0.07 - k * 0.012,
+      k % 2 ? 0.3 : -0.3,
+    ),
+  );
+
+  master(
+    dry,
+    send,
+    { t60: 1.2, damping: 0.5, predelay: 0.012, size: 0.75 },
+    0.35,
+    path.join(ROOT, "assets", "audio", "bf-ladder-score.wav"),
+  );
+};
+
+/* ------------------------------------------------------------------ */
+/* Black Friday 02: "The 40% Set" (D minor -> D major, 80 BPM)         */
+/* ------------------------------------------------------------------ */
+
+const bfSet = () => {
+  const tl = readTimeline("bf-set");
+  const fps = tl.fps;
+  const beat = 60 / tl.bpm;
+  const rand = mulberry32(1311);
+  const dry = new Bus();
+  const send = new Bus();
+  const padCh = channel(dry, send, 0.25);
+  const pianoCh = channel(dry, send, 0.5);
+  const fx = channel(dry, send, 0.55);
+  const p = tl.cuts.pieces.map((f) => f / fps);
+  const math = tl.cuts.math / fps;
+  const stamp = tl.cuts.stamp / fps;
+  const cta = tl.cuts.cta / fps;
+
+  // Harmony: Dm(add9) hook | Dm | Bbmaj7 | Gm7 | A (dominant) | riser | D major.
+  const chords = [
+    [0, p[0], ["D3", "A3", "E4", "F4"], 0.34],
+    [p[0], p[1], ["D3", "A3", "D4", "F4"], 0.38],
+    [p[1], p[2], ["Bb2", "F3", "A3", "D4"], 0.42],
+    [p[2], p[3], ["G2", "D3", "F3", "Bb3"], 0.46],
+    [p[3], stamp, ["A2", "E3", "A3", "C#4"], 0.5],
+    [stamp, DURATION, ["D3", "A3", "D4", "F#4", "A4"], 0.58],
+  ];
+  chords.forEach(([t0, t1, notes, level]) =>
+    pad(padCh, rand, t0, t1, notes, level, { attack: 0.3, release: 1.2 }),
+  );
+  [
+    ["D2", 0, p[1]],
+    ["Bb1", p[1], p[2]],
+    ["G1", p[2], p[3]],
+    ["A1", p[3], stamp],
+    ["D2", stamp, DURATION],
+  ].forEach(([n, t0, t1]) => sub(dry, t0, t1, n, 0.022));
+
+  // Opening: a bold low chord on frame 1.
+  lowBoom(dry, rand, 0.01, 0.1);
+  ["D4", "A4", "D5", "F5"].forEach((n, k) =>
+    feltPiano(pianoCh, rand, 0.02 + k * 0.012, n, 0.62, 2.2, (k - 1.5) * 0.15),
+  );
+
+  // Each piece: a piano voicing on the cut and a soft air movement.
+  const pieceNotes = [
+    ["F5", "A5"],
+    ["D5", "F5"],
+    ["D5", "G5"],
+    ["E5", "A5"],
+  ];
+  p.forEach((t, k) => {
+    whoosh(
+      fx,
+      rand,
+      t - 0.25,
+      0.4,
+      0.04,
+      700,
+      2600,
+      k % 2 ? 0.4 : -0.4,
+      k % 2 ? -0.4 : 0.4,
+    );
+    pieceNotes[k].forEach((n, j) =>
+      feltPiano(
+        pianoCh,
+        rand,
+        t + j * 0.015,
+        n,
+        0.5 + k * 0.03,
+        1.4,
+        0.15 - j * 0.3,
+      ),
+    );
+  });
+
+  // Momentum: an eighth-note string ostinato and soft kicks that build to the saving.
+  const ostinato = [
+    [p[0], p[1], ["D3", "A3"]],
+    [p[1], p[2], ["Bb2", "F3"]],
+    [p[2], p[3], ["G2", "D3"]],
+    [p[3], stamp, ["A2", "E3"]],
+  ];
+  ostinato.forEach(([t0, t1, notes], k) => {
+    for (let t = t0; t < t1 - 0.01; t += beat / 2) {
+      stringPulse(padCh, rand, t, notes, beat * 0.32, 0.16 + k * 0.03);
+    }
+  });
+  for (let t = p[1]; t < stamp - 0.01; t += beat)
+    kick(dry, rand, t, 0.26 + (t - p[1]) * 0.02);
+
+  // Receipt rows are typed; the saving lands with a resolution.
+  tl.cuts.rows.forEach((f) => typeClick(fx, rand, f / fps, 0.3));
+  riser(dry, rand, stamp - 1.0, 1.0, 0.05);
+  lowBoom(dry, rand, stamp, 0.13);
+  kick(dry, rand, stamp, 0.42);
+  ["D4", "F#4", "A4", "D5"].forEach((n, k) =>
+    feltPiano(pianoCh, rand, stamp + k * 0.012, n, 0.62, 2.0, (k - 1.5) * 0.15),
+  );
+  bell(fx, rand, stamp + 0.01, "D6", 0.05, 0.1);
+  bell(fx, rand, stamp + 0.45, "A5", 0.03, -0.2);
+
+  // Call to action: gentle continuation in D major.
+  whoosh(fx, rand, cta - 0.35, 0.5, 0.04, 2400, 700);
+  [
+    ["A5", 0],
+    ["F#5", 0.75],
+    ["D5", 1.5],
+  ].forEach(([n, d]) => feltPiano(pianoCh, rand, cta + d, n, 0.36, 1.2, 0.1));
+
+  master(
+    dry,
+    send,
+    { t60: 2.2, damping: 0.42, predelay: 0.02, size: 1.0 },
+    1.0,
+    path.join(ROOT, "assets", "audio", "bf-set-score.wav"),
+  );
+};
+
+/* ------------------------------------------------------------------ */
 
 const which = process.argv[2] ?? "all";
 fs.mkdirSync(path.join(ROOT, "assets", "audio"), { recursive: true });
 if (which === "heritage" || which === "all") heritage();
 if (which === "product" || which === "all") product();
+if (which === "bf-ladder" || which === "all") bfLadder();
+if (which === "bf-set" || which === "all") bfSet();
