@@ -1,31 +1,41 @@
 #!/usr/bin/env node
 /**
- * Re-checks every product featured in the ads against the live storefront
- * and fails loudly if a piece has sold out or its advertised price changed.
- * Vintage stock is mostly one-of-a-kind, so run this before launching or
- * refreshing a campaign:
+ * Re-checks every product a campaign features against the live storefront
+ * and fails loudly if a piece has sold out or its price changed. Vintage
+ * stock is mostly one-of-a-kind, so run this before launching or scaling:
  *
- *   npm run check:availability
+ *   npm run check:availability                          # latest campaign
+ *   npm run check:availability -- 2026-11-black-friday
+ *   npm run check:availability -- 2026-11-black-friday --record
  *
- * Behind an HTTP proxy, Node 22.21+ needs NODE_USE_ENV_PROXY=1.
+ * --record stores the result (time, prices, availability) as the campaign's
+ * snapshot, which the asset manifest reports. Behind an HTTP proxy, Node
+ * 22.21+ needs NODE_USE_ENV_PROXY=1.
  */
 
 import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import {
+  campaignFile,
+  campaignIds,
+  catalog,
+  featuredProducts,
+  loadCampaign,
+} from "./lib/campaigns.mjs";
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const catalog = JSON.parse(
-  fs.readFileSync(path.join(ROOT, "src", "data", "products.json"), "utf8"),
-);
+const args = process.argv.slice(2);
+const record = args.includes("--record");
+const id = args.find((a) => !a.startsWith("--")) ?? campaignIds().at(-1);
+const campaign = loadCampaign(id);
+const store = catalog().store;
+const products = featuredProducts(campaign);
+const checkedAt = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
 
 let problems = 0;
-console.log(
-  `Checking ${catalog.products.length} products at ${new Date().toISOString()}\n`,
-);
+const snapshot = {};
+console.log(`${id}: checking ${products.length} products at ${checkedAt}\n`);
 
-for (const product of catalog.products) {
-  const res = await fetch(`${catalog.store}/products/${product.handle}.js`, {
+for (const product of products) {
+  const res = await fetch(`${store}/products/${product.handle}.js`, {
     headers: { "user-agent": "formanova-content-check/1.0" },
   });
   if (!res.ok) {
@@ -44,6 +54,7 @@ for (const product of catalog.products) {
         ? "PRICE Δ "
         : "OK      ";
   if (status.trim() !== "OK") problems++;
+  if (variant) snapshot[product.id] = { price, available: variant.available };
   console.log(
     `${status} ${product.title} [${product.variant}] advertised EGP ${product.price}, live ${price ? `EGP ${price}` : "n/a"}`,
   );
@@ -52,6 +63,14 @@ for (const product of catalog.products) {
 console.log(
   problems === 0
     ? "\nAll featured products are available at the advertised prices."
-    : `\n${problems} product(s) need attention before running the ads.`,
+    : `\n${problems} product(s) need attention before running these ads.`,
 );
+
+if (record) {
+  campaign.checkedAt = checkedAt;
+  campaign.snapshot = snapshot;
+  fs.writeFileSync(campaignFile(id), JSON.stringify(campaign, null, 2) + "\n");
+  console.log(`Recorded snapshot in src/data/campaigns/${id}.json`);
+}
+
 process.exitCode = problems === 0 ? 0 : 1;

@@ -2,6 +2,8 @@
 
 Two 15-second vertical advertisements for Instagram and Facebook Reels and Stories in Egypt. They are built as two competing conversion hypotheses: an **emotional heritage film** in English and a **direct-response product film** in Egyptian Arabic.
 
+> **Status, 6 November 2026.** Three featured pieces are no longer on the store: the amber *Murano Glass Vase* (in both films), the *Satsuma Chinoiserie Bonbonnière* and the *Bleu Blanc Porcelain Potiche with Brass-Rimmed Lid* (both in film 02). Before running these films again, swap those pieces in the source and re-render. Pause them while the [Black Friday](../2026-11-black-friday/README.md) sale runs: they show full prices.
+
 <table>
 <tr>
 <td align="center" width="50%">
