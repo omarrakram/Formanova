@@ -1,6 +1,6 @@
 {
   "campaign": "2026-11-black-friday",
-  "checkedAt": "2026-11-06T11:33:53Z",
+  "checkedAt": "2026-11-06T12:16:01Z",
   "creatives": {
     "creative-01-ladder": "src/creatives/bf-ladder/BlackFridayLadder.tsx",
     "creative-02-set": "src/creatives/bf-set/BlackFridaySet.tsx"
@@ -62,31 +62,31 @@
   },
   "snapshot": {
     "sevres-candlestick": {
-      "price": "11999.00",
+      "price": "14399.99",
       "available": true
     },
     "cobalt-centerpiece": {
-      "price": "10599.99",
+      "price": "12749.99",
       "available": true
     },
     "jardiniere": {
-      "price": "32409.99",
+      "price": "44999.99",
       "available": true
     },
     "spelter-dogs": {
-      "price": "9754.99",
+      "price": "11749.99",
       "available": true
     },
     "elephant-side-table": {
-      "price": "6119.99",
+      "price": "7349.99",
       "available": true
     },
     "bleu-blanc-parrot": {
-      "price": "5814.99",
+      "price": "6999.99",
       "available": true
     },
     "murano-swirl-vase": {
-      "price": "5499.00",
+      "price": "6599.99",
       "available": true
     }
   }

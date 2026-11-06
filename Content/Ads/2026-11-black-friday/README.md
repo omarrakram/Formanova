@@ -58,13 +58,13 @@ Two 15-second vertical films for Instagram and Facebook Reels and Stories, built
 | Safe zones | All copy, prices and products inside y 270–1250 px and x 80–1000 px ([QA sheet](qa/safe-zone-check.jpg)) |
 | Nothing covers a product | Prices sit on panels below the photographs |
 | Product accuracy | Original listing photographs only; every attribute quoted from its listing ([claims](ad-copy.md#claims-and-evidence)) |
-| Prices and stock | All 7 featured pieces available at the advertised prices on 6 November 2026 at 11:33 UTC |
+| Prices and stock | Updated to the store's new prices of 6 November; all 7 featured pieces available at those prices at 12:16 UTC |
 | Sale maths | Per-item 40% prices exact to the piastre; receipt in whole pounds, correct under per-line or per-order rounding |
 | Reproducibility | Re-rendering with `npm run render` reproduces film 02 byte-for-byte. Film 01 re-renders visually identical but not bit-identical: lowest per-frame PSNR 48.3 dB, from sub-pixel anti-aliasing on its rotated cards. Audio is identical in both. |
 
 **SHA-256 of the delivered files**
 
 ```
-fa80ff2d9d491e01a512806b2bf6234de918eb4b939a4d2cda47c12c6b6a50d8  creative-01-ladder/final/formanova-bf-ladder-15s.mp4
-b0976d84827ded1bb1d75bd13820223d55fe20c20ebaaa3deb9679c2edf7bdcd  creative-02-set/final/formanova-bf-set-15s.mp4
+560ebd6310472744a25dea14b608ff98a64294a6750a2f3b67bf21f3bb20daa2  creative-01-ladder/final/formanova-bf-ladder-15s.mp4
+97ca8beb22bb52c2128ab4553d97523dcc426396154399fce223abea23f67b3c  creative-02-set/final/formanova-bf-set-15s.mp4
 ```
