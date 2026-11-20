@@ -4,6 +4,9 @@ import "./brand/fonts";
 import { VIDEO } from "./brand/tokens";
 import { BlackFridayLadder } from "./creatives/bf-ladder/BlackFridayLadder";
 import { BlackFridaySet } from "./creatives/bf-set/BlackFridaySet";
+import { BogoLastDay } from "./creatives/bogo-last-day/BogoLastDay";
+import { BogoPair } from "./creatives/bogo-pair/BogoPair";
+import { BogoTonight } from "./creatives/bogo-tonight/BogoTonight";
 import { Heritage } from "./creatives/heritage/Heritage";
 import { ProductAd } from "./creatives/product/ProductAd";
 
@@ -14,6 +17,35 @@ import { ProductAd } from "./creatives/product/ProductAd";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Folder name="Buy-1-Get-1-2026-11">
+        <Composition
+          id="BogoTonight"
+          component={BogoTonight}
+          width={VIDEO.width}
+          height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={VIDEO.durationInFrames}
+          defaultProps={{ audio: true, showSafeZones: false }}
+        />
+        <Composition
+          id="BogoPair"
+          component={BogoPair}
+          width={VIDEO.width}
+          height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={VIDEO.durationInFrames}
+          defaultProps={{ audio: true, showSafeZones: false }}
+        />
+        <Composition
+          id="BogoLastDay"
+          component={BogoLastDay}
+          width={VIDEO.width}
+          height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={VIDEO.durationInFrames}
+          defaultProps={{ audio: true, showSafeZones: false }}
+        />
+      </Folder>
       <Folder name="Black-Friday-2026-11">
         <Composition
           id="BlackFridayLadder"

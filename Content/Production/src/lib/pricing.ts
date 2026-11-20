@@ -1,5 +1,6 @@
 import october from "../data/campaigns/2026-10-sales-launch.json";
 import blackFriday from "../data/campaigns/2026-11-black-friday.json";
+import bogoWeekend from "../data/campaigns/2026-11-bogo-weekend.json";
 
 /**
  * Prices shown in a film come from its campaign's recorded price check in
@@ -14,6 +15,7 @@ type Snapshot = Record<string, { price: string; available: boolean }>;
 const SNAPSHOTS: Record<string, Snapshot> = {
   [october.campaign]: october.snapshot,
   [blackFriday.campaign]: blackFriday.snapshot,
+  [bogoWeekend.campaign]: bogoWeekend.snapshot,
 };
 
 /** A product's recorded price for a campaign, in integer piastres. */

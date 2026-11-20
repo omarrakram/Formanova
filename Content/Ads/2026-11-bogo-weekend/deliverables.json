@@ -1,0 +1,85 @@
+{
+  "campaign": "2026-11-bogo-weekend",
+  "deliverables": [
+    {
+      "id": "creative-01-tonight",
+      "title": "1+1, Tonight (Egyptian Arabic)",
+      "file": "creative-01-tonight/final/formanova-bogo-tonight-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-pair",
+      "title": "Two Pieces, One Price (English)",
+      "file": "creative-02-pair/final/formanova-bogo-pair-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-03-last-day",
+      "title": "Last Day (Egyptian Arabic)",
+      "file": "creative-03-last-day/final/formanova-bogo-last-day-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    }
+  ],
+  "requiredFiles": [
+    "README.md",
+    "strategy.md",
+    "ad-copy.md",
+    "licensing.md",
+    "asset-manifest.csv",
+    "qa/safe-zone-check.jpg",
+    "creative-01-tonight/cover.jpg",
+    "creative-01-tonight/contact-sheet.jpg",
+    "creative-01-tonight/script.md",
+    "creative-01-tonight/storyboard.md",
+    "creative-02-pair/cover.jpg",
+    "creative-02-pair/contact-sheet.jpg",
+    "creative-02-pair/script.md",
+    "creative-02-pair/storyboard.md",
+    "creative-03-last-day/cover.jpg",
+    "creative-03-last-day/contact-sheet.jpg",
+    "creative-03-last-day/script.md",
+    "creative-03-last-day/storyboard.md"
+  ]
+}

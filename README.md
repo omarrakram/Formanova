@@ -18,6 +18,42 @@ This repository is the brand's content studio: campaigns, brand standards and th
 
 ## Featured work
 
+### Buy 1 Get 1 Free weekend: Fri 20 Nov, 7:30 PM → Sun 22 Nov, midnight · the lower-priced piece is free
+
+<table>
+<tr>
+<td align="center" width="33%" valign="top">
+<a href="Content/Ads/2026-11-bogo-weekend/creative-01-tonight/final/formanova-bogo-tonight-15s.mp4"><img src="Content/Ads/2026-11-bogo-weekend/creative-01-tonight/cover.jpg" width="210" alt="Film 01: a giant gold 1+1 with the Arabic line buy a piece and the second is a gift, over a white buy card and a gold gift card"></a>
+<h4>01 · 1+1, Tonight</h4>
+<sub>Friday launch · Egyptian Arabic</sub>
+<br><br>
+<a href="Content/Ads/2026-11-bogo-weekend/creative-01-tonight/final/formanova-bogo-tonight-15s.mp4"><b>Watch / download MP4</b></a>
+<br>
+<a href="Content/Ads/2026-11-bogo-weekend/creative-01-tonight/script.md">Script</a> · <a href="Content/Ads/2026-11-bogo-weekend/creative-01-tonight/storyboard.md">Storyboard</a>
+</td>
+<td align="center" width="33%" valign="top">
+<a href="Content/Ads/2026-11-bogo-weekend/creative-02-pair/final/formanova-bogo-pair-15s.mp4"><img src="Content/Ads/2026-11-bogo-weekend/creative-02-pair/cover.jpg" width="210" alt="Film 02: Two pieces. One price. over the gold-plated jardinère and the antique French spelter statue in gold arches, with BUY and FREE labels"></a>
+<h4>02 · Two Pieces, One Price</h4>
+<sub>Saturday · English</sub>
+<br><br>
+<a href="Content/Ads/2026-11-bogo-weekend/creative-02-pair/final/formanova-bogo-pair-15s.mp4"><b>Watch / download MP4</b></a>
+<br>
+<a href="Content/Ads/2026-11-bogo-weekend/creative-02-pair/script.md">Script</a> · <a href="Content/Ads/2026-11-bogo-weekend/creative-02-pair/storyboard.md">Storyboard</a>
+</td>
+<td align="center" width="33%" valign="top">
+<a href="Content/Ads/2026-11-bogo-weekend/creative-03-last-day/final/formanova-bogo-last-day-15s.mp4"><img src="Content/Ads/2026-11-bogo-weekend/creative-03-last-day/cover.jpg" width="210" alt="Film 03: the jardinère to buy and the Sèvres candlesticks as the gift, under the Arabic rule choose any two pieces, the lower-priced is a gift"></a>
+<h4>03 · Last Day</h4>
+<sub>Sunday · Egyptian Arabic</sub>
+<br><br>
+<a href="Content/Ads/2026-11-bogo-weekend/creative-03-last-day/final/formanova-bogo-last-day-15s.mp4"><b>Watch / download MP4</b></a>
+<br>
+<a href="Content/Ads/2026-11-bogo-weekend/creative-03-last-day/script.md">Script</a> · <a href="Content/Ads/2026-11-bogo-weekend/creative-03-last-day/storyboard.md">Storyboard</a>
+</td>
+</tr>
+</table>
+
+One film for each day of the offer, built from ten pieces in stock with their real prices: the piece you buy, and the lower-priced piece you get free. See the [strategy and launch plan](Content/Ads/2026-11-bogo-weekend/strategy.md), the [ad copy and captions](Content/Ads/2026-11-bogo-weekend/ad-copy.md) and the [campaign overview](Content/Ads/2026-11-bogo-weekend/README.md).
+
 ### Black Friday 2026: Fri 6 Nov, 8 PM → Fri 13 Nov · Buy 2 · 20% · Buy 3 · 30% · Buy 4+ · 40%
 
 <table>
@@ -79,6 +115,7 @@ Formanova/
 ├── Content/
 │   ├── Brand/                       Brand guidelines and master assets
 │   ├── Ads/
+│   │   ├── 2026-11-bogo-weekend/    Buy 1 Get 1 weekend: strategy, ad copy, licensing, manifest, three films
 │   │   ├── 2026-11-black-friday/    Black Friday: strategy, ad copy, licensing, manifest, two films
 │   │   └── 2026-10-sales-launch/    October launch: strategy, ad copy, licensing, manifest, two films
 │   └── Production/                  Remotion source, score generator, render pipeline
@@ -88,7 +125,7 @@ Formanova/
 | Area | Start here |
 |---|---|
 | Brand identity, colour, type, voice, claims policy | [Content/Brand/brand-guidelines.md](Content/Brand/brand-guidelines.md) |
-| Campaigns and deliverables | [Black Friday 2026](Content/Ads/2026-11-black-friday/README.md) · [October 2026](Content/Ads/2026-10-sales-launch/README.md) |
+| Campaigns and deliverables | [Buy 1 Get 1 weekend](Content/Ads/2026-11-bogo-weekend/README.md) · [Black Friday 2026](Content/Ads/2026-11-black-friday/README.md) · [October 2026](Content/Ads/2026-10-sales-launch/README.md) |
 | How content is organised | [Content/README.md](Content/README.md) |
 | Rebuilding the videos | [Content/Production/README.md](Content/Production/README.md) |
 

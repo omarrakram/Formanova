@@ -9,6 +9,9 @@ Production/
 │   ├── brand/                      Design tokens (colour, type, safe zones) and font loading
 │   ├── components/                 Photo, Arch, Logo, PriceTag, CollectionChip, grain, safe-zone guide
 │   ├── creatives/
+│   │   ├── bogo-tonight/           Buy 1 Get 1 01 · 1+1, Tonight   (BogoTonight.tsx + timeline.json)
+│   │   ├── bogo-pair/              Buy 1 Get 1 02 · Two Pieces, One Price (BogoPair.tsx + timeline.json)
+│   │   ├── bogo-last-day/          Buy 1 Get 1 03 · Last Day       (BogoLastDay.tsx + timeline.json)
 │   │   ├── bf-ladder/              Black Friday 01 · The Ladder   (BlackFridayLadder.tsx + timeline.json)
 │   │   ├── bf-set/                 Black Friday 02 · The 40% Set  (BlackFridaySet.tsx + timeline.json)
 │   │   ├── heritage/               October 01 · One Piece With a Past  (Heritage.tsx + timeline.json)
@@ -16,7 +19,7 @@ Production/
 │   ├── data/
 │   │   ├── products.json           Product catalogue: titles, URLs, images, verified claims
 │   │   └── campaigns/<id>.json     Per campaign: creatives, fonts, scores, sale terms, recorded prices and stock
-│   └── lib/                        Animation, product, pricing and sale-maths helpers
+│   └── lib/                        Animation, product, pricing and offer-maths helpers (sale.ts, bogo.ts)
 ├── scripts/
 │   ├── synth-score.mjs             Original music and sound design (deterministic)
 │   ├── render.mjs                  Render, mux and trim to exactly 15.000 s
@@ -42,7 +45,7 @@ npm ci
 npm run studio
 ```
 
-Remotion Studio lists the films under **Black-Friday-2026-11** and **Sales-Launch-2026-10**. Set the `showSafeZones` prop to `true` to overlay the Reels interface zones.
+Remotion Studio lists the films under **Buy-1-Get-1-2026-11**, **Black-Friday-2026-11** and **Sales-Launch-2026-10**. Set the `showSafeZones` prop to `true` to overlay the Reels interface zones.
 
 ## Rebuild everything
 
@@ -54,7 +57,7 @@ This runs, in order:
 
 | Step | Command | What it does |
 |---|---|---|
-| 1 | `npm run score` | Synthesises every score in `assets/audio/` from the creative timelines (about 90 s). The same source always produces identical files. Use `npm run score -- bf-ladder` for one. |
+| 1 | `npm run score` | Synthesises every score in `assets/audio/` from the creative timelines (about 90 s). The same source always produces identical files. Use `npm run score -- bogo-tonight` for one. |
 | 2 | `npm run render` | Renders each composition muted (H.264 High, CRF 17, x264 preset `slow`, yuv420p, BT.709). The bundled FFmpeg then adds the score as AAC-LC 320 kb/s, trims to exactly 15.000 s and enables `faststart`. The video stream is copied, never re-encoded. |
 | 3 | `npm run manifest` | Rewrites each campaign's `asset-manifest.csv` from the creative sources and the campaign's stock snapshot, verifies every checksum and reports unused photographs. |
 | 4 | `npm run verify` | Validates every deliverable against its campaign's `deliverables.json`: codec, pixel format, colour tags, resolution, frame rate, exact frame count, exact durations, audio format, size, required files and manifest checksums. |
@@ -72,14 +75,14 @@ REMOTION_BROWSER_EXECUTABLE=/path/to/chrome-headless-shell npm run render
 Vintage pieces are usually one of a kind. Before launching, and daily while a campaign runs, check every product the campaign features:
 
 ```bash
-npm run check:availability -- 2026-11-black-friday
+npm run check:availability -- 2026-11-bogo-weekend
 ```
 
 Prices on screen come from that campaign's recorded snapshot, never from live data, so a store price change never alters a finished film by accident. When prices change, record them and re-render:
 
 ```bash
-npm run check:availability -- 2026-11-black-friday --record
-npm run render -- BlackFridayLadder BlackFridaySet
+npm run check:availability -- 2026-11-bogo-weekend --record
+npm run render -- BogoTonight BogoPair BogoLastDay
 npm run manifest
 ```
 
@@ -88,7 +91,7 @@ Behind an HTTP proxy, prefix the check with `NODE_USE_ENV_PROXY=1`.
 ## Making a variant
 
 - **Swap a product.** Vendor the photograph into `assets/products/<handle>/`, add it to `src/data/products.json` with its SHA-256, reference it in the creative with `getImage("<id>", <listing position>)`, and record its price with `check:availability -- <campaign> --record`. Names and collection chips come from the catalogue; prices come from the campaign snapshot.
-- **Change the sale.** Tiers, dates and labels live in `src/data/campaigns/2026-11-black-friday.json`; percentages and savings on screen are computed from it (`src/lib/sale.ts`).
+- **Change the sale.** Black Friday tiers, dates and labels live in `src/data/campaigns/2026-11-black-friday.json`; percentages and savings on screen are computed from it (`src/lib/sale.ts`). For Buy 1 Get 1, `src/lib/bogo.ts` works out which piece of each pair is free from the recorded prices and refuses a pair whose free piece costs more.
 - **Change copy.** Strings live in the creative's `.tsx` file next to the scene that shows them.
 - **Change timing.** Edit the creative's `timeline.json`, then re-run `npm run score` so the music still lands on the cuts.
 

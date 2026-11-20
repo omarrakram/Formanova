@@ -1228,6 +1228,392 @@ const bfSet = () => {
   );
 };
 
+/**
+ * Buy 1 Get 1 01 ("1+1, Tonight"): a 120 BPM darbuka-and-marimba groove on
+ * the Andalusian cadence (Dm, C, Bb, A). The "1+1" lands on frame 1, the
+ * gift card turns gold on beat 2, each pair flips on the downbeat and every
+ * "free" price is struck on a bright accent. Resolves to D major for the CTA.
+ */
+const bogoTonight = () => {
+  const tl = readTimeline("bogo-tonight");
+  const fps = tl.fps;
+  const beat = 60 / tl.bpm;
+  const rand = mulberry32(2011);
+  const dry = new Bus();
+  const send = new Bus();
+  const keys = channel(dry, send, 0.3);
+  const drums = channel(dry, send, 0.12);
+  const fx = channel(dry, send, 0.45);
+  const cta = tl.cuts.cta / fps;
+
+  const bars = [
+    [["D3", "F3", "A3"], "D2"],
+    [["C3", "E3", "G3"], "C2"],
+    [["Bb2", "D3", "F3"], "Bb1"],
+    [["A2", "C#3", "E3"], "A1"],
+    [["D3", "F3", "A3"], "D2"],
+    [["A2", "C#3", "E3"], "A1"],
+  ];
+  const motif = {
+    D2: ["D5", "F5", "A5", "D6", "C6", "A5", "F5", "E5"],
+    C2: ["C5", "E5", "G5", "C6", "Bb5", "G5", "E5", "D5"],
+    Bb1: ["Bb4", "D5", "F5", "Bb5", "A5", "F5", "D5", "C5"],
+    A1: ["A4", "C#5", "E5", "A5", "G5", "E5", "C#5", "Bb4"],
+  };
+  // Maqsum: dum tek . tek dum . tek . (eighth notes), ghost "ka" between.
+  const maqsum = ["dum", "tek", null, "tek", "dum", null, "tek", null];
+
+  for (let bar = 0; bar < bars.length; bar++) {
+    const t0 = bar * 4 * beat;
+    if (t0 >= cta) break;
+    const [chord, root] = bars[bar];
+    const barEnd = Math.min(t0 + 4 * beat, cta);
+    pad(keys, rand, t0, barEnd, chord, bar === 0 ? 0.24 : 0.3, {
+      attack: 0.08,
+      release: 0.4,
+      tilt: 4,
+    });
+    for (let e = 0; e < 8; e++) {
+      const t = t0 + e * (beat / 2);
+      if (t >= cta - 0.01) break;
+      const stroke = maqsum[e];
+      if (stroke)
+        darbuka(
+          drums,
+          rand,
+          t,
+          stroke,
+          stroke === "dum" ? 0.5 : 0.22,
+          stroke === "dum" ? 0 : 0.25,
+        );
+      else darbuka(drums, rand, t, "ka", 0.17, -0.25);
+      marimba(
+        keys,
+        rand,
+        t,
+        motif[root][e],
+        e % 4 === 0 ? 0.13 : 0.085,
+        e % 2 ? 0.3 : -0.3,
+      );
+      if (e % 2 === 0) bass(dry, t, root, beat * 0.42, e === 0 ? 0.15 : 0.1);
+    }
+  }
+
+  // Frame 1: the "1+1" punch.
+  lowBoom(dry, rand, 0.01, 0.12);
+  kick(dry, rand, 0.01, 0.42);
+  bell(fx, rand, 0.03, "D6", 0.035, 0.1);
+
+  // Beat 2: the second card turns gold, a gift.
+  const gold = tl.cuts.badge / fps;
+  ["F5", "A5", "D6"].forEach((n, k) =>
+    bell(fx, rand, gold + k * 0.045, n, 0.03 - k * 0.004, (k - 1) * 0.35),
+  );
+  glassTing(fx, rand, gold + 0.12, 0.05, -0.2);
+
+  // Cards settle into the pair layout; later pairs flip in on the downbeat.
+  whoosh(fx, rand, tl.cuts.pairs[0] / fps - 0.15, 0.4, 0.04, 900, 2800);
+  tl.cuts.pairs.slice(1).forEach((f, k) => {
+    const t = f / fps;
+    whoosh(fx, rand, t - 0.22, 0.32, 0.05, 1600, 4200, -0.4, 0.4);
+    kick(dry, rand, t, 0.4 + k * 0.04);
+  });
+
+  // Every gift price is struck through: a typed click and a bright accent.
+  tl.cuts.gifts.forEach((f, k) => {
+    const t = f / fps;
+    typeClick(fx, rand, t, 0.32);
+    bell(fx, rand, t + 0.02, ["A5", "C#6", "E6"][k], 0.032, 0.15);
+    marimba(keys, rand, t + 0.01, ["D5", "F5", "A5"][k], 0.12, -0.2);
+  });
+
+  // Call to action: resolve to D major.
+  riser(dry, rand, cta - 0.9, 0.9, 0.05);
+  lowBoom(dry, rand, cta, 0.12);
+  kick(dry, rand, cta, 0.4);
+  pad(keys, rand, cta, DURATION, ["D3", "F#3", "A3", "D4"], 0.6, {
+    attack: 0.05,
+    release: 1.6,
+    tilt: 5,
+  });
+  sub(dry, cta, DURATION, "D2", 0.03);
+  ["D5", "F#5", "A5"].forEach((n, k) =>
+    marimba(keys, rand, cta + k * 0.02, n, 0.14, (k - 1) * 0.3),
+  );
+  bell(fx, rand, cta + 0.01, "D6", 0.05, 0.1);
+  bell(fx, rand, cta + 0.5, "A5", 0.03, -0.2);
+  [0.75, 1.0, 1.25, 1.5].forEach((d, k) =>
+    marimba(
+      keys,
+      rand,
+      cta + d,
+      ["A5", "F#5", "D5", "A4"][k],
+      0.07 - k * 0.012,
+      k % 2 ? 0.3 : -0.3,
+    ),
+  );
+
+  master(
+    dry,
+    send,
+    { t60: 1.2, damping: 0.5, predelay: 0.012, size: 0.75 },
+    0.35,
+    path.join(ROOT, "assets", "audio", "bogo-tonight-score.wav"),
+  );
+};
+
+/**
+ * Buy 1 Get 1 02 ("Two pieces. One price."): 90 BPM piano and strings in F
+ * major. Chords land on frame 1 and on "One price.", each "FREE" is struck
+ * with a bell, a string ostinato and soft kicks carry the montage, and the
+ * call to action resolves home to F.
+ */
+const bogoPair = () => {
+  const tl = readTimeline("bogo-pair");
+  const fps = tl.fps;
+  const beat = 60 / tl.bpm;
+  const rand = mulberry32(2111);
+  const dry = new Bus();
+  const send = new Bus();
+  const padCh = channel(dry, send, 0.25);
+  const pianoCh = channel(dry, send, 0.5);
+  const fx = channel(dry, send, 0.55);
+  const sec = (f) => f / fps;
+  const [free1, free2] = tl.cuts.free.map(sec);
+  const pair2 = sec(tl.cuts.pairs[1]);
+  const montage = tl.cuts.montage.map(sec);
+  const cta = sec(tl.cuts.cta);
+
+  // Harmony: Fmaj9 | Dm9 | Bbmaj7 | Gm7 | C (dominant) | F.
+  const chords = [
+    [0, free1, ["F2", "C3", "E3", "G3", "A3"], 0.34],
+    [free1, pair2, ["D2", "A2", "C3", "E3", "F3"], 0.38],
+    [pair2, montage[0], ["Bb1", "F2", "A2", "D3"], 0.42],
+    [montage[0], montage[3], ["G1", "D2", "F2", "Bb2"], 0.46],
+    [montage[3], cta, ["C2", "G2", "Bb2", "E3"], 0.5],
+    [cta, DURATION, ["F2", "C3", "F3", "A3", "C4"], 0.58],
+  ];
+  chords.forEach(([t0, t1, notes, level]) =>
+    pad(padCh, rand, t0, t1, notes, level, { attack: 0.25, release: 1.2 }),
+  );
+  [
+    ["F1", 0, free1],
+    ["D2", free1, pair2],
+    ["Bb1", pair2, montage[0]],
+    ["G1", montage[0], montage[3]],
+    ["C2", montage[3], cta],
+    ["F1", cta, DURATION],
+  ].forEach(([n, t0, t1]) => sub(dry, t0, t1, n, 0.022));
+
+  // Frame 1: "Two pieces." A full, low chord.
+  lowBoom(dry, rand, 0.01, 0.1);
+  ["F3", "C4", "A4", "E5"].forEach((n, k) =>
+    feltPiano(pianoCh, rand, 0.02 + k * 0.012, n, 0.6, 2.0, (k - 1.5) * 0.15),
+  );
+  // "One price." in gold, one beat later.
+  const one = sec(tl.cuts.headline[1]);
+  kick(dry, rand, one, 0.34);
+  ["F4", "A4", "C5", "F5"].forEach((n, k) =>
+    feltPiano(pianoCh, rand, one + k * 0.01, n, 0.58, 1.8, (k - 1.5) * 0.15),
+  );
+  bell(fx, rand, one + 0.01, "C6", 0.03, 0.1);
+
+  // Prices are typed under the arches.
+  typeClick(fx, rand, sec(tl.cuts.labels), 0.26);
+  typeClick(fx, rand, sec(tl.cuts.labels) + 0.1, 0.2, -0.15);
+
+  // Each "FREE": bell, glass and a bright piano voicing.
+  [free1, free2].forEach((t, k) => {
+    bell(fx, rand, t, k ? "A5" : "F5", 0.045, 0.2);
+    bell(fx, rand, t + 0.06, k ? "E6" : "C6", 0.03, -0.2);
+    glassTing(fx, rand, t + 0.14, 0.05, 0.25);
+    typeClick(fx, rand, t, 0.3, 0.1);
+    ["A5", "C6"].forEach((n, j) =>
+      feltPiano(pianoCh, rand, t + j * 0.015, n, 0.45, 1.2, 0.2 - j * 0.4),
+    );
+  });
+
+  // The second pair arrives on a soft air movement.
+  whoosh(fx, rand, pair2 - 0.25, 0.42, 0.04, 700, 2600, -0.4, 0.4);
+  ["D4", "F4", "Bb4"].forEach((n, k) =>
+    feltPiano(pianoCh, rand, pair2 + k * 0.012, n, 0.5, 1.4, (k - 1) * 0.2),
+  );
+
+  // Momentum: an eighth-note string ostinato and soft kicks into the montage.
+  const ostinato = [
+    [free1, pair2, ["D3", "A3"]],
+    [pair2, montage[0], ["Bb2", "F3"]],
+    [montage[0], montage[3], ["G2", "D3"]],
+    [montage[3], cta, ["C3", "G3"]],
+  ];
+  ostinato.forEach(([t0, t1, notes], k) => {
+    for (let t = t0; t < t1 - 0.01; t += beat / 2) {
+      stringPulse(padCh, rand, t, notes, beat * 0.32, 0.15 + k * 0.03);
+    }
+  });
+  for (let t = pair2; t < cta - 0.01; t += beat)
+    kick(dry, rand, t, 0.24 + (t - pair2) * 0.025);
+
+  // Montage: every new pair is a rising note.
+  montage.forEach((t, k) => {
+    whoosh(fx, rand, t - 0.18, 0.28, 0.035, 1400, 3800, k % 2 ? 0.4 : -0.4, 0);
+    feltPiano(pianoCh, rand, t, ["C5", "D5", "E5", "G5"][k], 0.5, 1.0, 0.1);
+  });
+
+  // Call to action: resolve to F major.
+  riser(dry, rand, cta - 1.0, 1.0, 0.05);
+  lowBoom(dry, rand, cta, 0.13);
+  kick(dry, rand, cta, 0.42);
+  ["F3", "A3", "C4", "F4"].forEach((n, k) =>
+    feltPiano(pianoCh, rand, cta + k * 0.012, n, 0.62, 2.0, (k - 1.5) * 0.15),
+  );
+  bell(fx, rand, cta + 0.01, "F6", 0.05, 0.1);
+  bell(fx, rand, cta + 0.45, "C6", 0.03, -0.2);
+  [
+    ["C6", 0.75],
+    ["A5", 1.5],
+    ["F5", 2.25],
+  ].forEach(([n, d]) => feltPiano(pianoCh, rand, cta + d, n, 0.36, 1.2, 0.1));
+
+  master(
+    dry,
+    send,
+    { t60: 2.2, damping: 0.42, predelay: 0.02, size: 1.0 },
+    1.0,
+    path.join(ROOT, "assets", "audio", "bogo-pair-score.wav"),
+  );
+};
+
+/**
+ * Buy 1 Get 1 03 ("Last Day"): a 120 BPM darbuka groove in the Hijaz mode on
+ * E, with a clock ticking on every beat until the call to action. Each pair
+ * flips in on a downbeat, every free price is struck on a bright accent, and
+ * the end card lands on E major with bells.
+ */
+const bogoLastDay = () => {
+  const tl = readTimeline("bogo-last-day");
+  const fps = tl.fps;
+  const beat = 60 / tl.bpm;
+  const rand = mulberry32(2211);
+  const dry = new Bus();
+  const send = new Bus();
+  const keys = channel(dry, send, 0.3);
+  const drums = channel(dry, send, 0.12);
+  const fx = channel(dry, send, 0.45);
+  const cta = tl.cuts.cta / fps;
+
+  // Hijaz on E, two-second bars: E | F | E | F | Dm | E.
+  const bars = [
+    [["E3", "G#3", "B3"], "E2"],
+    [["F3", "A3", "C4"], "F2"],
+    [["E3", "G#3", "B3"], "E2"],
+    [["F3", "A3", "C4"], "F2"],
+    [["D3", "F3", "A3"], "D2"],
+    [["E3", "G#3", "B3"], "E2"],
+  ];
+  const motif = {
+    E2: ["E5", "F5", "G#5", "B5", "A5", "G#5", "F5", "E5"],
+    F2: ["F5", "A5", "C6", "B5", "A5", "G#5", "F5", "E5"],
+    D2: ["D5", "F5", "A5", "D6", "C6", "A5", "G#5", "F5"],
+  };
+  const maqsum = ["dum", "tek", null, "tek", "dum", null, "tek", null];
+
+  for (let bar = 0; bar < bars.length; bar++) {
+    const t0 = bar * 4 * beat;
+    if (t0 >= cta) break;
+    const [chord, root] = bars[bar];
+    const barEnd = Math.min(t0 + 4 * beat, cta);
+    pad(keys, rand, t0, barEnd, chord, bar === 0 ? 0.24 : 0.3, {
+      attack: 0.08,
+      release: 0.4,
+      tilt: 4,
+    });
+    for (let e = 0; e < 8; e++) {
+      const t = t0 + e * (beat / 2);
+      if (t >= cta - 0.01) break;
+      const stroke = maqsum[e];
+      if (stroke)
+        darbuka(
+          drums,
+          rand,
+          t,
+          stroke,
+          stroke === "dum" ? 0.5 : 0.22,
+          stroke === "dum" ? 0 : 0.25,
+        );
+      else darbuka(drums, rand, t, "ka", 0.17, -0.25);
+      if (bar > 0 || e >= 4)
+        marimba(
+          keys,
+          rand,
+          t,
+          motif[root][e],
+          e % 4 === 0 ? 0.12 : 0.08,
+          e % 2 ? 0.3 : -0.3,
+        );
+      if (e % 2 === 0) bass(dry, t, root, beat * 0.42, e === 0 ? 0.15 : 0.1);
+    }
+  }
+
+  // The clock: tick, tock, on every beat until the call to action.
+  for (let k = 0; k * beat < cta - 0.01; k++)
+    typeClick(fx, rand, k * beat, k % 2 ? 0.13 : 0.17, k % 2 ? 0.3 : -0.3);
+
+  // Frame 1: "Last day".
+  lowBoom(dry, rand, 0.01, 0.12);
+  kick(dry, rand, 0.01, 0.42);
+  bell(fx, rand, 0.03, "E6", 0.035, 0.1);
+
+  // The cards arrive, then flip to a new pairing on each downbeat.
+  tl.cuts.pairs.forEach((f, k) => {
+    const t = f / fps;
+    whoosh(fx, rand, t - 0.22, 0.32, 0.05, 1600, 4200, -0.4, 0.4);
+    kick(dry, rand, t, 0.38 + k * 0.03);
+  });
+
+  // Every free price is struck through.
+  tl.cuts.gifts.forEach((f, k) => {
+    const t = f / fps;
+    typeClick(fx, rand, t + 0.02, 0.3, 0.1);
+    bell(fx, rand, t + 0.02, ["B5", "C6", "E6", "G#6"][k], 0.032, 0.15);
+    marimba(keys, rand, t + 0.01, ["E5", "G#5", "B5", "E6"][k], 0.12, -0.2);
+  });
+
+  // Call to action: resolve to E major.
+  riser(dry, rand, cta - 0.9, 0.9, 0.05);
+  lowBoom(dry, rand, cta, 0.12);
+  kick(dry, rand, cta, 0.4);
+  pad(keys, rand, cta, DURATION, ["E3", "G#3", "B3", "E4"], 0.6, {
+    attack: 0.05,
+    release: 1.6,
+    tilt: 5,
+  });
+  sub(dry, cta, DURATION, "E2", 0.03);
+  ["E5", "G#5", "B5"].forEach((n, k) =>
+    marimba(keys, rand, cta + k * 0.02, n, 0.14, (k - 1) * 0.3),
+  );
+  bell(fx, rand, cta + 0.01, "E6", 0.05, 0.1);
+  bell(fx, rand, cta + 0.5, "B5", 0.03, -0.2);
+  [0.75, 1.0, 1.25, 1.5].forEach((d, k) =>
+    marimba(
+      keys,
+      rand,
+      cta + d,
+      ["B5", "G#5", "E5", "B4"][k],
+      0.07 - k * 0.012,
+      k % 2 ? 0.3 : -0.3,
+    ),
+  );
+
+  master(
+    dry,
+    send,
+    { t60: 1.2, damping: 0.5, predelay: 0.012, size: 0.75 },
+    0.35,
+    path.join(ROOT, "assets", "audio", "bogo-last-day-score.wav"),
+  );
+};
+
 /* ------------------------------------------------------------------ */
 
 const which = process.argv[2] ?? "all";
@@ -1236,3 +1622,6 @@ if (which === "heritage" || which === "all") heritage();
 if (which === "product" || which === "all") product();
 if (which === "bf-ladder" || which === "all") bfLadder();
 if (which === "bf-set" || which === "all") bfSet();
+if (which === "bogo-tonight" || which === "all") bogoTonight();
+if (which === "bogo-pair" || which === "all") bogoPair();
+if (which === "bogo-last-day" || which === "all") bogoLastDay();

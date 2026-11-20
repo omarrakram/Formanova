@@ -3,7 +3,7 @@
  * Renders the final advertisements straight into the campaign folders.
  *
  *   npm run render                       # every creative
- *   npm run render -- BlackFridayLadder  # one creative by composition id
+ *   npm run render -- BogoTonight        # one creative by composition id
  *
  * Pipeline per creative:
  *   1. Remotion renders the picture (H.264 High, yuv420p, BT.709, CRF 17).
@@ -27,8 +27,42 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ADS = path.resolve(ROOT, "..", "Ads");
 const CAMPAIGN = path.join(ADS, "2026-10-sales-launch");
 const BLACK_FRIDAY = path.join(ADS, "2026-11-black-friday");
+const BOGO = path.join(ADS, "2026-11-bogo-weekend");
 
 const CREATIVES = [
+  {
+    id: "BogoTonight",
+    title: "Formanova - Buy 1 Get 1: 1+1 Tonight (15s, Arabic)",
+    score: path.join(ROOT, "assets", "audio", "bogo-tonight-score.wav"),
+    output: path.join(
+      BOGO,
+      "creative-01-tonight",
+      "final",
+      "formanova-bogo-tonight-15s.mp4",
+    ),
+  },
+  {
+    id: "BogoPair",
+    title: "Formanova - Buy 1 Get 1: The Pair (15s)",
+    score: path.join(ROOT, "assets", "audio", "bogo-pair-score.wav"),
+    output: path.join(
+      BOGO,
+      "creative-02-pair",
+      "final",
+      "formanova-bogo-pair-15s.mp4",
+    ),
+  },
+  {
+    id: "BogoLastDay",
+    title: "Formanova - Buy 1 Get 1: Last Day (15s, Arabic)",
+    score: path.join(ROOT, "assets", "audio", "bogo-last-day-score.wav"),
+    output: path.join(
+      BOGO,
+      "creative-03-last-day",
+      "final",
+      "formanova-bogo-last-day-15s.mp4",
+    ),
+  },
   {
     id: "Heritage",
     title: "Formanova - One Piece With a Past (15s)",

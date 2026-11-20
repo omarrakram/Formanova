@@ -1,0 +1,16 @@
+{
+  "id": "BogoLastDay",
+  "fps": 30,
+  "bpm": 120,
+  "durationInFrames": 450,
+  "scenes": {
+    "hook": { "from": 0, "to": 84 },
+    "pairs": { "from": 60, "to": 330 },
+    "cta": { "from": 315, "to": 450 }
+  },
+  "cuts": {
+    "pairs": [75, 135, 195, 255],
+    "gifts": [105, 165, 225, 285],
+    "cta": 315
+  }
+}

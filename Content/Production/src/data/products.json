@@ -679,6 +679,74 @@
           "sha256": "5b4cef856ad7ea0bf328d65964c085e4c78540309df54d2a74aa6835365d2497"
         }
       ]
+    },
+    {
+      "id": "canton-cachepot",
+      "handle": "canton-porcelain-cachepot-with-matching-plate-amp-intricate-figurative-motifs",
+      "title": "Canton Porcelain Cachepot with Matching Plate & Intricate Figurative Motifs",
+      "shortTitle": "Canton Cachepot with Plate",
+      "url": "https://www.formanovavintage.com/products/canton-porcelain-cachepot-with-matching-plate-amp-intricate-figurative-motifs",
+      "collection": {
+        "en": "Canton",
+        "ar": "كانتون"
+      },
+      "variant": "One Size",
+      "priceNote": null,
+      "claims": [
+        {
+          "text": "Canton porcelain cachepot with a matching decorated plate",
+          "evidence": "Listing features: \"Canton porcelain cachepot\" / \"Matching decorated plate\""
+        },
+        {
+          "text": "Stamped, 35 × 27 cm",
+          "evidence": "Listing: \"Distinctive stamped mark\" / \"Cachepot height: 35 cm\" / \"Cachepot width: 27 cm\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/canton-porcelain-cachepot-with-matching-plate-amp-intricate-figurative-motifs/03-Photoroom_20261101_215235.jpg",
+          "listingPosition": 3,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/Photoroom_20261101_215235.jpg",
+          "sha256": "8044027c3d1e7aaf8be1335a0bde933891fa50a09356d9bf17b4401994583432"
+        }
+      ]
+    },
+    {
+      "id": "japanese-crackle-platter",
+      "handle": "antique-japanese-crackle-platter-stamped",
+      "title": "Antique Japanese Crackle Platter – Stamped",
+      "shortTitle": "Antique Japanese Crackle Platter",
+      "url": "https://www.formanovavintage.com/products/antique-japanese-crackle-platter-stamped",
+      "collection": {
+        "en": "Japanese",
+        "ar": "ياباني"
+      },
+      "variant": "One Size",
+      "priceNote": null,
+      "claims": [
+        {
+          "text": "Antique Japanese crackle platter, stamped",
+          "evidence": "Title: \"Antique Japanese Crackle Platter – Stamped\"; listing: \"Marking: Stamped\""
+        },
+        {
+          "text": "50 × 40 cm",
+          "evidence": "Listing: \"Size: 50 × 40 cm\""
+        }
+      ],
+      "images": [
+        {
+          "file": "products/antique-japanese-crackle-platter-stamped/01-2550B3F3-0A37-446D-9ED6-9F39F087400D.jpg",
+          "listingPosition": 1,
+          "width": 1600,
+          "height": 1600,
+          "kind": "styled-interior",
+          "source": "https://cdn.shopify.com/s/files/1/0754/6663/7490/files/2550B3F3-0A37-446D-9ED6-9F39F087400D.jpg",
+          "sha256": "8d00990a5a8ab386a597683ecb29a45a51782cf344fbf12dac40b91ee67cb44b"
+        }
+      ]
     }
   ]
 }
