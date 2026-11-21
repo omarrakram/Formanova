@@ -1,6 +1,6 @@
 {
   "campaign": "2026-11-bogo-weekend",
-  "checkedAt": "2026-11-20T12:49:10Z",
+  "checkedAt": "2026-11-21T06:14:19Z",
   "creatives": {
     "creative-01-tonight": "src/creatives/bogo-tonight/BogoTonight.tsx",
     "creative-02-pair": "src/creatives/bogo-pair/BogoPair.tsx",
@@ -59,10 +59,6 @@
     },
     "chinoiserie-cachepot": {
       "price": "5399.99",
-      "available": true
-    },
-    "italian-murano-vase": {
-      "price": "4199.99",
       "available": true
     },
     "cobalt-centerpiece": {

@@ -52,7 +52,7 @@ This repository is the brand's content studio: campaigns, brand standards and th
 </tr>
 </table>
 
-One film for each day of the offer, built from ten pieces in stock with their real prices: the piece you buy, and the lower-priced piece you get free. See the [strategy and launch plan](Content/Ads/2026-11-bogo-weekend/strategy.md), the [ad copy and captions](Content/Ads/2026-11-bogo-weekend/ad-copy.md) and the [campaign overview](Content/Ads/2026-11-bogo-weekend/README.md).
+One film for each day of the offer, built from nine pieces in stock with their real prices: the piece you buy, and the lower-priced piece you get free. See the [strategy and launch plan](Content/Ads/2026-11-bogo-weekend/strategy.md), the [ad copy and captions](Content/Ads/2026-11-bogo-weekend/ad-copy.md) and the [campaign overview](Content/Ads/2026-11-bogo-weekend/README.md).
 
 ### Black Friday 2026: Fri 6 Nov, 8 PM → Fri 13 Nov · Buy 2 · 20% · Buy 3 · 30% · Buy 4+ · 40%
 

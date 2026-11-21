@@ -4,7 +4,7 @@
 **Window:** Friday 20 November 2026, 7:30 PM (Cairo) → Sunday 22 November at midnight: about 52 hours.
 **Goal:** the most two-piece orders in a short window, with one film for each day.
 
-The offer terms were confirmed by the brand owner on 20 November 2026. Prices and availability come from the live storefront at **12:49 UTC on 20 November 2026**, re-confirmed at 13:07 UTC.
+The offer terms were confirmed by the brand owner on 20 November 2026. Prices and availability come from the live storefront at **12:49 UTC on 20 November 2026**, re-confirmed at 13:07 UTC. On Saturday 21 November at 06:14 UTC one featured piece, the Italian Murano Glass Vase, had sold; film 02's second pair was replaced and the nine remaining pieces were re-recorded at unchanged prices.
 
 ---
 
@@ -27,13 +27,13 @@ The free piece is always the lower-priced one, so the gift is worth the most whe
 | 01 | Porcelain Elephant Side Table · EGP 7,349.99 | Bleu Blanc Parrot · EGP 6,999.99 | EGP 14,349.98 | 49% |
 | 01 | Chinoiserie Cachepot, Red Mark · EGP 5,399.99 | Canton Cachepot with Plate · EGP 5,099.99 | EGP 10,499.98 | 49% |
 | 02 | Large Jardinère, 24K Gold-Plated · EGP 44,999.99 | Antique French Spelter Statue · EGP 11,749.99 | EGP 56,749.98 | 21% |
-| 02 | Antique Japanese Crackle Platter · EGP 4,449.99 | Italian Murano Glass Vase · EGP 4,199.99 | EGP 8,649.98 | 49% |
+| 02 | Canton Cachepot with Plate · EGP 5,099.99 | Antique Japanese Crackle Platter · EGP 4,449.99 | EGP 9,549.98 | 47% |
 | 03 | Large Jardinère · EGP 44,999.99 | Sèvres Château Candlesticks · EGP 14,399.99 | EGP 59,399.98 | 24% |
 | 03 | Cobalt Porcelain Centerpiece · EGP 12,749.99 | Antique French Spelter Statue · EGP 11,749.99 | EGP 24,499.98 | 48% |
 | 03 | Porcelain Elephant Side Table · EGP 7,349.99 | Chinoiserie Cachepot, Red Mark · EGP 5,399.99 | EGP 12,749.98 | 42% |
 | 03 | Bleu Blanc Parrot · EGP 6,999.99 | Canton Cachepot with Plate · EGP 5,099.99 | EGP 12,099.98 | 42% |
 
-Ten in-stock pieces appear across the three films, from EGP 4,199.99 to EGP 44,999.99, so every budget sees a pair it could buy. Sunday's film re-pairs the same pieces to show that *any* two pieces qualify, and opens on the largest gift the store can give today: the Sèvres candlesticks (EGP 14,399.99), free with the jardinère.
+Nine in-stock pieces appear across the three films, from EGP 4,449.99 to EGP 44,999.99, so every budget sees a pair it could buy. Sunday's film re-pairs the same pieces to show that *any* two pieces qualify, and opens on the largest gift the store can give today: the Sèvres candlesticks (EGP 14,399.99), free with the jardinère.
 
 ## 3. Three films, three days
 
@@ -64,7 +64,7 @@ A 52-hour window is too short for a statistically clean test; the plan is built 
 
 ## 5. Accuracy rules used in the films
 
-- **Prices are exact.** Every price is the live storefront price recorded at 12:49 UTC on 20 November; nothing is rounded. The six pieces carried over from Black Friday have the same prices as on 6 November, so no gift value was inflated before the offer.
+- **Prices are exact.** Every price is the live storefront price recorded at 12:49 UTC on 20 November and re-recorded, unchanged, at 06:14 UTC on 21 November; nothing is rounded. The six pieces carried over from Black Friday have the same prices as on 6 November, so no gift value was inflated before the offer.
 - **The free piece is computed, never chosen by hand.** `src/lib/bogo.ts` refuses to render a pair whose "free" piece costs more than the piece being bought.
 - **"Today" and "tonight" appear only in the films for that day.** Film 01 says «الليلة» (Friday); film 03 says «النهارده» (Sunday); film 02 gives the date.
 - **No promise about orders of three or more pieces.** Whether a four-piece order gets two free pieces depends on a Shopify setting (§6), so the films only promise one free piece for two.
@@ -77,7 +77,7 @@ A 52-hour window is too short for a statistically clean test; the plan is built 
 | The discount does not work as the films say | Create a Shopify **Buy X get Y** automatic discount: customer buys a minimum quantity of 1 item from all products; customer gets 1 item from all products at **Free**. Set it active from Fri 20 Nov, 7:30 PM to Sun 22 Nov, 11:59 PM. Before 7:30 PM, test carts with two pieces of different prices (for example the Sèvres pair and the cobalt centerpiece) and confirm the **lower-priced** piece becomes free and the higher-priced one stays at full price. |
 | Orders of three or more pieces | Decide in Shopify's "Maximum number of uses per order" whether every second piece is free (no limit) or only one piece per order (limit 1). The films and copy work with either; customer service should know which one applies. |
 | Margin | A close pair gives away up to half of the order's value, more than Black Friday's 40% top tier. Confirm the offer is profitable, especially on the close pairs the films promote. |
-| A featured piece sells | Most pieces are one of a kind, and several appear in two films. Run `npm run check:availability -- 2026-11-bogo-weekend` on Saturday and Sunday mornings. If a piece sells, pause the affected film or swap the pair in its source and re-render (about 5 minutes per film). |
+| A featured piece sells | Most pieces are one of a kind, and several appear in two films. Run `npm run check:availability -- 2026-11-bogo-weekend` on Saturday and Sunday mornings. If a piece sells, pause the affected film or swap the pair in its source and re-render (about 5 minutes per film). This happened on the first night: the Italian Murano vase sold, and film 02 was re-rendered with a new pair on Saturday morning. |
 | A film runs on the wrong day | Film 01 says "tonight" and film 03 says "today". Schedule them exactly as in §4. |
 | The offer is not visible on the site | Add a banner with "Buy 1, Get 1 Free · the lower-priced piece is free · until Sunday at midnight". Paid visitors should see the offer they clicked on. |
 

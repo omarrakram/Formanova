@@ -1,6 +1,6 @@
 # Buy 1 Get 1 Free: ad copy and handoff
 
-Ready to paste into Meta Ads Manager and Instagram: one film for each day of the offer. Prices and availability were checked against the live storefront at **12:49 UTC (2:49 PM Cairo) on Friday 20 November 2026** and re-confirmed for all ten pieces at 13:07 UTC (3:07 PM Cairo). Re-run `npm run check:availability -- 2026-11-bogo-weekend` in `Content/Production` before launch, on Saturday morning and on Sunday morning.
+Ready to paste into Meta Ads Manager and Instagram: one film for each day of the offer. Prices and availability were checked against the live storefront at **12:49 UTC (2:49 PM Cairo) on Friday 20 November 2026** and re-confirmed for all ten pieces at 13:07 UTC (3:07 PM Cairo). **Update, Saturday 21 November, 06:14 UTC:** the Italian Murano Glass Vase sold overnight, so film 02's second pair now shows the Canton cachepot with the Japanese crackle platter free; the nine pieces now featured were re-checked at unchanged prices. Re-run `npm run check:availability -- 2026-11-bogo-weekend` in `Content/Production` before launch, on Saturday morning and on Sunday morning.
 
 **Offer:** buy any two pieces and the lower-priced one is free. It is applied automatically at checkout, every piece is eligible, and there is no code.
 **Window:** **Friday 20 November, 7:30 PM (Cairo) → Sunday 22 November at midnight.**
@@ -97,7 +97,7 @@ Ready to paste into Meta Ads Manager and Instagram: one film for each day of the
 | | |
 |---|---|
 | **Concept** | A gallery of pairs in gold arches. The piece you buy stands on the left with its price; the free piece stands on the right under a gold FREE pill, its price struck through. It opens on the store's most valuable free piece and closes on the deadline. |
-| **Hypothesis** | On the second and third days, considered buyers respond to curated pairs, a clear rule and a dated deadline. Showing a statement pair (EGP 44,999.99 with an EGP 11,749.99 statue free) beside an everyday one (EGP 4,449.99 with an EGP 4,199.99 vase free) turns interest into two-piece orders across budgets. |
+| **Hypothesis** | On the second and third days, considered buyers respond to curated pairs, a clear rule and a dated deadline. Showing a statement pair (EGP 44,999.99 with an EGP 11,749.99 statue free) beside an everyday one (EGP 5,099.99 with an EGP 4,449.99 platter free) turns interest into two-piece orders across budgets. |
 | **Audience** | Egypt, 28–60, premium home décor and design interests, plus warm audiences (site visitors, engagers, add-to-carts, Friday's film 01 viewers). |
 | **Hook (0–1.5 s)** | *Two pieces.* ***One price.*** over the jardinère and the spelter statue in twin arches. |
 | **Voiceover** | None. The original piano-and-strings score lands each FREE on a bell. |
@@ -107,7 +107,7 @@ Ready to paste into Meta Ads Manager and Instagram: one film for each day of the
 | Time | Text |
 |---|---|
 | 0.0 – 5.3 s | BUY 1 · GET 1 FREE · ENDS SUNDAY MIDNIGHT — *Two pieces.* ***One price.*** — BUY **EGP 44,999.99** *Large Jardinère, 24K Gold-Plated* — **FREE** ~~EGP 11,749.99~~ *Antique French Spelter Statue* |
-| 5.3 – 8.0 s | *Pick any two pieces.* ***The lower-priced one is free.*** — BUY **EGP 4,449.99** *Antique Japanese Crackle Platter* — **FREE** ~~EGP 4,199.99~~ *Italian Murano Glass Vase* |
+| 5.3 – 8.0 s | *Pick any two pieces.* ***The lower-priced one is free.*** — BUY **EGP 5,099.99** *Canton Cachepot with Plate* — **FREE** ~~EGP 4,449.99~~ *Antique Japanese Crackle Platter* |
 | 8.0 – 11.3 s | *Every piece qualifies.* ***Choose your pair.*** — four more pairs in quick succession (no prices) — BUY / FREE — *The lower-priced piece is free, applied automatically at checkout.* |
 | 11.3 – 15.0 s | FormaNova wordmark — *Ends Sunday 22 November at midnight.* — **BUY 1 · GET 1 FREE** — *The lower-priced piece is free, applied automatically at checkout.* — **SHOP NOW** — formanovavintage.com — Every piece in the store · Delivery across Egypt |
 
@@ -240,7 +240,6 @@ Pair the 24K gold-plated Large Jardinère with the antique French spelter statue
 | "Large Jardinère, 24K Gold-Plated" | Listing: "24K gold-plated surface" |
 | "Antique French Spelter Statue" | Listing: "Origin: French – antique piece"; "Material: Spelter (semi-bronze)" |
 | "Antique Japanese Crackle Platter" | Listing title: "Antique Japanese Crackle Platter – Stamped" |
-| "Italian Murano Glass Vase" | Listing: "Material: Murano glass / Origin: Italy" |
 | "Bleu Blanc Parrot, Capodimonte Style" | Listing: "Capodmonte style" (spelling corrected) |
 | "Canton Cachepot with Plate" | Listing: "Canton porcelain cachepot" / "Matching decorated plate" |
 | "Chinoiserie Cachepot, Red Mark" | Listing title: "Large Vintage Chinoiserie Cachepot with Red Mark" |

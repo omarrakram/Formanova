@@ -46,8 +46,8 @@ const PAIRS = [
     free: card("spelter-dogs", 3, [50, 58]),
   },
   {
-    paid: card("japanese-crackle-platter", 1, [50, 54]),
-    free: card("italian-murano-vase", 1, [50, 52]),
+    paid: card("canton-cachepot", 3, [50, 48]),
+    free: card("japanese-crackle-platter", 1, [50, 54]),
   },
 ].map((p, k) => ({
   ...p,

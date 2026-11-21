@@ -4,7 +4,7 @@ Every element in the three Buy 1 Get 1 films, with its origin and the basis for 
 
 | Element | Origin | Basis for use |
 |---|---|---|
-| Product photographs (10) | Formanova's public storefront (Shopify CDN), original files | Formanova's own imagery, advertising Formanova's own products |
+| Product photographs (9) | Formanova's public storefront (Shopify CDN), original files | Formanova's own imagery, advertising Formanova's own products |
 | Wordmark | Formanova storefront header (transparent PNG) | Formanova's own brand mark, unaltered |
 | Typefaces | Google Fonts repository (unmodified) | SIL Open Font License 1.1 |
 | Music and sound design | Created for these films by `Content/Production/scripts/synth-score.mjs` | Original work; no third-party material |
@@ -14,7 +14,7 @@ Every element in the three Buy 1 Get 1 films, with its origin and the basis for 
 
 ## Product photography
 
-- **Source.** All ten photographs were downloaded at full original resolution from formanovavintage.com and are stored unaltered in `Content/Production/assets/products/`. Their source URLs and checksums are in the manifest.
+- **Source.** All nine photographs were downloaded at full original resolution from formanovavintage.com and are stored unaltered in `Content/Production/assets/products/`. Their source URLs and checksums are in the manifest.
 - **Treatment.** Photographs are never retouched, recoloured or regenerated. The films only crop, scale, move and mask them (cards and arches) and place type, labels and price panels beside them. No overlay covers the products themselves.
 - **One edited listing image.** The Canton cachepot photograph (listing image 3) is the storefront's own edited listing image; its file name shows it was produced in Photoroom, a background-editing app. It is used exactly as Formanova published it.
 - **Checks.** Every image used was inspected for watermarks; none carries one.

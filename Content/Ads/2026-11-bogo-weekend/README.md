@@ -53,7 +53,7 @@ Three 15-second vertical films for Instagram and Facebook Reels and Stories, one
 | Video | H.264 High, yuv420p, BT.709, 1080 × 1920, 30 fps | H.264 High, yuv420p, BT.709, 1080 × 1920, 30 fps | H.264 High, yuv420p, BT.709, 1080 × 1920, 30 fps |
 | Length | 450 frames; container, video and audio exactly 15.000 s | 450 frames; container, video and audio exactly 15.000 s | 450 frames; container, video and audio exactly 15.000 s |
 | Audio | AAC-LC 48 kHz stereo · −14.3 LUFS · −1.4 dBTP | AAC-LC 48 kHz stereo · −14.1 LUFS · −1.6 dBTP | AAC-LC 48 kHz stereo · −14.1 LUFS · −1.6 dBTP |
-| Size | 5.1 MB | 5.1 MB | 5.1 MB |
+| Size | 5.1 MB | 5.2 MB | 5.1 MB |
 
 ## Quality assurance
 
@@ -64,13 +64,13 @@ Three 15-second vertical films for Instagram and Facebook Reels and Stories, one
 | Safe zones | All copy, prices and products inside y 270–1250 px and x 80–1000 px ([QA sheet](qa/safe-zone-check.jpg)) |
 | Nothing covers a product | "Buy" and "gift" labels sit on a strip above each photograph; prices sit on panels below |
 | Which piece is free | Computed from the recorded prices; the films refuse to render a pair whose free piece costs more (`src/lib/bogo.ts`) |
-| Prices and stock | All 10 featured pieces available at the prices shown, at 12:49 UTC and again at 13:07 UTC on 20 November |
+| Prices and stock | All 9 featured pieces available at the prices shown at 06:14 UTC on Saturday 21 November. The Italian Murano Glass Vase sold on the first night, so film 02's second pair was replaced (the Canton cachepot, with the Japanese crackle platter free) and the film re-rendered |
 | Reproducibility | Re-rendering with `npm run score` and `npm run render` reproduces all three files byte for byte |
 
 **SHA-256 of the delivered files**
 
 ```
 11a758a515b03a6a2bf7b2285a0773f06bd0bcabad86a90359d171187dd1175e  creative-01-tonight/final/formanova-bogo-tonight-15s.mp4
-abf778671004a29dc7c7039479f56ee7c9a3be5eeaec283069e1399dd2e6a9fd  creative-02-pair/final/formanova-bogo-pair-15s.mp4
+0294bfe9e0be64591a2ee11d4902997cd9db8063a0732f25de61f9549eeede90  creative-02-pair/final/formanova-bogo-pair-15s.mp4
 61df3739e87e6c3bb555a47f729e4970e14f97bec81c58b6bb5066a2e7f56d69  creative-03-last-day/final/formanova-bogo-last-day-15s.mp4
 ```

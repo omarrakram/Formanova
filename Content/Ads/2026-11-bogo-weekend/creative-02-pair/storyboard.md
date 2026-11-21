@@ -20,7 +20,7 @@ The gallery arch from the brand's earlier films, doubled: two niches side by sid
 | # | Frames | Shot | Source image | Motion |
 |---|---|---|---|---|
 | 1 | 0–160 | Hook and pair 1 | Jardinère #4, spelter statue #3 | Arches settle upward (frames 0–16, the right one from slightly lower); outlines draw on; labels at frame 40; FREE and strike at frame 80; slow 6% push in each arch. |
-| 2 | 160–240 | Pair 2 | Japanese crackle platter #1, Italian Murano vase #1 | 8-frame cross-dissolve (right arch 3 frames later); labels swap at frames 152–170; strike at frame 200. |
+| 2 | 160–240 | Pair 2 | Canton cachepot #3, Japanese crackle platter #1 | 8-frame cross-dissolve (right arch 3 frames later); labels swap at frames 152–170; strike at frame 200. |
 | 3 | 240–340 | Montage | Sèvres pair #5 + cobalt centerpiece #1; elephant side table #2 + Bleu Blanc parrot #1; chinoiserie cachepot #1 + Canton cachepot #3; jardinère #4 + spelter statue #3 | A cross-dissolve on every beat (frames 240, 260, 280, 300); price labels give way to the rule line; the scene fades out by frame 350. |
 | 4 | 340–450 | End card | FormaNova wordmark | Fade up; wordmark wipes on; deadline, pill, rule, button, URL and footer build by frame 378; slow push to the end. |
 
