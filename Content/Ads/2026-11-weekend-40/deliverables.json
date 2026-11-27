@@ -42,8 +42,28 @@
       }
     },
     {
+      "id": "creative-01-friday-4x5",
+      "title": "Friday launch (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-01-friday/final/formanova-w40-friday-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-02-sat-a",
-      "title": "Saturday A \u00b7 40% (Egyptian Arabic)",
+      "title": "Saturday A · 40% (Egyptian Arabic)",
       "file": "creative-02-sat-a/final/formanova-w40-sat-a-15s.mp4",
       "spec": {
         "container": "mp4",
@@ -62,8 +82,28 @@
       }
     },
     {
+      "id": "creative-02-sat-a-4x5",
+      "title": "Saturday A · 40% (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-03-sat-b",
-      "title": "Saturday B \u00b7 Already gone (English)",
+      "title": "Saturday B · Already gone (English)",
       "file": "creative-03-sat-b/final/formanova-w40-sat-b-15s.mp4",
       "spec": {
         "container": "mp4",
@@ -82,8 +122,28 @@
       }
     },
     {
+      "id": "creative-03-sat-b-4x5",
+      "title": "Saturday B · Already gone (English) · 4:5 feed version",
+      "file": "creative-03-sat-b/final/formanova-w40-sat-b-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-04-sat-c",
-      "title": "Saturday C \u00b7 Save (Egyptian Arabic)",
+      "title": "Saturday C · Save (Egyptian Arabic)",
       "file": "creative-04-sat-c/final/formanova-w40-sat-c-15s.mp4",
       "spec": {
         "container": "mp4",
@@ -102,8 +162,28 @@
       }
     },
     {
+      "id": "creative-04-sat-c-4x5",
+      "title": "Saturday C · Save (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-05-sun-a",
-      "title": "Sunday A \u00b7 Last day clock (Egyptian Arabic)",
+      "title": "Sunday A · Last day clock (Egyptian Arabic)",
       "file": "creative-05-sun-a/final/formanova-w40-sun-a-15s.mp4",
       "spec": {
         "container": "mp4",
@@ -122,8 +202,28 @@
       }
     },
     {
+      "id": "creative-05-sun-a-4x5",
+      "title": "Sunday A · Last day clock (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-06-sun-b",
-      "title": "Sunday B \u00b7 Last day (English)",
+      "title": "Sunday B · Last day (English)",
       "file": "creative-06-sun-b/final/formanova-w40-sun-b-15s.mp4",
       "spec": {
         "container": "mp4",
@@ -142,8 +242,28 @@
       }
     },
     {
+      "id": "creative-06-sun-b-4x5",
+      "title": "Sunday B · Last day (English) · 4:5 feed version",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-07-sun-c",
-      "title": "Sunday C \u00b7 Sold out (Egyptian Arabic)",
+      "title": "Sunday C · Sold out (Egyptian Arabic)",
       "file": "creative-07-sun-c/final/formanova-w40-sun-c-15s.mp4",
       "spec": {
         "container": "mp4",
@@ -152,6 +272,26 @@
         "colorSpace": "bt709",
         "width": 1080,
         "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c-4x5",
+      "title": "Sunday C · Sold out (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
         "frameRate": "30/1",
         "frames": 450,
         "durationSeconds": 15.0,
