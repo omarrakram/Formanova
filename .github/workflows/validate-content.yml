@@ -72,6 +72,9 @@ jobs:
           npx remotion still BogoTonight out/bogo-tonight-frame-100.png --frame=100 --props='{"audio":false}'
           npx remotion still BogoPair out/bogo-pair-frame-100.png --frame=100 --props='{"audio":false}'
           npx remotion still BogoLastDay out/bogo-last-day-frame-110.png --frame=110 --props='{"audio":false}'
+          npx remotion still W40Friday out/w40-friday-frame-120.png --frame=120 --props='{"variant":"W40Friday","audio":false}'
+          npx remotion still W40SatB out/w40-sat-b-frame-60.png --frame=60 --props='{"variant":"W40SatB","audio":false}'
+          npx remotion still W40SunA out/w40-sun-a-frame-40.png --frame=40 --props='{"variant":"W40SunA","audio":false}'
 
       - name: Score generator runs and reproduces the masters
         run: |

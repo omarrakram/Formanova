@@ -9,6 +9,7 @@ Production/
 │   ├── brand/                      Design tokens (colour, type, safe zones) and font loading
 │   ├── components/                 Photo, Arch, Logo, PriceTag, CollectionChip, grain, safe-zone guide
 │   ├── creatives/
+│   │   ├── weekend40/              40% weekend: one design (Weekend40.tsx), eight variants (w40-*.json)
 │   │   ├── bogo-tonight/           Buy 1 Get 1 01 · 1+1, Tonight   (BogoTonight.tsx + timeline.json)
 │   │   ├── bogo-pair/              Buy 1 Get 1 02 · Two Pieces, One Price (BogoPair.tsx + timeline.json)
 │   │   ├── bogo-last-day/          Buy 1 Get 1 03 · Last Day       (BogoLastDay.tsx + timeline.json)
@@ -45,7 +46,7 @@ npm ci
 npm run studio
 ```
 
-Remotion Studio lists the films under **Buy-1-Get-1-2026-11**, **Black-Friday-2026-11** and **Sales-Launch-2026-10**. Set the `showSafeZones` prop to `true` to overlay the Reels interface zones.
+Remotion Studio lists the films under **Weekend-40-2026-11**, **Buy-1-Get-1-2026-11**, **Black-Friday-2026-11** and **Sales-Launch-2026-10**. Set the `showSafeZones` prop to `true` to overlay the Reels interface zones.
 
 ## Rebuild everything
 

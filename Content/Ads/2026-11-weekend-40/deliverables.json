@@ -1,0 +1,188 @@
+{
+  "campaign": "2026-11-weekend-40",
+  "deliverables": [
+    {
+      "id": "creative-00-teaser",
+      "title": "Teaser (Egyptian Arabic, organic)",
+      "file": "creative-00-teaser/final/formanova-w40-teaser-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-01-friday",
+      "title": "Friday launch (Egyptian Arabic)",
+      "file": "creative-01-friday/final/formanova-w40-friday-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-sat-a",
+      "title": "Saturday A \u00b7 40% (Egyptian Arabic)",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-03-sat-b",
+      "title": "Saturday B \u00b7 Already gone (English)",
+      "file": "creative-03-sat-b/final/formanova-w40-sat-b-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-04-sat-c",
+      "title": "Saturday C \u00b7 Save (Egyptian Arabic)",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-05-sun-a",
+      "title": "Sunday A \u00b7 Last day clock (Egyptian Arabic)",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-06-sun-b",
+      "title": "Sunday B \u00b7 Last day (English)",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c",
+      "title": "Sunday C \u00b7 Sold out (Egyptian Arabic)",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    }
+  ],
+  "requiredFiles": [
+    "README.md",
+    "ad-copy.md",
+    "licensing.md",
+    "asset-manifest.csv",
+    "qa/safe-zone-check.jpg",
+    "creative-00-teaser/cover.jpg",
+    "creative-00-teaser/contact-sheet.jpg",
+    "creative-01-friday/cover.jpg",
+    "creative-01-friday/contact-sheet.jpg",
+    "creative-02-sat-a/cover.jpg",
+    "creative-02-sat-a/contact-sheet.jpg",
+    "creative-03-sat-b/cover.jpg",
+    "creative-03-sat-b/contact-sheet.jpg",
+    "creative-04-sat-c/cover.jpg",
+    "creative-04-sat-c/contact-sheet.jpg",
+    "creative-05-sun-a/cover.jpg",
+    "creative-05-sun-a/contact-sheet.jpg",
+    "creative-06-sun-b/cover.jpg",
+    "creative-06-sun-b/contact-sheet.jpg",
+    "creative-07-sun-c/cover.jpg",
+    "creative-07-sun-c/contact-sheet.jpg"
+  ]
+}

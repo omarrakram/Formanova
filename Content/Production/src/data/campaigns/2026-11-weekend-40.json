@@ -23,7 +23,56 @@
     "rule": "40% off every piece in the store, no minimum.",
     "confirmedBy": "Brand owner, 27 November 2026: 40% storewide, from today 8 PM until Sunday 29 November 11:59 PM; ads from 7:30 PM; weekend ad budget EGP 3,000."
   },
-  "fonts": {},
+  "fonts": {
+    "AnonymousPro-Bold.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-03-sat-b",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-06-sun-b",
+      "creative-07-sun-c"
+    ],
+    "EBGaramond-Italic-Variable.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-03-sat-b",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-06-sun-b",
+      "creative-07-sun-c"
+    ],
+    "EBGaramond-Variable.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-03-sat-b",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-06-sun-b",
+      "creative-07-sun-c"
+    ],
+    "ElMessiri-Variable.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-07-sun-c"
+    ],
+    "PlayfairDisplay-Italic-Variable.ttf": [
+      "creative-03-sat-b",
+      "creative-06-sun-b"
+    ],
+    "PlayfairDisplay-Variable.ttf": [
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-04-sat-c",
+      "creative-06-sun-b"
+    ]
+  },
   "scores": {
     "creative-00-teaser": "w40-teaser-score.wav",
     "creative-01-friday": "w40-friday-score.wav",

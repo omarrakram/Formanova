@@ -18,6 +18,10 @@ This repository is the brand's content studio: campaigns, brand standards and th
 
 ## Featured work
 
+### 40% off everything: Fri 27 Nov, 8 PM → Sun 29 Nov, 11:59 PM
+
+Eight 15-second films (an organic teaser and seven urgency ads, one for Friday night and three each for Saturday and Sunday) with the Meta campaign that runs them. See the [campaign overview](Content/Ads/2026-11-weekend-40/README.md) and the [ad copy and captions](Content/Ads/2026-11-weekend-40/ad-copy.md).
+
 ### Buy 1 Get 1 Free weekend: Fri 20 Nov, 7:30 PM → Sun 22 Nov, midnight · the lower-priced piece is free
 
 <table>
@@ -115,6 +119,7 @@ Formanova/
 ├── Content/
 │   ├── Brand/                       Brand guidelines and master assets
 │   ├── Ads/
+│   │   ├── 2026-11-weekend-40/      40% weekend: ad copy, licensing, manifest, eight films
 │   │   ├── 2026-11-bogo-weekend/    Buy 1 Get 1 weekend: strategy, ad copy, licensing, manifest, three films
 │   │   ├── 2026-11-black-friday/    Black Friday: strategy, ad copy, licensing, manifest, two films
 │   │   └── 2026-10-sales-launch/    October launch: strategy, ad copy, licensing, manifest, two films
@@ -125,7 +130,7 @@ Formanova/
 | Area | Start here |
 |---|---|
 | Brand identity, colour, type, voice, claims policy | [Content/Brand/brand-guidelines.md](Content/Brand/brand-guidelines.md) |
-| Campaigns and deliverables | [Buy 1 Get 1 weekend](Content/Ads/2026-11-bogo-weekend/README.md) · [Black Friday 2026](Content/Ads/2026-11-black-friday/README.md) · [October 2026](Content/Ads/2026-10-sales-launch/README.md) |
+| Campaigns and deliverables | [40% weekend](Content/Ads/2026-11-weekend-40/README.md) · [Buy 1 Get 1 weekend](Content/Ads/2026-11-bogo-weekend/README.md) · [Black Friday 2026](Content/Ads/2026-11-black-friday/README.md) · [October 2026](Content/Ads/2026-10-sales-launch/README.md) |
 | How content is organised | [Content/README.md](Content/README.md) |
 | Rebuilding the videos | [Content/Production/README.md](Content/Production/README.md) |
 
