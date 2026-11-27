@@ -1,0 +1,18 @@
+{
+  "id": "BogoPair",
+  "fps": 30,
+  "bpm": 90,
+  "durationInFrames": 450,
+  "scenes": {
+    "gallery": { "from": 0, "to": 352 },
+    "cta": { "from": 340, "to": 450 }
+  },
+  "cuts": {
+    "headline": [0, 20],
+    "labels": 40,
+    "pairs": [0, 160],
+    "free": [80, 200],
+    "montage": [240, 260, 280, 300],
+    "cta": 340
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "W40SatB",
+  "slug": "sat-b",
+  "creative": "creative-03-sat-b",
+  "lang": "en",
+  "hook": "sold",
+  "hookEnd": 90,
+  "ribbon": "40% OFF · ENDS SUNDAY 11:59 PM",
+  "hookLines": [
+    "Already gone.",
+    "Everything else is 40% off until Sunday 11:59 PM."
+  ],
+  "sold": [
+    {
+      "id": "murano-swirl-vase",
+      "image": 1,
+      "focus": [48, 50]
+    },
+    {
+      "id": "italian-murano-vase",
+      "image": 1,
+      "focus": [50, 52]
+    },
+    {
+      "id": "czech-crystal-vase",
+      "image": 3,
+      "focus": [50, 50]
+    },
+    {
+      "id": "bleu-blanc-ginger-jar",
+      "image": 1,
+      "focus": [50, 50]
+    }
+  ],
+  "productsHeadline": "Before they're gone",
+  "products": [
+    {
+      "id": "jardiniere",
+      "image": 4,
+      "focus": [50, 62]
+    },
+    {
+      "id": "cobalt-centerpiece",
+      "image": 1,
+      "focus": [50, 60]
+    },
+    {
+      "id": "canton-cachepot",
+      "image": 3,
+      "focus": [50, 48]
+    },
+    {
+      "id": "japanese-crackle-platter",
+      "image": 1,
+      "focus": [50, 54]
+    }
+  ],
+  "priceNote": "40% OFF · UNTIL SUN 11:59 PM",
+  "cta": {
+    "title": "Ends Sunday at 11:59 PM.",
+    "deadline": [
+      "40% OFF EVERYTHING",
+      "One of a kind. Once it's gone, it's gone."
+    ],
+    "note": "Delivery across Egypt",
+    "button": "SHOP NOW"
+  },
+  "score": {
+    "style": "piano",
+    "mode": "major",
+    "root": "F",
+    "ticks": false,
+    "seed": 4401
+  }
+}

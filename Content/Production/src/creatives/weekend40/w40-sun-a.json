@@ -1,0 +1,52 @@
+{
+  "id": "W40SunA",
+  "slug": "sun-a",
+  "creative": "creative-05-sun-a",
+  "lang": "ar",
+  "hook": "clock",
+  "hookEnd": 90,
+  "ribbon": "LAST DAY · 40% OFF EVERYTHING",
+  "hookLines": [
+    "آخر يوم",
+    "خصم 40% بيخلص النهارده 11:59 مساءً",
+    "على كل القطع"
+  ],
+  "clock": [11, 58, 30],
+  "productsHeadline": "آخر يوم بخصم 40%",
+  "products": [
+    {
+      "id": "spelter-dogs",
+      "image": 3,
+      "focus": [50, 58]
+    },
+    {
+      "id": "bleu-blanc-parrot",
+      "image": 1,
+      "focus": [50, 40]
+    },
+    {
+      "id": "chinoiserie-cachepot",
+      "image": 1,
+      "focus": [57, 52]
+    },
+    {
+      "id": "sevres-candlestick",
+      "image": 5,
+      "focus": [50, 62]
+    }
+  ],
+  "priceNote": "لحد النهارده 11:59 مساءً",
+  "cta": {
+    "title": "النهارده آخر يوم",
+    "deadline": ["خصم 40% على كل القطع", "لحد النهارده 11:59 مساءً"],
+    "note": "بكرة الأسعار بترجع",
+    "button": "تسوّق الآن"
+  },
+  "score": {
+    "style": "darbuka",
+    "mode": "hijaz",
+    "root": "E",
+    "ticks": true,
+    "seed": 4601
+  }
+}

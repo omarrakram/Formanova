@@ -1,0 +1,91 @@
+{
+  "id": "W40FridayWknd",
+  "slug": "friday-wknd",
+  "scoreSlug": "friday",
+  "creative": "creative-01-friday",
+  "lang": "ar",
+  "hook": "big40",
+  "hookEnd": 60,
+  "ribbon": "40% OFF EVERYTHING · UNTIL SUNDAY",
+  "hookLines": [
+    "خصم",
+    "على كل القطع في فورمانوفا",
+    "لحد الأحد 11:59 مساءً بس"
+  ],
+  "hero": {
+    "id": "jardiniere",
+    "image": 4,
+    "focus": [
+      50,
+      58
+    ]
+  },
+  "productsHeadline": "كل القطع بخصم 40%",
+  "products": [
+    {
+      "id": "sevres-candlestick",
+      "image": 5,
+      "focus": [
+        50,
+        62
+      ]
+    },
+    {
+      "id": "cobalt-centerpiece",
+      "image": 1,
+      "focus": [
+        50,
+        60
+      ]
+    },
+    {
+      "id": "elephant-side-table",
+      "image": 2,
+      "focus": [
+        58,
+        50
+      ]
+    },
+    {
+      "id": "chinoiserie-cachepot",
+      "image": 1,
+      "focus": [
+        57,
+        52
+      ]
+    },
+    {
+      "id": "canton-cachepot",
+      "image": 3,
+      "focus": [
+        50,
+        48
+      ]
+    },
+    {
+      "id": "japanese-crackle-platter",
+      "image": 1,
+      "focus": [
+        50,
+        54
+      ]
+    }
+  ],
+  "priceNote": "لحد الأحد 11:59 مساءً",
+  "cta": {
+    "title": "الخصم لحد الأحد 11:59 مساءً بس",
+    "deadline": [
+      "خصم 40% على كل القطع",
+      "لحد الأحد 29/11 الساعة 11:59 مساءً"
+    ],
+    "note": "قطع فريدة… لما تخلص مش هترجع",
+    "button": "تسوّق الآن"
+  },
+  "score": {
+    "style": "darbuka",
+    "mode": "minor",
+    "root": "D",
+    "ticks": false,
+    "seed": 4201
+  }
+}

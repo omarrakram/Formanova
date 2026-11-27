@@ -1,0 +1,61 @@
+{
+  "campaign": "2026-11-black-friday",
+  "deliverables": [
+    {
+      "id": "creative-01-ladder",
+      "title": "The Ladder (Egyptian Arabic)",
+      "file": "creative-01-ladder/final/formanova-bf-ladder-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-set",
+      "title": "The 40% Set (English)",
+      "file": "creative-02-set/final/formanova-bf-set-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    }
+  ],
+  "requiredFiles": [
+    "README.md",
+    "strategy.md",
+    "ad-copy.md",
+    "licensing.md",
+    "asset-manifest.csv",
+    "qa/safe-zone-check.jpg",
+    "creative-01-ladder/cover.jpg",
+    "creative-01-ladder/contact-sheet.jpg",
+    "creative-01-ladder/script.md",
+    "creative-01-ladder/storyboard.md",
+    "creative-02-set/cover.jpg",
+    "creative-02-set/contact-sheet.jpg",
+    "creative-02-set/script.md",
+    "creative-02-set/storyboard.md"
+  ]
+}

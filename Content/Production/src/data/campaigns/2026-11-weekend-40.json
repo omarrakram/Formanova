@@ -1,0 +1,160 @@
+{
+  "campaign": "2026-11-weekend-40",
+  "checkedAt": "2026-11-27T15:27:23Z",
+  "creatives": {
+    "creative-00-teaser": "src/creatives/weekend40/w40-teaser.json",
+    "creative-01-friday": "src/creatives/weekend40/w40-friday.json",
+    "creative-02-sat-a": "src/creatives/weekend40/w40-sat-a.json",
+    "creative-03-sat-b": "src/creatives/weekend40/w40-sat-b.json",
+    "creative-04-sat-c": "src/creatives/weekend40/w40-sat-c.json",
+    "creative-05-sun-a": "src/creatives/weekend40/w40-sun-a.json",
+    "creative-06-sun-b": "src/creatives/weekend40/w40-sun-b.json",
+    "creative-07-sun-c": "src/creatives/weekend40/w40-sun-c.json"
+  },
+  "sale": {
+    "name": "40% off everything",
+    "startsAt": "2026-11-27T20:00:00+02:00",
+    "endsAt": "2026-11-29T23:59:00+02:00",
+    "label": {
+      "en": "Fri 27 Nov, 8 PM – Sun 29 Nov, 11:59 PM",
+      "ar": "من الجمعة 27/11 الساعة 8 مساءً لحد الأحد 29/11 الساعة 11:59 مساءً"
+    },
+    "percentOff": 40,
+    "rule": "40% off every piece in the store, no minimum.",
+    "confirmedBy": "Brand owner, 27 November 2026: 40% storewide, from today 8 PM until Sunday 29 November 11:59 PM; ads from 7:30 PM; weekend ad budget EGP 3,000."
+  },
+  "fonts": {
+    "AnonymousPro-Bold.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-03-sat-b",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-06-sun-b",
+      "creative-07-sun-c"
+    ],
+    "EBGaramond-Italic-Variable.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-03-sat-b",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-06-sun-b",
+      "creative-07-sun-c"
+    ],
+    "EBGaramond-Variable.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-03-sat-b",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-06-sun-b",
+      "creative-07-sun-c"
+    ],
+    "ElMessiri-Variable.ttf": [
+      "creative-00-teaser",
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-04-sat-c",
+      "creative-05-sun-a",
+      "creative-07-sun-c"
+    ],
+    "PlayfairDisplay-Italic-Variable.ttf": [
+      "creative-03-sat-b",
+      "creative-06-sun-b"
+    ],
+    "PlayfairDisplay-Variable.ttf": [
+      "creative-01-friday",
+      "creative-02-sat-a",
+      "creative-04-sat-c",
+      "creative-06-sun-b"
+    ]
+  },
+  "scores": {
+    "creative-00-teaser": "w40-teaser-score.wav",
+    "creative-01-friday": "w40-friday-score.wav",
+    "creative-02-sat-a": "w40-sat-a-score.wav",
+    "creative-03-sat-b": "w40-sat-b-score.wav",
+    "creative-04-sat-c": "w40-sat-c-score.wav",
+    "creative-05-sun-a": "w40-sun-a-score.wav",
+    "creative-06-sun-b": "w40-sun-b-score.wav",
+    "creative-07-sun-c": "w40-sun-c-score.wav"
+  },
+  "snapshot": {
+    "sevres-candlestick": {
+      "price": "14399.99",
+      "available": true
+    },
+    "chinoiserie-cachepot": {
+      "price": "5399.99",
+      "available": true
+    },
+    "czech-crystal-vase": {
+      "price": "5699.99",
+      "available": false
+    },
+    "cloisonne-jar": {
+      "price": "6599.99",
+      "available": false
+    },
+    "bleu-blanc-ginger-jar": {
+      "price": "1899.99",
+      "available": false
+    },
+    "italian-murano-vase": {
+      "price": "4199.99",
+      "available": false
+    },
+    "chinoiserie-potiches-pair": {
+      "price": "2249.99",
+      "available": true
+    },
+    "satsuma-potiche": {
+      "price": "1149.99",
+      "available": true
+    },
+    "chinoiserie-egg": {
+      "price": "1799.99",
+      "available": true
+    },
+    "cobalt-centerpiece": {
+      "price": "12749.99",
+      "available": true
+    },
+    "bohemian-gold-vase": {
+      "price": "2999.99",
+      "available": false
+    },
+    "jardiniere": {
+      "price": "44999.99",
+      "available": true
+    },
+    "spelter-dogs": {
+      "price": "11749.99",
+      "available": true
+    },
+    "elephant-side-table": {
+      "price": "7349.99",
+      "available": true
+    },
+    "bleu-blanc-parrot": {
+      "price": "6999.99",
+      "available": true
+    },
+    "murano-swirl-vase": {
+      "price": "6599.99",
+      "available": false
+    },
+    "canton-cachepot": {
+      "price": "5099.99",
+      "available": true
+    },
+    "japanese-crackle-platter": {
+      "price": "4449.99",
+      "available": true
+    }
+  }
+}

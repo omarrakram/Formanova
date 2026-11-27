@@ -1,0 +1,568 @@
+{
+  "campaign": "2026-11-weekend-40",
+  "deliverables": [
+    {
+      "id": "creative-00-teaser",
+      "title": "Teaser (Egyptian Arabic, organic)",
+      "file": "creative-00-teaser/final/formanova-w40-teaser-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-01-friday",
+      "title": "Friday launch (Egyptian Arabic)",
+      "file": "creative-01-friday/final/formanova-w40-friday-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-01-friday-4x5",
+      "title": "Friday launch (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-01-friday/final/formanova-w40-friday-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-01-friday-wknd",
+      "title": "Friday · all-weekend re-cut",
+      "file": "creative-01-friday/final/formanova-w40-friday-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-01-friday-wknd-4x5",
+      "title": "Friday · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-01-friday/final/formanova-w40-friday-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-sat-a",
+      "title": "Saturday A · 40% (Egyptian Arabic)",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-sat-a-4x5",
+      "title": "Saturday A · 40% (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-sat-a-wknd",
+      "title": "Saturday A · all-weekend re-cut",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-sat-a-wknd-4x5",
+      "title": "Saturday A · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-03-sat-b",
+      "title": "Saturday B · Already gone (English)",
+      "file": "creative-03-sat-b/final/formanova-w40-sat-b-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-03-sat-b-4x5",
+      "title": "Saturday B · Already gone (English) · 4:5 feed version",
+      "file": "creative-03-sat-b/final/formanova-w40-sat-b-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-04-sat-c",
+      "title": "Saturday C · Save (Egyptian Arabic)",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-04-sat-c-4x5",
+      "title": "Saturday C · Save (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-04-sat-c-wknd",
+      "title": "Saturday C · all-weekend re-cut",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-04-sat-c-wknd-4x5",
+      "title": "Saturday C · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-05-sun-a",
+      "title": "Sunday A · Last day clock (Egyptian Arabic)",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-05-sun-a-4x5",
+      "title": "Sunday A · Last day clock (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-05-sun-a-wknd",
+      "title": "Sunday A · all-weekend re-cut",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-05-sun-a-wknd-4x5",
+      "title": "Sunday A · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-06-sun-b",
+      "title": "Sunday B · Last day (English)",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-06-sun-b-4x5",
+      "title": "Sunday B · Last day (English) · 4:5 feed version",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-06-sun-b-wknd",
+      "title": "Sunday B · all-weekend re-cut",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-06-sun-b-wknd-4x5",
+      "title": "Sunday B · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c",
+      "title": "Sunday C · Sold out (Egyptian Arabic)",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c-4x5",
+      "title": "Sunday C · Sold out (Egyptian Arabic) · 4:5 feed version",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c-wknd",
+      "title": "Sunday C · all-weekend re-cut",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c-wknd-4x5",
+      "title": "Sunday C · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    }
+  ],
+  "requiredFiles": [
+    "README.md",
+    "ad-copy.md",
+    "licensing.md",
+    "asset-manifest.csv",
+    "qa/safe-zone-check.jpg",
+    "creative-00-teaser/cover.jpg",
+    "creative-00-teaser/contact-sheet.jpg",
+    "creative-01-friday/cover.jpg",
+    "creative-01-friday/contact-sheet.jpg",
+    "creative-02-sat-a/cover.jpg",
+    "creative-02-sat-a/contact-sheet.jpg",
+    "creative-03-sat-b/cover.jpg",
+    "creative-03-sat-b/contact-sheet.jpg",
+    "creative-04-sat-c/cover.jpg",
+    "creative-04-sat-c/contact-sheet.jpg",
+    "creative-05-sun-a/cover.jpg",
+    "creative-05-sun-a/contact-sheet.jpg",
+    "creative-06-sun-b/cover.jpg",
+    "creative-06-sun-b/contact-sheet.jpg",
+    "creative-07-sun-c/cover.jpg",
+    "creative-07-sun-c/contact-sheet.jpg"
+  ]
+}

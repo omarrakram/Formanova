@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Remotion and build output
+Content/Production/out/
+Content/Production/build/
+.remotion/
+
+# Logs and caches
+*.log
+npm-debug.log*
+.npm/
+.cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

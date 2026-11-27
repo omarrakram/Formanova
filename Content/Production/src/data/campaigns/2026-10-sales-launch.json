@@ -1,0 +1,94 @@
+{
+  "campaign": "2026-10-sales-launch",
+  "checkedAt": "2026-10-30T08:05:28Z",
+  "creatives": {
+    "creative-01-heritage": "src/creatives/heritage/Heritage.tsx",
+    "creative-02-product": "src/creatives/product/ProductAd.tsx"
+  },
+  "fonts": {
+    "AnonymousPro-Bold.ttf": [
+      "creative-02-product"
+    ],
+    "EBGaramond-Italic-Variable.ttf": [
+      "creative-01-heritage",
+      "creative-02-product"
+    ],
+    "EBGaramond-Variable.ttf": [
+      "creative-01-heritage",
+      "creative-02-product"
+    ],
+    "ElMessiri-Variable.ttf": [
+      "creative-02-product"
+    ],
+    "PlayfairDisplay-Italic-Variable.ttf": [
+      "creative-01-heritage",
+      "creative-02-product"
+    ],
+    "PlayfairDisplay-Variable.ttf": [
+      "creative-01-heritage",
+      "creative-02-product"
+    ]
+  },
+  "scores": {
+    "creative-01-heritage": "heritage-score.wav",
+    "creative-02-product": "product-score.wav"
+  },
+  "snapshot": {
+    "sevres-candlestick": {
+      "price": "11999.00",
+      "available": true
+    },
+    "chinoiserie-cachepot": {
+      "price": "4499.00",
+      "available": true
+    },
+    "czech-crystal-vase": {
+      "price": "4724.99",
+      "available": true
+    },
+    "cloisonne-jar": {
+      "price": "5459.99",
+      "available": true
+    },
+    "murano-amber-vase": {
+      "price": "3499.00",
+      "available": true
+    },
+    "bleu-blanc-ginger-jar": {
+      "price": "1574.99",
+      "available": true
+    },
+    "italian-murano-vase": {
+      "price": "3499.00",
+      "available": true
+    },
+    "chinoiserie-potiches-pair": {
+      "price": "1849.00",
+      "available": true
+    },
+    "satsuma-potiche": {
+      "price": "949.00",
+      "available": true
+    },
+    "chinoiserie-egg": {
+      "price": "1499.00",
+      "available": true
+    },
+    "cobalt-centerpiece": {
+      "price": "10599.99",
+      "available": true
+    },
+    "satsuma-bonbonniere": {
+      "price": "1849.00",
+      "available": true
+    },
+    "bleu-blanc-potiche": {
+      "price": "949.00",
+      "available": true
+    },
+    "bohemian-gold-vase": {
+      "price": "2499.00",
+      "available": true
+    }
+  }
+}

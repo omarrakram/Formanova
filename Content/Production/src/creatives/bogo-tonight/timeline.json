@@ -1,0 +1,17 @@
+{
+  "id": "BogoTonight",
+  "fps": 30,
+  "bpm": 120,
+  "durationInFrames": 450,
+  "scenes": {
+    "hook": { "from": 0, "to": 72 },
+    "pairs": { "from": 0, "to": 342 },
+    "cta": { "from": 330, "to": 450 }
+  },
+  "cuts": {
+    "badge": 30,
+    "pairs": [60, 150, 240],
+    "gifts": [90, 180, 270],
+    "cta": 330
+  }
+}

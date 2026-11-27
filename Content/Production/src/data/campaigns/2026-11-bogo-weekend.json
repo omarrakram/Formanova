@@ -1,0 +1,93 @@
+{
+  "campaign": "2026-11-bogo-weekend",
+  "checkedAt": "2026-11-21T06:14:19Z",
+  "creatives": {
+    "creative-01-tonight": "src/creatives/bogo-tonight/BogoTonight.tsx",
+    "creative-02-pair": "src/creatives/bogo-pair/BogoPair.tsx",
+    "creative-03-last-day": "src/creatives/bogo-last-day/BogoLastDay.tsx"
+  },
+  "sale": {
+    "name": "Buy 1 Get 1 Free",
+    "startsAt": "2026-11-20T19:30:00+02:00",
+    "endsAt": "2026-11-23T00:00:00+02:00",
+    "label": {
+      "en": "Fri 20 Nov, 7:30 PM – Sun 22 Nov, midnight",
+      "ar": "من الجمعة 20/11 الساعة 7:30 مساءً لحد الأحد 22/11 نص الليل"
+    },
+    "rule": "Buy any two pieces and the lower-priced one is free.",
+    "application": "Applied automatically at checkout; every product is eligible; no code.",
+    "confirmedBy": "Brand owner, 20 November 2026: starts today, Friday 20 November, at 7:30 PM; second piece free (the lower-priced one), automatic, on every piece; ends Sunday 22 November at midnight."
+  },
+  "fonts": {
+    "AnonymousPro-Bold.ttf": [
+      "creative-01-tonight",
+      "creative-02-pair",
+      "creative-03-last-day"
+    ],
+    "EBGaramond-Italic-Variable.ttf": [
+      "creative-01-tonight",
+      "creative-02-pair",
+      "creative-03-last-day"
+    ],
+    "EBGaramond-Variable.ttf": [
+      "creative-01-tonight",
+      "creative-02-pair",
+      "creative-03-last-day"
+    ],
+    "ElMessiri-Variable.ttf": [
+      "creative-01-tonight",
+      "creative-03-last-day"
+    ],
+    "PlayfairDisplay-Italic-Variable.ttf": [
+      "creative-02-pair"
+    ],
+    "PlayfairDisplay-Variable.ttf": [
+      "creative-01-tonight",
+      "creative-02-pair",
+      "creative-03-last-day"
+    ]
+  },
+  "scores": {
+    "creative-01-tonight": "bogo-tonight-score.wav",
+    "creative-02-pair": "bogo-pair-score.wav",
+    "creative-03-last-day": "bogo-last-day-score.wav"
+  },
+  "snapshot": {
+    "sevres-candlestick": {
+      "price": "14399.99",
+      "available": true
+    },
+    "chinoiserie-cachepot": {
+      "price": "5399.99",
+      "available": true
+    },
+    "cobalt-centerpiece": {
+      "price": "12749.99",
+      "available": true
+    },
+    "jardiniere": {
+      "price": "44999.99",
+      "available": true
+    },
+    "spelter-dogs": {
+      "price": "11749.99",
+      "available": true
+    },
+    "elephant-side-table": {
+      "price": "7349.99",
+      "available": true
+    },
+    "bleu-blanc-parrot": {
+      "price": "6999.99",
+      "available": true
+    },
+    "canton-cachepot": {
+      "price": "5099.99",
+      "available": true
+    },
+    "japanese-crackle-platter": {
+      "price": "4449.99",
+      "available": true
+    }
+  }
+}

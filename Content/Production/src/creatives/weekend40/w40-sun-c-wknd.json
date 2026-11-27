@@ -1,0 +1,100 @@
+{
+  "id": "W40SunCWknd",
+  "slug": "sun-c-wknd",
+  "scoreSlug": "sun-c",
+  "creative": "creative-07-sun-c",
+  "lang": "ar",
+  "hook": "sold",
+  "hookEnd": 90,
+  "ribbon": "40% OFF EVERYTHING · ENDS SUNDAY",
+  "hookLines": [
+    "القطع دي نفدت",
+    "والباقي بخصم 40% لحد الأحد 11:59 مساءً"
+  ],
+  "sold": [
+    {
+      "id": "cloisonne-jar",
+      "image": 1,
+      "focus": [
+        50,
+        50
+      ]
+    },
+    {
+      "id": "bohemian-gold-vase",
+      "image": 3,
+      "focus": [
+        50,
+        50
+      ]
+    },
+    {
+      "id": "czech-crystal-vase",
+      "image": 5,
+      "focus": [
+        50,
+        50
+      ]
+    },
+    {
+      "id": "italian-murano-vase",
+      "image": 2,
+      "focus": [
+        50,
+        52
+      ]
+    }
+  ],
+  "productsHeadline": "الحق الباقي قبل ما يخلص",
+  "products": [
+    {
+      "id": "elephant-side-table",
+      "image": 2,
+      "focus": [
+        58,
+        50
+      ]
+    },
+    {
+      "id": "cobalt-centerpiece",
+      "image": 1,
+      "focus": [
+        50,
+        60
+      ]
+    },
+    {
+      "id": "satsuma-potiche",
+      "image": 5,
+      "focus": [
+        50,
+        50
+      ]
+    },
+    {
+      "id": "japanese-crackle-platter",
+      "image": 1,
+      "focus": [
+        50,
+        54
+      ]
+    }
+  ],
+  "priceNote": "لحد الأحد 11:59 مساءً",
+  "cta": {
+    "title": "الخصم بيخلص الأحد 11:59 مساءً",
+    "deadline": [
+      "خصم 40% على كل القطع",
+      "لحد الأحد 29/11 الساعة 11:59 مساءً"
+    ],
+    "note": "قطع فريدة… لما تخلص مش هترجع",
+    "button": "تسوّق الآن"
+  },
+  "score": {
+    "style": "darbuka",
+    "mode": "minor",
+    "root": "C",
+    "ticks": true,
+    "seed": 4801
+  }
+}
