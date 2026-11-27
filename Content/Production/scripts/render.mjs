@@ -109,6 +109,27 @@ const CREATIVES = [
   },
 ];
 
+/* Weekend 40%: one composition per variant file. */
+const W40 = path.join(ADS, "2026-11-weekend-40");
+const W40_DIR = path.join(ROOT, "src", "creatives", "weekend40");
+for (const file of fs
+  .readdirSync(W40_DIR)
+  .filter((f) => f.endsWith(".json"))
+  .sort()) {
+  const v = JSON.parse(fs.readFileSync(path.join(W40_DIR, file), "utf8"));
+  CREATIVES.push({
+    id: v.id,
+    title: `Formanova - 40% Weekend: ${v.slug} (15s)`,
+    score: path.join(ROOT, "assets", "audio", `w40-${v.slug}-score.wav`),
+    output: path.join(
+      W40,
+      v.creative,
+      "final",
+      `formanova-w40-${v.slug}-15s.mp4`,
+    ),
+  });
+}
+
 const requested = process.argv.slice(2);
 const browser = process.env.REMOTION_BROWSER_EXECUTABLE;
 const run = (args) =>

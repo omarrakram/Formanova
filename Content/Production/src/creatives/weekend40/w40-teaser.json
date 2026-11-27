@@ -1,0 +1,52 @@
+{
+  "id": "W40Teaser",
+  "slug": "teaser",
+  "creative": "creative-00-teaser",
+  "lang": "ar",
+  "hook": "teaser",
+  "hookEnd": 90,
+  "ribbon": "40% OFF EVERYTHING · TONIGHT 8 PM",
+  "hookLines": [
+    "الليلة الساعة 8",
+    "خصم 40% على كل القطع",
+    "لحد الأحد 11:59 مساءً"
+  ],
+  "clock": [7, 58, 40],
+  "productsHeadline": "جهّز قائمتك… دي أسعارها من الساعة 8",
+  "products": [
+    {
+      "id": "jardiniere",
+      "image": 4,
+      "focus": [50, 62]
+    },
+    {
+      "id": "sevres-candlestick",
+      "image": 5,
+      "focus": [50, 62]
+    },
+    {
+      "id": "bleu-blanc-parrot",
+      "image": 1,
+      "focus": [50, 40]
+    },
+    {
+      "id": "chinoiserie-cachepot",
+      "image": 1,
+      "focus": [57, 52]
+    }
+  ],
+  "priceNote": "من الليلة الساعة 8",
+  "cta": {
+    "title": "الليلة الساعة 8 مساءً",
+    "deadline": ["خصم 40% على كل القطع", "لحد الأحد 29/11 الساعة 11:59 مساءً"],
+    "note": "قطع فريدة… لما تخلص مش هترجع",
+    "button": "جهّز قائمتك"
+  },
+  "score": {
+    "style": "darbuka",
+    "mode": "hijaz",
+    "root": "E",
+    "ticks": true,
+    "seed": 4101
+  }
+}

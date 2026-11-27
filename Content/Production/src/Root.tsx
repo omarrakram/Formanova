@@ -5,6 +5,7 @@ import { VIDEO } from "./brand/tokens";
 import { BlackFridayLadder } from "./creatives/bf-ladder/BlackFridayLadder";
 import { BlackFridaySet } from "./creatives/bf-set/BlackFridaySet";
 import { BogoLastDay } from "./creatives/bogo-last-day/BogoLastDay";
+import { WEEKEND40_IDS, Weekend40 } from "./creatives/weekend40/Weekend40";
 import { BogoPair } from "./creatives/bogo-pair/BogoPair";
 import { BogoTonight } from "./creatives/bogo-tonight/BogoTonight";
 import { Heritage } from "./creatives/heritage/Heritage";
@@ -17,6 +18,20 @@ import { ProductAd } from "./creatives/product/ProductAd";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Folder name="Weekend-40-2026-11">
+        {WEEKEND40_IDS.map((id) => (
+          <Composition
+            key={id}
+            id={id}
+            component={Weekend40}
+            width={VIDEO.width}
+            height={VIDEO.height}
+            fps={VIDEO.fps}
+            durationInFrames={VIDEO.durationInFrames}
+            defaultProps={{ variant: id, audio: true, showSafeZones: false }}
+          />
+        ))}
+      </Folder>
       <Folder name="Buy-1-Get-1-2026-11">
         <Composition
           id="BogoTonight"

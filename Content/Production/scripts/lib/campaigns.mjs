@@ -46,14 +46,14 @@ export const loadCampaign = (id) => {
 
 /**
  * Product images used by each creative: getImage("id", n), card("id", n, ...)
- * and data objects of the form { id: "id", image: n }.
+ * and data objects of the form { id: "id", image: n } (also as JSON keys).
  * Returns Map("productId#listingPosition" -> Set(creative)).
  */
 export const imageUsage = (campaign) => {
   const usage = new Map();
   const patterns = [
     /(?:getImage|card)\(\s*"([a-z0-9-]+)",\s*(\d+)/g,
-    /id:\s*"([a-z0-9-]+)",\s*image:\s*(\d+)/g,
+    /"?id"?:\s*"([a-z0-9-]+)",\s*"?image"?:\s*(\d+)/g,
   ];
   for (const [creative, source] of Object.entries(campaign.creatives)) {
     const code = fs.readFileSync(path.join(ROOT, source), "utf8");

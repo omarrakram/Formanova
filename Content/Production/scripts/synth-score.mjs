@@ -1614,6 +1614,268 @@ const bogoLastDay = () => {
   );
 };
 
+/**
+ * Weekend 40% (eight films from one design): a 120 BPM score generated from
+ * each variant's JSON. Darbuka variants play maqsum with marimba and bass;
+ * piano variants play chords over a string ostinato. Every cut lands on the
+ * beat: the hook, each piece (an air movement and a kick), each struck price
+ * (a typed click and a bell), and the end card, which resolves to the major.
+ * Clock variants tick on every beat until the call to action.
+ */
+const NOTE_NAMES = [
+  "C",
+  "C#",
+  "D",
+  "D#",
+  "E",
+  "F",
+  "F#",
+  "G",
+  "G#",
+  "A",
+  "A#",
+  "B",
+];
+const noteName = (m) =>
+  `${NOTE_NAMES[((m % 12) + 12) % 12]}${Math.floor(m / 12) - 1}`;
+
+const W40_PROGRESSIONS = {
+  minor: [
+    [0, 3, 7],
+    [-2, 2, 5],
+    [-4, 0, 3],
+    [-5, -1, 2],
+    [0, 3, 7],
+    [-5, -1, 2],
+  ],
+  hijaz: [
+    [0, 4, 7],
+    [1, 5, 8],
+    [0, 4, 7],
+    [-7, -4, 0],
+    [1, 5, 8],
+    [0, 4, 7],
+  ],
+  major: [
+    [0, 4, 7],
+    [-3, 0, 4],
+    [-7, -3, 0],
+    [-5, -1, 2],
+    [0, 4, 7],
+    [-5, -1, 2],
+  ],
+};
+
+const w40 = (slug) => {
+  const v = JSON.parse(
+    fs.readFileSync(
+      path.join(ROOT, "src", "creatives", "weekend40", `w40-${slug}.json`),
+      "utf8",
+    ),
+  );
+  const fps = 30;
+  const beat = 0.5;
+  const sc = v.score;
+  const rand = mulberry32(sc.seed);
+  const dry = new Bus();
+  const send = new Bus();
+  const keys = channel(dry, send, 0.3);
+  const drums = channel(dry, send, 0.12);
+  const fx = channel(dry, send, 0.45);
+  const pianoCh = channel(dry, send, 0.5);
+  const R = midi(`${sc.root}3`);
+  const cta = 330 / fps;
+  const slot = (330 - v.hookEnd) / v.products.length;
+  const starts = v.products.map((_, k) => (v.hookEnd + k * slot) / fps);
+  const prog = W40_PROGRESSIONS[sc.mode];
+  const maqsum = ["dum", "tek", null, "tek", "dum", null, "tek", null];
+
+  for (let bar = 0; bar < prog.length; bar++) {
+    const t0 = bar * 4 * beat;
+    if (t0 >= cta) break;
+    const chord = prog[bar];
+    const barEnd = Math.min(t0 + 4 * beat, cta);
+    const triad = chord.map((o) => noteName(R + o));
+    const tones = chord.map((o) => R + 24 + o);
+    const motif = [0, 1, 2, 3, 2, 1, 0, 1].map((i) =>
+      noteName(i === 3 ? tones[0] + 12 : tones[i]),
+    );
+    const root = noteName(R - 12 + chord[0]);
+    pad(keys, rand, t0, barEnd, triad, bar === 0 ? 0.24 : 0.3, {
+      attack: sc.style === "piano" ? 0.25 : 0.08,
+      release: sc.style === "piano" ? 1.0 : 0.4,
+      tilt: 4,
+    });
+    if (sc.style === "piano") {
+      triad.forEach((n, k) =>
+        feltPiano(
+          pianoCh,
+          rand,
+          t0 + k * 0.012,
+          noteName(midi(n) + 12),
+          0.5,
+          1.6,
+          (k - 1) * 0.2,
+        ),
+      );
+    }
+    for (let e = 0; e < 8; e++) {
+      const t = t0 + e * (beat / 2);
+      if (t >= cta - 0.01) break;
+      if (sc.style === "darbuka") {
+        const stroke = maqsum[e];
+        if (stroke)
+          darbuka(
+            drums,
+            rand,
+            t,
+            stroke,
+            stroke === "dum" ? 0.5 : 0.22,
+            stroke === "dum" ? 0 : 0.25,
+          );
+        else darbuka(drums, rand, t, "ka", 0.17, -0.25);
+        marimba(
+          keys,
+          rand,
+          t,
+          motif[e],
+          e % 4 === 0 ? 0.13 : 0.085,
+          e % 2 ? 0.3 : -0.3,
+        );
+        if (e % 2 === 0) bass(dry, t, root, beat * 0.42, e === 0 ? 0.15 : 0.1);
+      } else {
+        stringPulse(
+          keys,
+          rand,
+          t,
+          [triad[0], triad[2]],
+          beat * 0.32,
+          0.17 + bar * 0.02,
+        );
+        if (e % 2 === 0) kick(dry, rand, t, 0.18 + bar * 0.03);
+      }
+    }
+    if (sc.style === "piano") sub(dry, t0, barEnd, root, 0.022);
+  }
+
+  // Frame 1: the hook lands.
+  lowBoom(dry, rand, 0.01, 0.12);
+  kick(dry, rand, 0.01, 0.42);
+  bell(fx, rand, 0.03, noteName(R + 36), 0.035, 0.1);
+
+  // Sold-out stamps land one by one.
+  if (v.hook === "sold")
+    [8, 16, 24, 32].forEach((f, k) => {
+      typeClick(fx, rand, f / fps, 0.3, (k % 2 ? 1 : -1) * 0.2);
+      kick(dry, rand, f / fps, 0.24);
+    });
+
+  // A clock ticks on every beat until the call to action.
+  if (sc.ticks)
+    for (let k = 0; k * beat < cta - 0.01; k++)
+      typeClick(fx, rand, k * beat, k % 2 ? 0.12 : 0.16, k % 2 ? 0.3 : -0.3);
+
+  // Each piece slides in on the beat; its old price is struck a beat later.
+  starts.forEach((t, k) => {
+    whoosh(
+      fx,
+      rand,
+      t - 0.2,
+      0.3,
+      0.045,
+      1500,
+      4000,
+      k % 2 ? 0.4 : -0.4,
+      k % 2 ? -0.4 : 0.4,
+    );
+    kick(dry, rand, t, 0.34 + (k / starts.length) * 0.08);
+    const strike = t + 13 / fps;
+    typeClick(fx, rand, strike, 0.28, 0.1);
+    bell(
+      fx,
+      rand,
+      strike + 0.01,
+      noteName(R + 24 + [7, 12, 16, 19, 24, 28][k % 6]),
+      0.028,
+      0.15,
+    );
+  });
+
+  // Call to action: resolve to the major tonic.
+  const home = [0, 4, 7, 12].map((o) => noteName(R + o));
+  riser(dry, rand, cta - 0.9, 0.9, 0.05);
+  lowBoom(dry, rand, cta, 0.12);
+  kick(dry, rand, cta, 0.4);
+  pad(keys, rand, cta, DURATION, home, 0.6, {
+    attack: 0.05,
+    release: 1.6,
+    tilt: 5,
+  });
+  sub(dry, cta, DURATION, noteName(R - 12), 0.03);
+  if (sc.style === "piano") {
+    home.forEach((n, k) =>
+      feltPiano(
+        pianoCh,
+        rand,
+        cta + k * 0.012,
+        noteName(midi(n) + 12),
+        0.6,
+        2.0,
+        (k - 1.5) * 0.15,
+      ),
+    );
+  } else {
+    home
+      .slice(0, 3)
+      .forEach((n, k) =>
+        marimba(
+          keys,
+          rand,
+          cta + k * 0.02,
+          noteName(midi(n) + 24),
+          0.14,
+          (k - 1) * 0.3,
+        ),
+      );
+  }
+  bell(fx, rand, cta + 0.01, noteName(R + 36), 0.05, 0.1);
+  bell(fx, rand, cta + 0.5, noteName(R + 31), 0.03, -0.2);
+  [0.75, 1.0, 1.25, 1.5].forEach((d, k) =>
+    marimba(
+      keys,
+      rand,
+      cta + d,
+      noteName(R + 31 - [0, 3, 7, 12][k]),
+      0.07 - k * 0.012,
+      k % 2 ? 0.3 : -0.3,
+    ),
+  );
+
+  master(
+    dry,
+    send,
+    {
+      t60: sc.style === "piano" ? 2.0 : 1.2,
+      damping: 0.48,
+      predelay: 0.015,
+      size: sc.style === "piano" ? 1.0 : 0.75,
+    },
+    sc.style === "piano" ? 0.9 : 0.35,
+    path.join(ROOT, "assets", "audio", `w40-${slug}-score.wav`),
+  );
+};
+
+const W40_SLUGS = [
+  "teaser",
+  "friday",
+  "sat-a",
+  "sat-b",
+  "sat-c",
+  "sun-a",
+  "sun-b",
+  "sun-c",
+];
+
 /* ------------------------------------------------------------------ */
 
 const which = process.argv[2] ?? "all";
@@ -1625,3 +1887,5 @@ if (which === "bf-set" || which === "all") bfSet();
 if (which === "bogo-tonight" || which === "all") bogoTonight();
 if (which === "bogo-pair" || which === "all") bogoPair();
 if (which === "bogo-last-day" || which === "all") bogoLastDay();
+if (which === "w40" || which === "all") W40_SLUGS.forEach(w40);
+else if (which.startsWith("w40-")) w40(which.slice(4));

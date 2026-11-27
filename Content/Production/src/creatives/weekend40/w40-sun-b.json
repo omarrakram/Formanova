@@ -1,0 +1,62 @@
+{
+  "id": "W40SunB",
+  "slug": "sun-b",
+  "creative": "creative-06-sun-b",
+  "lang": "en",
+  "hook": "big40",
+  "hookEnd": 60,
+  "ribbon": "LAST DAY · ENDS 11:59 PM TONIGHT",
+  "hookLines": ["LAST DAY", "OFF EVERYTHING", "Ends tonight at 11:59 PM."],
+  "hero": {
+    "id": "cobalt-centerpiece",
+    "image": 2,
+    "focus": [50, 58]
+  },
+  "productsHeadline": "Last day at 40% off",
+  "products": [
+    {
+      "id": "jardiniere",
+      "image": 4,
+      "focus": [50, 62]
+    },
+    {
+      "id": "sevres-candlestick",
+      "image": 3,
+      "focus": [50, 55]
+    },
+    {
+      "id": "elephant-side-table",
+      "image": 2,
+      "focus": [58, 50]
+    },
+    {
+      "id": "canton-cachepot",
+      "image": 3,
+      "focus": [50, 48]
+    },
+    {
+      "id": "chinoiserie-potiches-pair",
+      "image": 4,
+      "focus": [50, 50]
+    },
+    {
+      "id": "chinoiserie-egg",
+      "image": 5,
+      "focus": [50, 50]
+    }
+  ],
+  "priceNote": "40% OFF · ENDS 11:59 PM TONIGHT",
+  "cta": {
+    "title": "Ends tonight at 11:59 PM.",
+    "deadline": ["40% OFF EVERYTHING", "Prices go back up tomorrow."],
+    "note": "One of a kind. Once it's gone, it's gone.",
+    "button": "SHOP NOW"
+  },
+  "score": {
+    "style": "piano",
+    "mode": "major",
+    "root": "D",
+    "ticks": true,
+    "seed": 4701
+  }
+}
