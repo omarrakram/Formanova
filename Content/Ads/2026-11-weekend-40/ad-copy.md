@@ -11,7 +11,7 @@
 | 02 · Saturday A (Arabic) · 03 · Saturday B (English) · 04 · Saturday C (Arabic) | Ads + organic | Sat 00:00 → 11:59 PM |
 | 05 · Sunday A (Arabic) · 06 · Sunday B (English) · 07 · Sunday C (Arabic) | Ads + organic | Sun 00:00 → 11:59 PM |
 
-On Meta, every ad film runs every day: each original film on its own day, and on the other days its all-weekend re-cut (see the end of this file), whose date lines say "until Sunday 11:59 PM". Organic posts use the originals on their own day.
+On Meta, all seven ad films run in one ad set from Friday 8 PM to Sunday 11:59 PM, in their all-weekend wording (see the end of this file), whose date lines say "until Sunday 11:59 PM". Organic posts use the originals on their own day.
 
 Every ad links to `https://www.formanovavintage.com/collections/all-products` with `utm_source=meta&utm_medium=paid_social&utm_campaign=2026-11-weekend-40&utm_content=w40-<film>-15s` (`w40-<film>-wknd-15s` for a re-cut).
 
@@ -224,9 +224,9 @@ One of a kind. Once it's gone, it's gone.
 
 ## All-weekend re-cuts (ads only)
 
-Same films, pieces and prices; only the date lines change (listed in the [README](README.md#all-weekend-re-cuts)). Each runs on the days its original's wording would be false.
+Same films, pieces and prices; only the date lines change (listed in the [README](README.md#all-weekend-re-cuts)). These are the versions the Meta ads use, from Friday 8 PM to Sunday 11:59 PM.
 
-### Friday · all weekend (Arabic) · runs Sat, Sun
+### Friday · all weekend (Arabic) 
 ```
 خصم 40% على كل القطع في فورمانوفا 🖤
 لحد الأحد 29/11 الساعة 11:59 مساءً بس.
@@ -236,7 +236,7 @@ Same films, pieces and prices; only the date lines change (listed in the [README
 ```
 **Headline:** خصم 40% على كل القطع · **Description:** لحد الأحد 11:59 مساءً بس
 
-### Saturday A · all weekend (Arabic) · runs Fri, Sun
+### Saturday A · all weekend (Arabic) 
 ```
 خصم 40% على كل القطع… لحد الأحد 11:59 مساءً بس ⏳
 قطع فريدة… لما تخلص مش هترجع.
@@ -244,7 +244,7 @@ Same films, pieces and prices; only the date lines change (listed in the [README
 ```
 **Headline:** لحد الأحد بالليل بس · **Description:** خصم 40% على كل القطع
 
-### Saturday C · all weekend (Arabic) · runs Fri, Sun
+### Saturday C · all weekend (Arabic) 
 ```
 وفّر لحد 18,000 جنيه 🖤
 خصم 40% على كل القطع في فورمانوفا: الجردينة المطلية بماء الذهب عيار 24 من 44,999.99 بقت 26,999.99 جنيه.
@@ -252,7 +252,7 @@ Same films, pieces and prices; only the date lines change (listed in the [README
 ```
 **Headline:** وفّر لحد 18,000 جنيه · **Description:** خصم 40% لحد الأحد 11:59 مساءً
 
-### Sunday A · all weekend (Arabic) · runs Fri, Sat
+### Sunday A · all weekend (Arabic) 
 ```
 لحد الأحد بس ⏰
 خصم 40% على كل القطع بيخلص الأحد 29/11 الساعة 11:59 مساءً. بعد الأحد الأسعار بترجع.
@@ -260,7 +260,7 @@ Same films, pieces and prices; only the date lines change (listed in the [README
 ```
 **Headline:** الخصم بيخلص الأحد 11:59 مساءً · **Description:** خصم 40% على كل القطع
 
-### Sunday B · all weekend (English) · runs Fri, Sat
+### Sunday B · all weekend (English) 
 ```
 This weekend: 40% off everything, until Sunday 29 November at 11:59 PM.
 Prices go back up on Monday.
@@ -270,7 +270,7 @@ Applied automatically at checkout. Delivery across Egypt.
 ```
 **Headline:** 40% off everything · this weekend · **Description:** Ends Sunday 11:59 PM
 
-### Sunday C · all weekend (Arabic) · runs Fri, Sat
+### Sunday C · all weekend (Arabic) 
 ```
 القطع دي نفدت… والباقي بخصم 40% لحد الأحد 11:59 مساءً بس.
 قطع فريدة… لما تخلص مش هترجع.

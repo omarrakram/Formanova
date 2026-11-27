@@ -2,7 +2,7 @@
 
 **Friday 27 November, 8 PM → Sunday 29 November, 11:59 PM** · 40% off every piece, no minimum, applied automatically at checkout, no code.
 
-Eight 15-second vertical films: an organic teaser for Friday afternoon, then seven ads focused on urgency (one for Friday night, three for Saturday, three for Sunday). Six of the ads also have an all-weekend re-cut, and every ad film has a 4:5 version for the feeds, so all seven run on Meta every day from 8 PM on Friday to 11:59 PM on Sunday.
+Eight 15-second vertical films: an organic teaser for Friday afternoon, then seven ads focused on urgency (one for Friday night, three for Saturday, three for Sunday). Six of the ads also have an all-weekend re-cut, and every ad film has a 4:5 version for the feeds, so all seven run on Meta from 8 PM on Friday to 11:59 PM on Sunday.
 
 <table>
 <tr>
@@ -63,13 +63,9 @@ Hooks, on-screen text and the pieces in each film are listed in [ad-copy.md](ad-
 
 ## Meta Ads
 
-One Sales campaign, "40% Weekend · 27–29 Nov 2026", optimised for purchases on the "Forma new" pixel, runs from Friday 8 PM, when the discount starts, to Sunday 11:59 PM. There is one ad set per day, and every ad film runs every day: each day uses the original films whose wording is true that day, and the all-weekend re-cuts cover the rest.
+One Sales campaign, "40% Weekend · 27–29 Nov 2026", optimised for purchases on the "Forma new" pixel. It has one ad set, which runs from Friday 8 PM, when the discount starts, to Sunday 11:59 PM with a lifetime budget of EGP 3,000. Meta paces the spend across the weekend.
 
-| Ad set | Schedule (Cairo) | Lifetime budget | Original films | All-weekend re-cuts |
-|---|---|---|---|---|
-| Fri 27 Nov | 8 PM → 11:59 PM | EGP 500 | 01 Friday, 03 Already gone | Sat A, Sat C, Sun A, Sun B, Sun C |
-| Sat 28 Nov | 00:00 → 11:59 PM | EGP 1,100 | 02 Sat A, 03 Already gone, 04 Sat C | Friday, Sun A, Sun B, Sun C |
-| Sun 29 Nov | 00:00 → 11:59 PM | EGP 1,400 | 03 Already gone, 05 Sun A, 06 Sun B, 07 Sun C | Friday, Sat A, Sat C |
+All seven ad films run for the whole window in their all-weekend wording ("until Sunday 11:59 PM"): Friday, Saturday A, "Already gone" (03, already true all weekend), Saturday C, Sunday A, Sunday B and Sunday C. The originals, with "tonight", "tomorrow" and "last day" lines, are for organic posts on their own day.
 
 - **Placements:** Facebook and Instagram only (feed, Stories and Reels), with Advantage+ placements off. Each ad shows the film's 4:5 version in the feeds and the 9:16 master in Stories and Reels.
 - **Audience:** Egypt, 18–65, Advantage+ audience, with Instagram and Facebook Page engagers (last 365 days) and antiques, collectibles, vases, Bohemian and luxury interests as suggestions.
@@ -79,7 +75,7 @@ Copy, headlines and links are in [ad-copy.md](ad-copy.md).
 
 ### All-weekend re-cuts
 
-Six films state the end of the sale relative to their own day ("tonight", "until tomorrow, Sunday", "last day"), which would be false on the other days. Each has a re-cut, `formanova-w40-<film>-wknd-15s.mp4` in the same folder, whose date lines say "until Sunday 11:59 PM" instead. The pieces, prices, pictures and music are unchanged; "Already gone" (03) already reads true all weekend.
+Six films state the end of the sale relative to their own day ("tonight", "until tomorrow, Sunday", "last day"), which would be false on the other days, so the ads use re-cuts instead. Each has a re-cut, `formanova-w40-<film>-wknd-15s.mp4` in the same folder, whose date lines say "until Sunday 11:59 PM" instead. The pieces, prices, pictures and music are unchanged; "Already gone" (03) already reads true all weekend.
 
 | Re-cut | What changes |
 |---|---|
