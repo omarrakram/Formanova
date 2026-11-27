@@ -45,6 +45,20 @@ Every ad links to `https://www.formanovavintage.com/collections/all-products` wi
 ```
 **Headline:** خصم 40% على كل القطع · **Description:** لحد الأحد 11:59 مساءً بس · **CTA:** Shop Now
 
+**Instagram caption** (Reel and Story)
+```
+🖤 خصم 40% على كل القطع في فورمانوفا
+من الليلة الساعة 8 مساءً لحد الأحد 29/11 الساعة 11:59 مساءً بس.
+
+✨ الخصم أوتوماتيك عند الدفع، من غير كود
+🚚 توصيل لكل محافظات مصر
+
+قطع فريدة… لما تخلص مش هترجع.
+🛒 formanovavintage.com (اللينك في البايو)
+
+#فورمانوفا #أنتيكات #فينتاج #ديكور #FormanovaVintage #Antiques #VintageDecor
+```
+
 ## 02 · Saturday A (ad, Arabic)
 
 **On screen:** «خصم 40%» · «على كل القطع» · «لحد بكرة الأحد 11:59 مساءً بس» · six pieces: jardinère EGP 26,999.99 · spelter statue EGP 7,049.99 · Bleu Blanc parrot EGP 4,199.99 · pair of chinoiserie potiches EGP 1,349.99 · chinoiserie egg EGP 1,079.99 · Satsuma potiche (21 cm) EGP 689.99 · end card «الخصم بيخلص بكرة 11:59 مساءً»
@@ -56,6 +70,19 @@ Every ad links to `https://www.formanovavintage.com/collections/all-products` wi
 الخصم أوتوماتيك عند الدفع، من غير كود. توصيل لكل محافظات مصر.
 ```
 **Headline:** لحد بكرة بالليل بس · **Description:** خصم 40% على كل القطع
+
+**Instagram caption** (Reel and Story)
+```
+⏳ خصم 40% على كل القطع… لحد بكرة الأحد 11:59 مساءً بس
+قطع فريدة… لما تخلص مش هترجع.
+
+✨ الخصم أوتوماتيك عند الدفع، من غير كود
+🚚 توصيل لكل محافظات مصر
+
+🛒 formanovavintage.com (اللينك في البايو)
+
+#فورمانوفا #أنتيكات #فينتاج #ديكور #FormanovaVintage #Antiques #VintageDecor
+```
 
 ## 03 · Saturday B (ad, English)
 
@@ -71,6 +98,21 @@ Applied automatically at checkout. Delivery across Egypt.
 ```
 **Headline:** 40% off everything, until Sunday · **Description:** Ends Sunday 11:59 PM
 
+**Instagram caption** (Reel and Story)
+```
+Already gone. 🤍
+These pieces sold out this month.
+
+Everything else is 40% off until Sunday 29 November at 11:59 PM.
+▫️ Applied automatically at checkout, no code
+▫️ Delivery across Egypt
+
+One of a kind. Once it's gone, it's gone.
+🛒 formanovavintage.com (link in bio)
+
+#FormanovaVintage #VintageDecor #Antiques #InteriorDesign
+```
+
 ## 04 · Saturday C (ad, Arabic)
 
 **On screen:** «وفّر لحد» **EGP 18,000** «على الجردينة المطلية بماء الذهب» · «خصم 40% على كل القطع لحد بكرة بالليل» · four pieces with their savings: Sèvres pair (save EGP 5,760) · cobalt centerpiece (EGP 5,100) · spelter statue (EGP 4,700) · elephant side table (EGP 2,940) · end card «الخصم بيخلص بكرة 11:59 مساءً»
@@ -83,6 +125,21 @@ Applied automatically at checkout. Delivery across Egypt.
 ```
 **Headline:** وفّر لحد 18,000 جنيه · **Description:** خصم 40% لحد الأحد 11:59 مساءً
 
+**Instagram caption** (Reel and Story)
+```
+💰 وفّر لحد 18,000 جنيه
+خصم 40% على كل القطع في فورمانوفا:
+الجردينة المطلية بماء الذهب عيار 24 من 44,999.99 بقت 26,999.99 جنيه بس.
+
+✨ الخصم أوتوماتيك عند الدفع، من غير كود
+🚚 توصيل لكل محافظات مصر
+⏳ لحد بكرة الأحد 11:59 مساءً بس
+
+🛒 formanovavintage.com (اللينك في البايو)
+
+#فورمانوفا #أنتيكات #فينتاج #ديكور #FormanovaVintage #Antiques #VintageDecor
+```
+
 ## 05 · Sunday A (ad, Arabic)
 
 **On screen:** «آخر يوم» over a clock at 11:58 · «خصم 40% بيخلص النهارده 11:59 مساءً» · «على كل القطع» · four pieces: spelter statue EGP 7,049.99 · Bleu Blanc parrot EGP 4,199.99 · chinoiserie cachepot EGP 3,239.99 · Sèvres pair EGP 8,639.99 · end card «النهارده آخر يوم» · «بكرة الأسعار بترجع»
@@ -94,6 +151,20 @@ Applied automatically at checkout. Delivery across Egypt.
 أوتوماتيك عند الدفع، من غير كود. توصيل لكل محافظات مصر.
 ```
 **Headline:** النهارده آخر يوم · **Description:** خصم 40% على كل القطع
+
+**Instagram caption** (Reel and Story)
+```
+⏰ آخر يوم!
+خصم 40% على كل القطع في فورمانوفا بيخلص النهارده الساعة 11:59 مساءً.
+بكرة الأسعار بترجع.
+
+✨ الخصم أوتوماتيك عند الدفع، من غير كود
+🚚 توصيل لكل محافظات مصر
+
+🛒 formanovavintage.com (اللينك في البايو)
+
+#فورمانوفا #أنتيكات #فينتاج #ديكور #FormanovaVintage #Antiques #VintageDecor
+```
 
 ## 06 · Sunday B (ad, English)
 
@@ -109,6 +180,20 @@ Applied automatically at checkout.
 ```
 **Headline:** Last day · 40% off everything · **Description:** Ends tonight at 11:59 PM
 
+**Instagram caption** (Reel and Story)
+```
+Last day. ⏰
+40% off everything ends tonight at 11:59 PM. Prices go back up tomorrow.
+
+▫️ Applied automatically at checkout, no code
+▫️ Delivery across Egypt
+
+One of a kind. Once it's gone, it's gone.
+🛒 formanovavintage.com (link in bio)
+
+#FormanovaVintage #VintageDecor #Antiques #InteriorDesign
+```
+
 ## 07 · Sunday C (ad, Arabic)
 
 **On screen:** «القطع دي نفدت» over four pieces stamped «نفدت» (cloisonné jar, Bohemian crystal vase, Czech crystal vase, Italian Murano vase; all sold out this month) · «والباقي بخصم 40% لحد النهارده 11:59 مساءً» · four pieces: elephant side table EGP 4,409.99 · cobalt centerpiece EGP 7,649.99 · Satsuma potiche (21 cm) EGP 689.99 · Japanese crackle platter EGP 2,669.99 · end card «آخر يوم… الخصم بيخلص النهارده»
@@ -120,6 +205,20 @@ Applied automatically at checkout.
 أوتوماتيك عند الدفع، من غير كود.
 ```
 **Headline:** آخر يوم بخصم 40% · **Description:** لحد النهارده 11:59 مساءً
+
+**Instagram caption** (Reel and Story)
+```
+القطع دي نفدت… 🖤
+والباقي بخصم 40% لحد النهارده الساعة 11:59 مساءً بس.
+
+قطع فريدة… لما تخلص مش هترجع.
+✨ الخصم أوتوماتيك عند الدفع، من غير كود
+🚚 توصيل لكل محافظات مصر
+
+🛒 formanovavintage.com (اللينك في البايو)
+
+#فورمانوفا #أنتيكات #فينتاج #ديكور #FormanovaVintage #Antiques #VintageDecor
+```
 
 ---
 
