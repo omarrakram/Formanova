@@ -20,6 +20,61 @@ This repository is the brand's content studio: campaigns, brand standards and th
 
 ### 40% off everything: Fri 27 Nov, 8 PM → Sun 29 Nov, 11:59 PM
 
+<table>
+<tr>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-00-teaser/final/formanova-w40-teaser-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-00-teaser/cover.jpg" width="150" alt="Teaser: the Arabic line tonight at 8 over a gold clock at 7:58, with 40% off every piece until Sunday 11:59 PM"></a>
+<br><b>00 · Teaser</b>
+<br><sub>Organic only · Fri before 8 PM · Arabic</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-00-teaser/final/formanova-w40-teaser-15s.mp4">MP4</a>
+</td>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-01-friday/final/formanova-w40-friday-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-01-friday/cover.jpg" width="150" alt="Friday: a giant gold 40% with the Arabic line on every piece at Formanova, from tonight at 8 until Sunday 11:59 PM, above the gold-plated jardinère"></a>
+<br><b>01 · Friday</b>
+<br><sub>Ad · Fri 7:30–11:59 PM · Arabic</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-01-friday/final/formanova-w40-friday-15s.mp4">MP4</a>
+</td>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-02-sat-a/final/formanova-w40-sat-a-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-02-sat-a/cover.jpg" width="150" alt="Saturday A: a giant gold 40% with the Arabic line on every piece, until tomorrow, Sunday, 11:59 PM only, above the Sèvres porcelain bird candlesticks"></a>
+<br><b>02 · Saturday A</b>
+<br><sub>Ad · Saturday · Arabic</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-02-sat-a/final/formanova-w40-sat-a-15s.mp4">MP4</a>
+</td>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-03-sat-b/final/formanova-w40-sat-b-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-03-sat-b/cover.jpg" width="150" alt="Saturday B: Already gone. Four pieces stamped SOLD OUT, then everything else is 40% off until Sunday 11:59 PM"></a>
+<br><b>03 · Saturday B</b>
+<br><sub>Ad · Saturday · English</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-03-sat-b/final/formanova-w40-sat-b-15s.mp4">MP4</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-04-sat-c/final/formanova-w40-sat-c-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-04-sat-c/cover.jpg" width="150" alt="Saturday C: the Arabic line save up to EGP 18,000 on the gold-plated jardinère, with 40% off every piece until tomorrow night"></a>
+<br><b>04 · Saturday C</b>
+<br><sub>Ad · Saturday · Arabic</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-04-sat-c/final/formanova-w40-sat-c-15s.mp4">MP4</a>
+</td>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-05-sun-a/final/formanova-w40-sun-a-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-05-sun-a/cover.jpg" width="150" alt="Sunday A: the Arabic line last day over a gold clock at 11:58, the 40% discount ends tonight at 11:59 PM"></a>
+<br><b>05 · Sunday A</b>
+<br><sub>Ad · Sunday · Arabic</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-05-sun-a/final/formanova-w40-sun-a-15s.mp4">MP4</a>
+</td>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-06-sun-b/final/formanova-w40-sun-b-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-06-sun-b/cover.jpg" width="150" alt="Sunday B: LAST DAY, a giant gold 40% OFF EVERYTHING, ends tonight at 11:59 PM, above the cobalt centerpiece"></a>
+<br><b>06 · Sunday B</b>
+<br><sub>Ad · Sunday · English</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-06-sun-b/final/formanova-w40-sun-b-15s.mp4">MP4</a>
+</td>
+<td align="center" width="25%" valign="top">
+<a href="Content/Ads/2026-11-weekend-40/creative-07-sun-c/final/formanova-w40-sun-c-15s.mp4"><img src="Content/Ads/2026-11-weekend-40/creative-07-sun-c/cover.jpg" width="150" alt="Sunday C: the Arabic line these pieces sold out, over four pieces stamped sold out, and the rest at 40% off until tonight 11:59 PM"></a>
+<br><b>07 · Sunday C</b>
+<br><sub>Ad · Sunday · Arabic</sub>
+<br><a href="Content/Ads/2026-11-weekend-40/creative-07-sun-c/final/formanova-w40-sun-c-15s.mp4">MP4</a>
+</td>
+</tr>
+</table>
+
 Eight 15-second films (an organic teaser and seven urgency ads, one for Friday night and three each for Saturday and Sunday) with the Meta campaign that runs them. See the [campaign overview](Content/Ads/2026-11-weekend-40/README.md) and the [ad copy and captions](Content/Ads/2026-11-weekend-40/ad-copy.md).
 
 ### Buy 1 Get 1 Free weekend: Fri 20 Nov, 7:30 PM → Sun 22 Nov, midnight · the lower-priced piece is free
