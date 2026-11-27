@@ -1,0 +1,72 @@
+{
+  "id": "W40SunAWknd",
+  "slug": "sun-a-wknd",
+  "scoreSlug": "sun-a",
+  "creative": "creative-05-sun-a",
+  "lang": "ar",
+  "hook": "clock",
+  "hookEnd": 90,
+  "ribbon": "40% OFF EVERYTHING · ENDS SUNDAY",
+  "hookLines": [
+    "لحد الأحد بس",
+    "خصم 40% بيخلص الأحد 11:59 مساءً",
+    "على كل القطع"
+  ],
+  "clock": [
+    11,
+    58,
+    30
+  ],
+  "productsHeadline": "خصم 40% لحد الأحد",
+  "products": [
+    {
+      "id": "spelter-dogs",
+      "image": 3,
+      "focus": [
+        50,
+        58
+      ]
+    },
+    {
+      "id": "bleu-blanc-parrot",
+      "image": 1,
+      "focus": [
+        50,
+        40
+      ]
+    },
+    {
+      "id": "chinoiserie-cachepot",
+      "image": 1,
+      "focus": [
+        57,
+        52
+      ]
+    },
+    {
+      "id": "sevres-candlestick",
+      "image": 5,
+      "focus": [
+        50,
+        62
+      ]
+    }
+  ],
+  "priceNote": "لحد الأحد 11:59 مساءً",
+  "cta": {
+    "title": "الخصم بيخلص الأحد 11:59 مساءً",
+    "deadline": [
+      "خصم 40% على كل القطع",
+      "لحد الأحد 29/11 الساعة 11:59 مساءً"
+    ],
+    "note": "بعد الأحد الأسعار بترجع",
+    "button": "تسوّق الآن"
+  },
+  "score": {
+    "style": "darbuka",
+    "mode": "hijaz",
+    "root": "E",
+    "ticks": true,
+    "seed": 4601
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "W40SatCWknd",
+  "slug": "sat-c-wknd",
+  "scoreSlug": "sat-c",
+  "creative": "creative-04-sat-c",
+  "lang": "ar",
+  "hook": "save",
+  "hookEnd": 90,
+  "ribbon": "SAVE 40% · ENDS SUNDAY",
+  "hookLines": [
+    "وفّر لحد",
+    "على الجردينة المطلية بماء الذهب",
+    "خصم 40% على كل القطع لحد الأحد بالليل"
+  ],
+  "hero": {
+    "id": "jardiniere",
+    "image": 4,
+    "focus": [
+      50,
+      58
+    ]
+  },
+  "productsHeadline": "وفّر على كل قطعة",
+  "products": [
+    {
+      "id": "sevres-candlestick",
+      "image": 8,
+      "focus": [
+        50,
+        50
+      ]
+    },
+    {
+      "id": "cobalt-centerpiece",
+      "image": 2,
+      "focus": [
+        50,
+        58
+      ]
+    },
+    {
+      "id": "spelter-dogs",
+      "image": 3,
+      "focus": [
+        50,
+        58
+      ]
+    },
+    {
+      "id": "elephant-side-table",
+      "image": 2,
+      "focus": [
+        58,
+        50
+      ]
+    }
+  ],
+  "priceNote": "save",
+  "cta": {
+    "title": "الخصم بيخلص الأحد 11:59 مساءً",
+    "deadline": [
+      "خصم 40% على كل القطع",
+      "لحد الأحد 29/11 الساعة 11:59 مساءً"
+    ],
+    "note": "قطع فريدة… لما تخلص مش هترجع",
+    "button": "تسوّق الآن"
+  },
+  "score": {
+    "style": "darbuka",
+    "mode": "minor",
+    "root": "G",
+    "ticks": false,
+    "seed": 4501
+  }
+}

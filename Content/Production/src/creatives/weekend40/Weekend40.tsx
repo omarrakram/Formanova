@@ -13,12 +13,18 @@ import { EASE_IN, EASE_IN_OUT, EASE_OUT, progress } from "../../lib/anim";
 import { getImage, getProduct } from "../../lib/products";
 import { assertSoldOut, fortyOff } from "../../lib/weekend40";
 import friday from "./w40-friday.json";
+import fridayWknd from "./w40-friday-wknd.json";
 import satA from "./w40-sat-a.json";
+import satAWknd from "./w40-sat-a-wknd.json";
 import satB from "./w40-sat-b.json";
 import satC from "./w40-sat-c.json";
+import satCWknd from "./w40-sat-c-wknd.json";
 import sunA from "./w40-sun-a.json";
+import sunAWknd from "./w40-sun-a-wknd.json";
 import sunB from "./w40-sun-b.json";
+import sunBWknd from "./w40-sun-b-wknd.json";
 import sunC from "./w40-sun-c.json";
+import sunCWknd from "./w40-sun-c-wknd.json";
 import teaser from "./w40-teaser.json";
 
 /**
@@ -34,6 +40,8 @@ type Piece = { id: string; image: number; focus: number[] };
 type Variant = {
   id: string;
   slug: string;
+  /** Score to reuse (an all-weekend re-cut plays its original's music). */
+  scoreSlug?: string;
   lang: "ar" | "en";
   hook: "big40" | "clock" | "sold" | "save" | "teaser";
   hookEnd: number;
@@ -57,6 +65,13 @@ const VARIANTS = {
   W40SunA: sunA,
   W40SunB: sunB,
   W40SunC: sunC,
+  // All-weekend re-cuts: same films, date lines that hold from Friday to Sunday.
+  W40FridayWknd: fridayWknd,
+  W40SatAWknd: satAWknd,
+  W40SatCWknd: satCWknd,
+  W40SunAWknd: sunAWknd,
+  W40SunBWknd: sunBWknd,
+  W40SunCWknd: sunCWknd,
 } as unknown as Record<string, Variant>;
 
 export const WEEKEND40_IDS = Object.keys(VARIANTS);
@@ -925,7 +940,7 @@ export const Weekend40: React.FC<Weekend40Props> = ({
       </Sequence>
       <Grain opacity={0.045} />
       {audio ? (
-        <Audio src={staticFile(`audio/w40-${v.slug}-score.wav`)} />
+        <Audio src={staticFile(`audio/w40-${v.scoreSlug ?? v.slug}-score.wav`)} />
       ) : null}
       {showSafeZones ? <SafeZoneGuide /> : null}
     </AbsoluteFill>

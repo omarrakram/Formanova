@@ -1,0 +1,91 @@
+{
+  "id": "W40SatAWknd",
+  "slug": "sat-a-wknd",
+  "scoreSlug": "sat-a",
+  "creative": "creative-02-sat-a",
+  "lang": "ar",
+  "hook": "big40",
+  "hookEnd": 60,
+  "ribbon": "40% OFF EVERYTHING · ENDS SUNDAY",
+  "hookLines": [
+    "خصم",
+    "على كل القطع",
+    "لحد الأحد 11:59 مساءً بس"
+  ],
+  "hero": {
+    "id": "sevres-candlestick",
+    "image": 3,
+    "focus": [
+      50,
+      55
+    ]
+  },
+  "productsHeadline": "لحد الأحد بالليل بس",
+  "products": [
+    {
+      "id": "jardiniere",
+      "image": 4,
+      "focus": [
+        50,
+        62
+      ]
+    },
+    {
+      "id": "spelter-dogs",
+      "image": 3,
+      "focus": [
+        50,
+        58
+      ]
+    },
+    {
+      "id": "bleu-blanc-parrot",
+      "image": 1,
+      "focus": [
+        50,
+        40
+      ]
+    },
+    {
+      "id": "chinoiserie-potiches-pair",
+      "image": 2,
+      "focus": [
+        50,
+        50
+      ]
+    },
+    {
+      "id": "chinoiserie-egg",
+      "image": 1,
+      "focus": [
+        50,
+        50
+      ]
+    },
+    {
+      "id": "satsuma-potiche",
+      "image": 2,
+      "focus": [
+        50,
+        50
+      ]
+    }
+  ],
+  "priceNote": "لحد الأحد 11:59 مساءً",
+  "cta": {
+    "title": "الخصم بيخلص الأحد 11:59 مساءً",
+    "deadline": [
+      "خصم 40% على كل القطع",
+      "لحد الأحد 29/11 الساعة 11:59 مساءً"
+    ],
+    "note": "قطع فريدة… لما تخلص مش هترجع",
+    "button": "تسوّق الآن"
+  },
+  "score": {
+    "style": "darbuka",
+    "mode": "minor",
+    "root": "A",
+    "ticks": false,
+    "seed": 4301
+  }
+}

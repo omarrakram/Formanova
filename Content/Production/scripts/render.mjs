@@ -120,7 +120,12 @@ for (const file of fs
   CREATIVES.push({
     id: v.id,
     title: `Formanova - 40% Weekend: ${v.slug} (15s)`,
-    score: path.join(ROOT, "assets", "audio", `w40-${v.slug}-score.wav`),
+    score: path.join(
+      ROOT,
+      "assets",
+      "audio",
+      `w40-${v.scoreSlug ?? v.slug}-score.wav`,
+    ),
     output: path.join(
       W40,
       v.creative,

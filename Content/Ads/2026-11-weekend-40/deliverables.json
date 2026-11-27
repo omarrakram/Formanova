@@ -62,6 +62,46 @@
       }
     },
     {
+      "id": "creative-01-friday-wknd",
+      "title": "Friday · all-weekend re-cut",
+      "file": "creative-01-friday/final/formanova-w40-friday-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-01-friday-wknd-4x5",
+      "title": "Friday · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-01-friday/final/formanova-w40-friday-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-02-sat-a",
       "title": "Saturday A · 40% (Egyptian Arabic)",
       "file": "creative-02-sat-a/final/formanova-w40-sat-a-15s.mp4",
@@ -85,6 +125,46 @@
       "id": "creative-02-sat-a-4x5",
       "title": "Saturday A · 40% (Egyptian Arabic) · 4:5 feed version",
       "file": "creative-02-sat-a/final/formanova-w40-sat-a-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-sat-a-wknd",
+      "title": "Saturday A · all-weekend re-cut",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-02-sat-a-wknd-4x5",
+      "title": "Saturday A · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-02-sat-a/final/formanova-w40-sat-a-wknd-15s-4x5.mp4",
       "spec": {
         "container": "mp4",
         "videoCodec": "h264",
@@ -182,6 +262,46 @@
       }
     },
     {
+      "id": "creative-04-sat-c-wknd",
+      "title": "Saturday C · all-weekend re-cut",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-04-sat-c-wknd-4x5",
+      "title": "Saturday C · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-04-sat-c/final/formanova-w40-sat-c-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-05-sun-a",
       "title": "Sunday A · Last day clock (Egyptian Arabic)",
       "file": "creative-05-sun-a/final/formanova-w40-sun-a-15s.mp4",
@@ -205,6 +325,46 @@
       "id": "creative-05-sun-a-4x5",
       "title": "Sunday A · Last day clock (Egyptian Arabic) · 4:5 feed version",
       "file": "creative-05-sun-a/final/formanova-w40-sun-a-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-05-sun-a-wknd",
+      "title": "Sunday A · all-weekend re-cut",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-05-sun-a-wknd-4x5",
+      "title": "Sunday A · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-05-sun-a/final/formanova-w40-sun-a-wknd-15s-4x5.mp4",
       "spec": {
         "container": "mp4",
         "videoCodec": "h264",
@@ -262,6 +422,46 @@
       }
     },
     {
+      "id": "creative-06-sun-b-wknd",
+      "title": "Sunday B · all-weekend re-cut",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-06-sun-b-wknd-4x5",
+      "title": "Sunday B · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-06-sun-b/final/formanova-w40-sun-b-wknd-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
       "id": "creative-07-sun-c",
       "title": "Sunday C · Sold out (Egyptian Arabic)",
       "file": "creative-07-sun-c/final/formanova-w40-sun-c-15s.mp4",
@@ -285,6 +485,46 @@
       "id": "creative-07-sun-c-4x5",
       "title": "Sunday C · Sold out (Egyptian Arabic) · 4:5 feed version",
       "file": "creative-07-sun-c/final/formanova-w40-sun-c-15s-4x5.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1350,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c-wknd",
+      "title": "Sunday C · all-weekend re-cut",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-wknd-15s.mp4",
+      "spec": {
+        "container": "mp4",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "colorSpace": "bt709",
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "frames": 450,
+        "durationSeconds": 15.0,
+        "audioCodec": "aac",
+        "audioSampleRate": 48000,
+        "audioChannels": 2,
+        "maxSizeMB": 50
+      }
+    },
+    {
+      "id": "creative-07-sun-c-wknd-4x5",
+      "title": "Sunday C · all-weekend re-cut · 4:5 feed version",
+      "file": "creative-07-sun-c/final/formanova-w40-sun-c-wknd-15s-4x5.mp4",
       "spec": {
         "container": "mp4",
         "videoCodec": "h264",
