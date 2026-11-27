@@ -7,11 +7,13 @@
 | Film | Use | Runs |
 |---|---|---|
 | 00 · Teaser (Arabic) | Organic Reel and Story only, before 8 PM Friday | Friday afternoon |
-| 01 · Friday (Arabic) | Ad + organic | Fri 7:30 PM → 11:59 PM |
+| 01 · Friday (Arabic) | Ad + organic | Fri 8 PM → 11:59 PM |
 | 02 · Saturday A (Arabic) · 03 · Saturday B (English) · 04 · Saturday C (Arabic) | Ads + organic | Sat 00:00 → 11:59 PM |
 | 05 · Sunday A (Arabic) · 06 · Sunday B (English) · 07 · Sunday C (Arabic) | Ads + organic | Sun 00:00 → 11:59 PM |
 
-Every ad links to `https://www.formanovavintage.com/collections/all-products` with `utm_source=meta&utm_medium=paid_social&utm_campaign=2026-11-weekend-40&utm_content=w40-<film>-15s`.
+On Meta, every ad film runs every day: each original film on its own day, and on the other days its all-weekend re-cut (see the end of this file), whose date lines say "until Sunday 11:59 PM". Organic posts use the originals on their own day.
+
+Every ad links to `https://www.formanovavintage.com/collections/all-products` with `utm_source=meta&utm_medium=paid_social&utm_campaign=2026-11-weekend-40&utm_content=w40-<film>-15s` (`w40-<film>-wknd-15s` for a re-cut).
 
 ---
 
@@ -220,6 +222,62 @@ One of a kind. Once it's gone, it's gone.
 #فورمانوفا #أنتيكات #فينتاج #ديكور #FormanovaVintage #Antiques #VintageDecor
 ```
 
+## All-weekend re-cuts (ads only)
+
+Same films, pieces and prices; only the date lines change (listed in the [README](README.md#all-weekend-re-cuts)). Each runs on the days its original's wording would be false.
+
+### Friday · all weekend (Arabic) · runs Sat, Sun
+```
+خصم 40% على كل القطع في فورمانوفا 🖤
+لحد الأحد 29/11 الساعة 11:59 مساءً بس.
+
+قطع فريدة… لما تخلص مش هترجع.
+الخصم أوتوماتيك عند الدفع، من غير كود. توصيل لكل محافظات مصر.
+```
+**Headline:** خصم 40% على كل القطع · **Description:** لحد الأحد 11:59 مساءً بس
+
+### Saturday A · all weekend (Arabic) · runs Fri, Sun
+```
+خصم 40% على كل القطع… لحد الأحد 11:59 مساءً بس ⏳
+قطع فريدة… لما تخلص مش هترجع.
+الخصم أوتوماتيك عند الدفع، من غير كود. توصيل لكل محافظات مصر.
+```
+**Headline:** لحد الأحد بالليل بس · **Description:** خصم 40% على كل القطع
+
+### Saturday C · all weekend (Arabic) · runs Fri, Sun
+```
+وفّر لحد 18,000 جنيه 🖤
+خصم 40% على كل القطع في فورمانوفا: الجردينة المطلية بماء الذهب عيار 24 من 44,999.99 بقت 26,999.99 جنيه.
+لحد الأحد 11:59 مساءً بس. أوتوماتيك عند الدفع، من غير كود.
+```
+**Headline:** وفّر لحد 18,000 جنيه · **Description:** خصم 40% لحد الأحد 11:59 مساءً
+
+### Sunday A · all weekend (Arabic) · runs Fri, Sat
+```
+لحد الأحد بس ⏰
+خصم 40% على كل القطع بيخلص الأحد 29/11 الساعة 11:59 مساءً. بعد الأحد الأسعار بترجع.
+أوتوماتيك عند الدفع، من غير كود. توصيل لكل محافظات مصر.
+```
+**Headline:** الخصم بيخلص الأحد 11:59 مساءً · **Description:** خصم 40% على كل القطع
+
+### Sunday B · all weekend (English) · runs Fri, Sat
+```
+This weekend: 40% off everything, until Sunday 29 November at 11:59 PM.
+Prices go back up on Monday.
+
+One of a kind. Once it's gone, it's gone.
+Applied automatically at checkout. Delivery across Egypt.
+```
+**Headline:** 40% off everything · this weekend · **Description:** Ends Sunday 11:59 PM
+
+### Sunday C · all weekend (Arabic) · runs Fri, Sat
+```
+القطع دي نفدت… والباقي بخصم 40% لحد الأحد 11:59 مساءً بس.
+قطع فريدة… لما تخلص مش هترجع.
+أوتوماتيك عند الدفع، من غير كود.
+```
+**Headline:** الحق الباقي بخصم 40% · **Description:** لحد الأحد 11:59 مساءً
+
 ---
 
 ## Claims and evidence
@@ -231,5 +289,5 @@ One of a kind. Once it's gone, it's gone.
 | "Sold out" / «نفدت» pieces | The same check recorded each one as sold out; the film refuses to show a piece as sold out otherwise, and refuses to show a sold-out piece at 40% off |
 | "Sold out this month" | Each was in stock on 6 November (pre–Black Friday catalogue) and sold out by 27 November |
 | «قطع فريدة» / "One of a kind" | Vintage and antique pieces, sold as single items or pairs |
-| «بكرة الأسعار بترجع» / "Prices go back up tomorrow" | The discount ends Sunday 11:59 PM; regular prices apply from Monday |
+| «بكرة الأسعار بترجع» / "Prices go back up tomorrow" (Sunday films only) · «بعد الأحد الأسعار بترجع» / "Prices go back up on Monday" (re-cuts) | The discount ends Sunday 11:59 PM; regular prices apply from Monday |
 | «توصيل لكل محافظات مصر» / "Delivery across Egypt" | Shipping page: "We ship to all governorates across Egypt" |
